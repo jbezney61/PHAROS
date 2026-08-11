@@ -4,6 +4,10 @@ import pytest
 from typer.testing import CliRunner
 
 from pharos_cell import __version__
+from pharos_cell.admissibility.calibration_cli import build_parser as build_calibration_parser
+from pharos_cell.admissibility.manifold_cli import build_parser as build_manifold_parser
+from pharos_cell.admissibility.separation_cli import parse_args as parse_separation_args
+from pharos_cell.admissibility.separation_cli import resolve_cells_per_line
 from pharos_cell.cli import app
 from pharos_cell.open_search import parse_args
 
@@ -93,3 +97,78 @@ def test_open_search_high_sensitivity_defaults_to_three_robust_batches() -> None
     assert args.batch_candidates == 1000
     assert args.batch_overlap_penalty == 0.0
     assert args.robust_n_samples == 3
+
+
+@pytest.mark.parametrize(
+    ("command", "expected"),
+    [
+        (["admissibility", "calibrate", "--help"], "--target-calibration-mode"),
+        (["admissibility", "manifold", "--help"], "build-reference"),
+        (["admissibility", "manifold", "build-reference", "--help"], "--reference-h5ad"),
+        (["admissibility", "manifold", "score-query", "--help"], "--query-h5ad"),
+        (["admissibility", "separation", "--help"], "--min-mean-knn-purity"),
+    ],
+)
+def test_admissibility_help(command: list[str], expected: str) -> None:
+    result = runner.invoke(app, command)
+
+    assert result.exit_code == 0
+    assert expected in result.stdout
+
+
+def test_admissibility_group_help() -> None:
+    result = runner.invoke(app, ["admissibility", "--help"])
+
+    assert result.exit_code == 0
+    assert "calibrate" in result.stdout
+    assert "manifold" in result.stdout
+    assert "separation" in result.stdout
+
+
+def test_calibration_defaults() -> None:
+    args = build_calibration_parser().parse_args(
+        [
+            "--adata", "calibration.h5ad",
+            "--model-dir", "state-model",
+            "--output-dir", "calibration-output",
+        ]
+    )
+
+    assert args.target_calibration_mode == "all"
+    assert args.cells_per_state == 100
+    assert args.sinkhorn_metric == "cosine"
+    assert args.sinkhorn_epsilon == 0.05
+    assert args.sinkhorn_iters == 100
+    assert args.projection_method == "none"
+
+
+def test_manifold_defaults() -> None:
+    parser = build_manifold_parser()
+    reference = parser.parse_args(
+        ["build-reference", "--reference-h5ad", "reference.h5ad", "--output-dir", "reference-output"]
+    )
+    query = parser.parse_args(
+        [
+            "score-query",
+            "--reference-dir", "reference-output",
+            "--query-h5ad", "query.h5ad",
+            "--output-dir", "query-output",
+        ]
+    )
+
+    assert reference.metric == "l2"
+    assert reference.k == 50
+    assert reference.calibration_cells_per_state == 100
+    assert reference.require_gpu is True
+    assert query.query_cells_per_state == 100
+    assert query.require_gpu is True
+
+
+def test_separation_defaults() -> None:
+    args = parse_separation_args(["--adata", "query.h5ad", "--output-dir", "separation-output"])
+
+    assert resolve_cells_per_line(args) == 256
+    assert args.knn_k == 30
+    assert args.min_mean_knn_purity == 0.8
+    assert args.umap_n_neighbors == 15
+    assert args.umap_min_dist == 0.3

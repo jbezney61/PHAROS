@@ -13,6 +13,13 @@ app = typer.Typer(
     rich_markup_mode="markdown",
 )
 
+admissibility_app = typer.Typer(
+    help="Check whether a proposed cell-state conversion is suitable for PHAROS.",
+    no_args_is_help=True,
+    rich_markup_mode="markdown",
+)
+app.add_typer(admissibility_app, name="admissibility")
+
 
 def _version_callback(value: bool) -> None:
     if value:
@@ -47,6 +54,48 @@ def open_search(ctx: typer.Context) -> None:
     from pharos_cell.open_search import main as open_search_main
 
     open_search_main(argv)
+
+
+@admissibility_app.command(
+    "calibrate",
+    add_help_option=False,
+    context_settings={"allow_extra_args": True, "ignore_unknown_options": True},
+)
+def admissibility_calibrate(ctx: typer.Context) -> None:
+    """Check STATE predictions against observed perturbation targets."""
+
+    argv = list(ctx.args) or ["--help"]
+    from pharos_cell.admissibility.calibration_cli import main as calibration_main
+
+    calibration_main(argv)
+
+
+@admissibility_app.command(
+    "manifold",
+    add_help_option=False,
+    context_settings={"allow_extra_args": True, "ignore_unknown_options": True},
+)
+def admissibility_manifold(ctx: typer.Context) -> None:
+    """Build or query the reference embedding manifold."""
+
+    argv = list(ctx.args) or ["--help"]
+    from pharos_cell.admissibility.manifold_cli import main as manifold_main
+
+    manifold_main(argv)
+
+
+@admissibility_app.command(
+    "separation",
+    add_help_option=False,
+    context_settings={"allow_extra_args": True, "ignore_unknown_options": True},
+)
+def admissibility_separation(ctx: typer.Context) -> None:
+    """Screen start/target state separation before a PHAROS search."""
+
+    argv = list(ctx.args) or ["--help"]
+    from pharos_cell.admissibility.separation_cli import main as separation_main
+
+    separation_main(argv)
 
 
 def main() -> None:
