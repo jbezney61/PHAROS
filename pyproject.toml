@@ -1,0 +1,42 @@
+[build-system]
+requires = ["uv_build>=0.11.14,<0.12.0"]
+build-backend = "uv_build"
+
+[project]
+name = "pharos-cell"
+version = "0.1.0a0"
+description = "Target-directed drug-combination screening from single-cell state embeddings"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  { name = "Jonathan Bezney" },
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+dependencies = [
+  "typer==0.25.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/jbezney61/PHAROS"
+Repository = "https://github.com/jbezney61/PHAROS"
+Issues = "https://github.com/jbezney61/PHAROS/issues"
+
+[project.scripts]
+pharos = "pharos_cell.cli:main"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3,<9",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
