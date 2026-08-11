@@ -17,9 +17,11 @@ python positive_control_2drug/positive_control_2drug_panel_analysis.py \\
   --cell-col Sample \\
   --model-dir "$ST_RUN" \\
   --approved-pairs-file approved_breast_cancer_pairs.tsv \\
-  --output-dir runs/patient_1_fda_pair_panel \\
-  --random-pairs 1000 \\
-  --batch 5
+  --output-dir runs/patient_1_fda_pair_panel
+
+The remaining defaults match the validated panel settings used in the PHAROS
+paper, including 100 random pairs, five standard batches, and conversion-aligned
+PCA--PLS-DA scoring. High-sensitivity batch selection defaults to three batches.
 
 Pair file columns
 -----------------
@@ -161,12 +163,12 @@ def parse_args() -> argparse.Namespace:
         default="standard",
         help="How start/target batches are selected.",
     )
-    data.add_argument("--batch-candidates", type=int, default=300, help="Candidates screened for high-sensitivity batches.")
-    data.add_argument("--batch-overlap-penalty", type=float, default=0.02, help="Overlap penalty for high-sensitivity batches.")
+    data.add_argument("--batch-candidates", type=int, default=1000, help="Candidates screened for high-sensitivity batches.")
+    data.add_argument("--batch-overlap-penalty", type=float, default=0.0, help="Overlap penalty for high-sensitivity batches.")
     data.add_argument("--batch-selection-score-chunk-size", type=int, default=8, help="Candidate batches scored per chunk.")
 
     analysis = p.add_argument_group("Panel analysis")
-    analysis.add_argument("--random-pairs", type=int, default=1000, help="Number of random 2-drug controls.")
+    analysis.add_argument("--random-pairs", type=int, default=100, help="Number of random 2-drug controls.")
     analysis.add_argument(
         "--random-type",
         "--random_type",
@@ -178,7 +180,17 @@ def parse_args() -> argparse.Namespace:
             "random pair. 'legacy' keeps the prior direct ordered-label sampling with the existing filters."
         ),
     )
-    analysis.add_argument("--batch", "--batches", dest="n_batches", type=int, default=5, help="Number of sampled batches.")
+    analysis.add_argument(
+        "--batch",
+        "--batches",
+        dest="n_batches",
+        type=int,
+        default=None,
+        help=(
+            "Number of sampled batches. Defaults to 5 with standard sampling "
+            "and 3 with high-sensitivity sampling."
+        ),
+    )
     analysis.add_argument("--converter-chunk-size", type=int, default=16, help="Second-drug labels scored per converter/scorer chunk.")
     analysis.add_argument(
         "--MOA-pairs",
@@ -218,7 +230,7 @@ def parse_args() -> argparse.Namespace:
     scoring.add_argument("--no-normalize-embeddings", action="store_true", help="Disable L2 normalization before scoring.")
 
     projection = p.add_argument_group("Projection")
-    projection.add_argument("--projection-method", choices=["none", "pls_da", "pca_pls_da", "pca"], default="none")
+    projection.add_argument("--projection-method", choices=["none", "pls_da", "pca_pls_da", "pca"], default="pca_pls_da")
     projection.add_argument("--projection-components", type=int, default=128)
     projection.add_argument("--projection-whiten", action=argparse.BooleanOptionalAction, default=False)
     projection.add_argument("--projection-fit-cap", type=int, default=4000)
@@ -226,7 +238,7 @@ def parse_args() -> argparse.Namespace:
     projection.add_argument(
         "--projection-auto-select-components",
         action=argparse.BooleanOptionalAction,
-        default=False,
+        default=True,
         help=(
             "Select PCA/PLS component counts from held-out start/target geometry before fitting the final projection. "
             "When enabled, --projection-components and --projection-pca-prefilter are replaced by the selected values."
@@ -239,7 +251,7 @@ def parse_args() -> argparse.Namespace:
     )
     projection.add_argument(
         "--projection-selection-pls-grid",
-        default="32,64,96,128,192",
+        default="64,96,128,192",
         help="Comma- or space-separated PLS/component candidates for --projection-auto-select-components.",
     )
     projection.add_argument(
@@ -285,7 +297,11 @@ def parse_args() -> argparse.Namespace:
 
     metadata = p.add_argument_group("Metadata")
     metadata.add_argument("--metadata-dir", default="metadata", help="Directory containing drug_metadata.csv.")
-    metadata.add_argument("--drug-metadata", default=None, help="Optional explicit path to drug_metadata.csv.")
+    metadata.add_argument(
+        "--drug-metadata",
+        default="metadata/drug_metadata_sciplex.csv",
+        help="Drug metadata CSV used for panel construction and reporting.",
+    )
 
     out = p.add_argument_group("Output and report")
     out.add_argument("--skip-report", action="store_true", help="Run scoring only; skip panel report generation.")
@@ -293,7 +309,10 @@ def parse_args() -> argparse.Namespace:
     out.add_argument("--errorbar", choices=["std", "sem"], default="std", help="Error bars for report mean-gain plot.")
     out.add_argument("--overwrite", action=argparse.BooleanOptionalAction, default=False, help="Overwrite a non-empty output directory.")
 
-    return p.parse_args()
+    args = p.parse_args()
+    if args.n_batches is None:
+        args.n_batches = 3 if args.batch_selection == "high-sensitivity" else 5
+    return args
 
 
 def prepare_output_dir(output_dir: Path, overwrite: bool) -> None:

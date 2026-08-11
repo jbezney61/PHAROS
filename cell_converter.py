@@ -34,10 +34,12 @@ Minimal example
       --embed-key X_state \
       --model-dir "$ST_RUN" \
       --checkpoint "$ST_RUN/checkpoints/final.ckpt" \
-      --output-dir runs/J82_to_A172 \
-      --algorithm deterministic_beam \
-      --max-depth 5 \
-      --beam-size 32
+      --output-dir runs/J82_to_A172
+
+The default search settings match the validated settings used in the PHAROS
+paper: diverse beam search, depth 2, beam width 128, robust reranking, and a
+conversion-aligned PCA--PLS-DA scoring projection. High-sensitivity batch
+selection uses three robust batches instead of the standard five.
 
 Smoke test
 ----------------
@@ -53,7 +55,9 @@ Smoke test
       --max-drugs-to-consider 6 \
       --prefilter-multiplier 3 \
       --converter-chunk-size 3 \
-      --sinkhorn-iters 50
+      --sinkhorn-iters 50 \
+      --no-robust-rerank \
+      --projection-method none
 
 Outputs
 -------
@@ -159,13 +163,13 @@ def parse_args() -> argparse.Namespace:
     data.add_argument(
         "--batch-candidates",
         type=int,
-        default=300,
+        default=1000,
         help="Number of local candidate batch pairs screened when --batch-selection high-sensitivity.",
     )
     data.add_argument(
         "--batch-overlap-penalty",
         type=float,
-        default=0.02,
+        default=0.0,
         help=(
             "Soft overlap penalty for high-sensitivity greedy batch selection. "
             "Small values keep OT separation as the dominant criterion."
@@ -186,9 +190,9 @@ def parse_args() -> argparse.Namespace:
 
     search = p.add_argument_group("Search")
     search.add_argument("--config", default=None, help="Optional YAML search config; CLI values override it.")
-    search.add_argument("--algorithm", choices=["deterministic_beam", "diverse_beam"], default="deterministic_beam")
-    search.add_argument("--max-depth", type=int, default=5, help="Maximum number of sequential drugs.")
-    search.add_argument("--beam-size", type=int, default=32, help="Number of paths retained after each depth.")
+    search.add_argument("--algorithm", choices=["deterministic_beam", "diverse_beam"], default="diverse_beam")
+    search.add_argument("--max-depth", type=int, default=2, help="Maximum number of sequential drugs.")
+    search.add_argument("--beam-size", type=int, default=128, help="Number of paths retained after each depth.")
     search.add_argument("--prefilter-multiplier", type=int, default=10, help="Sinkhorn rerank pool = beam_size * this value.")
     search.add_argument(
         "--prefilter-metric",
@@ -218,7 +222,7 @@ def parse_args() -> argparse.Namespace:
     filt.add_argument("--allowed-drug-name-contains", default=None, help="Comma-separated substrings allowed in base drug names.")
 
     diversity = p.add_argument_group("Diverse beam settings")
-    diversity.add_argument("--path-overlap-penalty", type=float, default=0.05, help="Diverse beam path-overlap penalty.")
+    diversity.add_argument("--path-overlap-penalty", type=float, default=25.0, help="Diverse beam path-overlap penalty.")
     diversity.add_argument("--use-state-similarity-penalty", action=argparse.BooleanOptionalAction, default=False)
     diversity.add_argument("--state-similarity-penalty", type=float, default=0.02)
 
@@ -232,7 +236,7 @@ def parse_args() -> argparse.Namespace:
     projection.add_argument(
         "--projection-method",
         choices=["none", "pls_da", "pca_pls_da", "pca"],
-        default="none",
+        default="pca_pls_da",
         help="Linear dimensionality reduction applied only at scoring time.",
     )
     projection.add_argument("--projection-components", type=int, default=128, help="Number of latent dimensions K.")
@@ -287,7 +291,7 @@ def parse_args() -> argparse.Namespace:
     projection.add_argument(
         "--projection-auto-select-components",
         action=argparse.BooleanOptionalAction,
-        default=False,
+        default=True,
         help=(
             "Select PCA/PLS component counts from held-out start/target geometry before fitting the final projection. "
             "When enabled, --projection-components and --projection-pca-prefilter are replaced by the selected values."
@@ -300,7 +304,7 @@ def parse_args() -> argparse.Namespace:
     )
     projection.add_argument(
         "--projection-selection-pls-grid",
-        default="32,64,96,128,192",
+        default="64,96,128,192",
         help="Comma- or space-separated PLS/component candidates for --projection-auto-select-components.",
     )
     projection.add_argument(
@@ -344,10 +348,18 @@ def parse_args() -> argparse.Namespace:
     robust.add_argument(
         "--robust-rerank",
         action=argparse.BooleanOptionalAction,
-        default=False,
+        default=True,
         help="At each depth, rerank the post-Sinkhorn candidate pool across additional sampled start/target batches.",
     )
-    robust.add_argument("--robust-n-samples", type=int, default=3, help="Number of additional sampled batches used for robust reranking.")
+    robust.add_argument(
+        "--robust-n-samples",
+        type=int,
+        default=None,
+        help=(
+            "Number of additional sampled batches used for robust reranking. "
+            "Defaults to 5 with standard sampling and 3 with high-sensitivity sampling."
+        ),
+    )
     robust.add_argument(
         "--robust-start-sample",
         default=None,
@@ -386,7 +398,7 @@ def parse_args() -> argparse.Namespace:
     out = p.add_argument_group("Output and report")
     out.add_argument("--state-checkpoint-dtype", choices=["float16", "float32"], default="float16")
     out.add_argument("--skip-report", action="store_true", help="Run search only; skip the generic search report.")
-    out.add_argument("--conversion-threshold", type=float, default=None, help="Report-only Sinkhorn threshold for counting conversions.")
+    out.add_argument("--conversion-threshold", type=float, default=0.025, help="Report-only Sinkhorn threshold for counting conversions.")
     out.add_argument("--report-top-n-paths", type=int, default=25)
     out.add_argument("--report-top-n-drugs", type=int, default=20)
 
@@ -410,8 +422,8 @@ def parse_args() -> argparse.Namespace:
     )
     out.add_argument(
         "--drug-metadata",
-        default=None,
-        help="Optional explicit path to drug_metadata.csv.",
+        default="metadata/drug_metadata_sciplex.csv",
+        help="Drug metadata CSV used by the sample/drug report.",
     )
     out.add_argument(
         "--sample-drug-top-n-paths",
@@ -440,7 +452,10 @@ def parse_args() -> argparse.Namespace:
 
     out.add_argument("--overwrite", action=argparse.BooleanOptionalAction, default=False, help="Overwrite non-empty output directory.")
 
-    return p.parse_args()
+    args = p.parse_args()
+    if args.robust_n_samples is None:
+        args.robust_n_samples = 3 if args.batch_selection == "high-sensitivity" else 5
+    return args
 
 
 def load_yaml_config(path: Optional[str]) -> Dict[str, Any]:

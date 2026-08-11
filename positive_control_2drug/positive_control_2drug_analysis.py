@@ -15,16 +15,12 @@ python positive_control_2drug_analysis.py \
   --model-dir "$ST_RUN" \
   --checkpoint "$ST_CKPT" \
   --output-dir runs/PC_CPA_pano_alve \
-  --random-pairs 1000 \
   --2drug-pair "['Panobinostat', 'crizotinib']" \
-  --batch 5 \
-  --MOA-pairs "['HDAC inhibitor', 'Multi-TK inhibitor']" \
-  --converter-chunk-size 16 \
-  --start-sample 256 \
-  --target-sample 256 \
-  --sinkhorn-metric cosine \
-  --sinkhorn-epsilon 0.05 \
-  --sinkhorn-iters 100
+  --MOA-pairs "['HDAC inhibitor', 'Multi-TK inhibitor']"
+
+The remaining defaults match the validated settings used in the PHAROS paper,
+including 100 random pairs, five standard batches, and conversion-aligned
+PCA--PLS-DA scoring. High-sensitivity batch selection defaults to three batches.
 """
 
 from __future__ import annotations
@@ -156,13 +152,13 @@ def parse_args() -> argparse.Namespace:
     data.add_argument(
         "--batch-candidates",
         type=int,
-        default=300,
+        default=1000,
         help="Number of local candidate batch pairs screened when --batch-selection high-sensitivity.",
     )
     data.add_argument(
         "--batch-overlap-penalty",
         type=float,
-        default=0.02,
+        default=0.0,
         help=(
             "Soft overlap penalty for high-sensitivity greedy batch selection. "
             "Small values keep OT separation as the dominant criterion."
@@ -176,7 +172,7 @@ def parse_args() -> argparse.Namespace:
     )
 
     analysis = p.add_argument_group("Positive-control analysis")
-    analysis.add_argument("--random-pairs", type=int, default=1000, help="Number of random 2-drug controls.")
+    analysis.add_argument("--random-pairs", type=int, default=100, help="Number of random 2-drug controls.")
     analysis.add_argument(
         "--random-type",
         "--random_type",
@@ -189,7 +185,17 @@ def parse_args() -> argparse.Namespace:
             "ordered-label sampling with the existing filters, then also evaluates those controls across all batches."
         ),
     )
-    analysis.add_argument("--batch", "--batches", dest="n_batches", type=int, default=5, help="Number of sampled batches for baseline and selected pairs.")
+    analysis.add_argument(
+        "--batch",
+        "--batches",
+        dest="n_batches",
+        type=int,
+        default=None,
+        help=(
+            "Number of sampled batches for baseline and selected pairs. "
+            "Defaults to 5 with standard sampling and 3 with high-sensitivity sampling."
+        ),
+    )
     analysis.add_argument("--converter-chunk-size", type=int, default=16, help="Second-drug labels scored per converter/scorer chunk.")
     analysis.add_argument(
         "--include-explicit-in-moa",
@@ -230,7 +236,7 @@ def parse_args() -> argparse.Namespace:
     projection.add_argument(
         "--projection-method",
         choices=["none", "pls_da", "pca_pls_da", "pca"],
-        default="none",
+        default="pca_pls_da",
         help="Linear dimensionality reduction fit on start vs target and applied only at scoring time.",
     )
     projection.add_argument("--projection-components", type=int, default=128, help="Number of latent dimensions K.")
@@ -245,7 +251,7 @@ def parse_args() -> argparse.Namespace:
     projection.add_argument(
         "--projection-auto-select-components",
         action=argparse.BooleanOptionalAction,
-        default=False,
+        default=True,
         help=(
             "Select PCA/PLS component counts from held-out start/target geometry before fitting the final projection. "
             "When enabled, --projection-components and --projection-pca-prefilter are replaced by the selected values."
@@ -258,7 +264,7 @@ def parse_args() -> argparse.Namespace:
     )
     projection.add_argument(
         "--projection-selection-pls-grid",
-        default="32,64,96,128,192",
+        default="64,96,128,192",
         help="Comma- or space-separated PLS/component candidates for --projection-auto-select-components.",
     )
     projection.add_argument(
@@ -343,7 +349,7 @@ def parse_args() -> argparse.Namespace:
     out.add_argument(
         "--trajectory-embedding-space",
         choices=["full", "projection", "both"],
-        default="full",
+        default="projection",
         help="Embedding space for explicit trajectory report figures/metrics.",
     )
     out.add_argument(
@@ -360,7 +366,10 @@ def parse_args() -> argparse.Namespace:
     out.add_argument("--errorbar", choices=["std", "sem"], default="std", help="Error bars for the bar plot.")
     out.add_argument("--overwrite", action=argparse.BooleanOptionalAction, default=False, help="Overwrite a non-empty output directory.")
 
-    return p.parse_args()
+    args = p.parse_args()
+    if args.n_batches is None:
+        args.n_batches = 3 if args.batch_selection == "high-sensitivity" else 5
+    return args
 
 
 def prepare_output_dir(output_dir: Path, overwrite: bool) -> None:
