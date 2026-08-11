@@ -1,0 +1,1139 @@
+perturbation_label	drug_name
+[('(R)-Verapamil (hydrochloride)', 0.05, 'uM')]	(R)-Verapamil (hydrochloride)
+[('(R)-Verapamil (hydrochloride)', 0.5, 'uM')]	(R)-Verapamil (hydrochloride)
+[('(R)-Verapamil (hydrochloride)', 5.0, 'uM')]	(R)-Verapamil (hydrochloride)
+[('(S)-Crizotinib', 0.05, 'uM')]	(S)-Crizotinib
+[('(S)-Crizotinib', 0.5, 'uM')]	(S)-Crizotinib
+[('(S)-Crizotinib', 5.0, 'uM')]	(S)-Crizotinib
+[('18β-Glycyrrhetinic acid', 0.05, 'uM')]	18β-Glycyrrhetinic acid
+[('18β-Glycyrrhetinic acid', 0.5, 'uM')]	18β-Glycyrrhetinic acid
+[('18β-Glycyrrhetinic acid', 5.0, 'uM')]	18β-Glycyrrhetinic acid
+[('4EGI-1', 0.05, 'uM')]	4EGI-1
+[('4EGI-1', 0.5, 'uM')]	4EGI-1
+[('4EGI-1', 5.0, 'uM')]	4EGI-1
+[('5-Azacytidine', 0.05, 'uM')]	5-Azacytidine
+[('5-Azacytidine', 0.5, 'uM')]	5-Azacytidine
+[('5-Azacytidine', 5.0, 'uM')]	5-Azacytidine
+[('5-Fluorouracil', 0.05, 'uM')]	5-Fluorouracil
+[('5-Fluorouracil', 0.5, 'uM')]	5-Fluorouracil
+[('5-Fluorouracil', 5.0, 'uM')]	5-Fluorouracil
+[('8-Hydroxyquinoline', 0.05, 'uM')]	8-Hydroxyquinoline
+[('8-Hydroxyquinoline', 0.5, 'uM')]	8-Hydroxyquinoline
+[('8-Hydroxyquinoline', 5.0, 'uM')]	8-Hydroxyquinoline
+[('9-ING-41', 0.05, 'uM')]	9-ING-41
+[('9-ING-41', 0.5, 'uM')]	9-ING-41
+[('9-ING-41', 5.0, 'uM')]	9-ING-41
+[('APTO-253', 0.05, 'uM')]	APTO-253
+[('APTO-253', 0.5, 'uM')]	APTO-253
+[('APTO-253', 5.0, 'uM')]	APTO-253
+[('AT7519', 0.05, 'uM')]	AT7519
+[('AT7519', 0.5, 'uM')]	AT7519
+[('AT7519', 5.0, 'uM')]	AT7519
+[('AZD-7648', 0.05, 'uM')]	AZD-7648
+[('AZD-7648', 0.5, 'uM')]	AZD-7648
+[('AZD-7648', 5.0, 'uM')]	AZD-7648
+[('AZD-8055', 0.05, 'uM')]	AZD-8055
+[('AZD-8055', 0.5, 'uM')]	AZD-8055
+[('AZD-8055', 5.0, 'uM')]	AZD-8055
+[('AZD1390', 0.05, 'uM')]	AZD1390
+[('AZD1390', 0.5, 'uM')]	AZD1390
+[('AZD1390', 5.0, 'uM')]	AZD1390
+[('AZD2858', 0.05, 'uM')]	AZD2858
+[('AZD2858', 0.5, 'uM')]	AZD2858
+[('AZD2858', 5.0, 'uM')]	AZD2858
+[('Abemaciclib', 0.05, 'uM')]	Abemaciclib
+[('Abemaciclib', 0.5, 'uM')]	Abemaciclib
+[('Abemaciclib', 5.0, 'uM')]	Abemaciclib
+[('Abiraterone acetate', 0.05, 'uM')]	Abiraterone acetate
+[('Abiraterone acetate', 0.5, 'uM')]	Abiraterone acetate
+[('Abiraterone acetate', 5.0, 'uM')]	Abiraterone acetate
+[('Acetazolamide', 0.05, 'uM')]	Acetazolamide
+[('Acetazolamide', 0.5, 'uM')]	Acetazolamide
+[('Acetazolamide', 5.0, 'uM')]	Acetazolamide
+[('Acetohexamide', 0.05, 'uM')]	Acetohexamide
+[('Acetohexamide', 0.5, 'uM')]	Acetohexamide
+[('Acetohexamide', 5.0, 'uM')]	Acetohexamide
+[('Adagrasib', 0.05, 'uM')]	Adagrasib
+[('Adagrasib', 0.5, 'uM')]	Adagrasib
+[('Adagrasib', 5.0, 'uM')]	Adagrasib
+[('Adenine', 0.05, 'uM')]	Adenine
+[('Adenine', 0.5, 'uM')]	Adenine
+[('Adenine', 5.0, 'uM')]	Adenine
+[('Adenosine', 0.05, 'uM')]	Adenosine
+[('Adenosine', 0.5, 'uM')]	Adenosine
+[('Adenosine', 5.0, 'uM')]	Adenosine
+[('Afatinib', 0.05, 'uM')]	Afatinib
+[('Afatinib', 0.5, 'uM')]	Afatinib
+[('Afatinib', 5.0, 'uM')]	Afatinib
+[('Aliskiren', 0.05, 'uM')]	Aliskiren
+[('Aliskiren', 0.5, 'uM')]	Aliskiren
+[('Aliskiren', 5.0, 'uM')]	Aliskiren
+[('Allantoin', 0.05, 'uM')]	Allantoin
+[('Allantoin', 0.5, 'uM')]	Allantoin
+[('Allantoin', 5.0, 'uM')]	Allantoin
+[('Allopurinol', 0.05, 'uM')]	Allopurinol
+[('Allopurinol', 0.5, 'uM')]	Allopurinol
+[('Allopurinol', 5.0, 'uM')]	Allopurinol
+[('Almonertinib (hydrochloride)', 0.05, 'uM')]	Almonertinib (hydrochloride)
+[('Almonertinib (hydrochloride)', 0.5, 'uM')]	Almonertinib (hydrochloride)
+[('Almonertinib (hydrochloride)', 5.0, 'uM')]	Almonertinib (hydrochloride)
+[('Almonertinib (mesylate)', 0.05, 'uM')]	Almonertinib (mesylate)
+[('Almonertinib (mesylate)', 0.5, 'uM')]	Almonertinib (mesylate)
+[('Almonertinib (mesylate)', 5.0, 'uM')]	Almonertinib (mesylate)
+[('Alpelisib', 0.05, 'uM')]	Alpelisib
+[('Alpelisib', 0.5, 'uM')]	Alpelisib
+[('Alpelisib', 5.0, 'uM')]	Alpelisib
+[('Altretamine', 0.05, 'uM')]	Altretamine
+[('Altretamine', 0.5, 'uM')]	Altretamine
+[('Altretamine', 5.0, 'uM')]	Altretamine
+[('Amsacrine', 0.05, 'uM')]	Amsacrine
+[('Amsacrine', 0.5, 'uM')]	Amsacrine
+[('Amsacrine', 5.0, 'uM')]	Amsacrine
+[('Anastrozole', 0.05, 'uM')]	Anastrozole
+[('Anastrozole', 0.5, 'uM')]	Anastrozole
+[('Anastrozole', 5.0, 'uM')]	Anastrozole
+[('Anethole trithione', 0.05, 'uM')]	Anethole trithione
+[('Anethole trithione', 0.5, 'uM')]	Anethole trithione
+[('Anethole trithione', 5.0, 'uM')]	Anethole trithione
+[('Apalutamide', 0.05, 'uM')]	Apalutamide
+[('Apalutamide', 0.5, 'uM')]	Apalutamide
+[('Apalutamide', 5.0, 'uM')]	Apalutamide
+[('Aprepitant', 0.05, 'uM')]	Aprepitant
+[('Aprepitant', 0.5, 'uM')]	Aprepitant
+[('Aprepitant', 5.0, 'uM')]	Aprepitant
+[('Arbutin', 0.05, 'uM')]	Arbutin
+[('Arbutin', 0.5, 'uM')]	Arbutin
+[('Arbutin', 5.0, 'uM')]	Arbutin
+[('Artemether', 0.05, 'uM')]	Artemether
+[('Artemether', 0.5, 'uM')]	Artemether
+[('Artemether', 5.0, 'uM')]	Artemether
+[('Artesunate', 0.05, 'uM')]	Artesunate
+[('Artesunate', 0.5, 'uM')]	Artesunate
+[('Artesunate', 5.0, 'uM')]	Artesunate
+[('Asciminib', 0.05, 'uM')]	Asciminib
+[('Asciminib', 0.5, 'uM')]	Asciminib
+[('Asciminib', 5.0, 'uM')]	Asciminib
+[('Aspirin', 0.05, 'uM')]	Aspirin
+[('Aspirin', 0.5, 'uM')]	Aspirin
+[('Aspirin', 5.0, 'uM')]	Aspirin
+[('Ataluren', 0.05, 'uM')]	Ataluren
+[('Ataluren', 0.5, 'uM')]	Ataluren
+[('Ataluren', 5.0, 'uM')]	Ataluren
+[('Atazanavir (sulfate)', 0.05, 'uM')]	Atazanavir (sulfate)
+[('Atazanavir (sulfate)', 0.5, 'uM')]	Atazanavir (sulfate)
+[('Atazanavir (sulfate)', 5.0, 'uM')]	Atazanavir (sulfate)
+[('Auranofin', 0.05, 'uM')]	Auranofin
+[('Auranofin', 0.5, 'uM')]	Auranofin
+[('Auranofin', 5.0, 'uM')]	Auranofin
+[('Azithromycin (hydrate)', 0.05, 'uM')]	Azithromycin (hydrate)
+[('Azithromycin (hydrate)', 0.5, 'uM')]	Azithromycin (hydrate)
+[('Azithromycin (hydrate)', 5.0, 'uM')]	Azithromycin (hydrate)
+[('BAY1125976', 0.05, 'uM')]	BAY1125976
+[('BAY1125976', 0.5, 'uM')]	BAY1125976
+[('BAY1125976', 5.0, 'uM')]	BAY1125976
+[('BI-3406', 0.05, 'uM')]	BI-3406
+[('BI-3406', 0.5, 'uM')]	BI-3406
+[('BI-3406', 5.0, 'uM')]	BI-3406
+[('BI-78D3', 0.05, 'uM')]	BI-78D3
+[('BI-78D3', 0.5, 'uM')]	BI-78D3
+[('BI-78D3', 5.0, 'uM')]	BI-78D3
+[('Baicalin', 0.05, 'uM')]	Baicalin
+[('Baicalin', 0.5, 'uM')]	Baicalin
+[('Baicalin', 5.0, 'uM')]	Baicalin
+[('Balsalazide (sodium hydrate)', 0.05, 'uM')]	Balsalazide (sodium hydrate)
+[('Balsalazide (sodium hydrate)', 0.5, 'uM')]	Balsalazide (sodium hydrate)
+[('Balsalazide (sodium hydrate)', 5.0, 'uM')]	Balsalazide (sodium hydrate)
+[('Belinostat', 0.05, 'uM')]	Belinostat
+[('Belinostat', 0.5, 'uM')]	Belinostat
+[('Belinostat', 5.0, 'uM')]	Belinostat
+[('Belumosudil (mesylate)', 0.05, 'uM')]	Belumosudil (mesylate)
+[('Belumosudil (mesylate)', 0.5, 'uM')]	Belumosudil (mesylate)
+[('Belumosudil (mesylate)', 5.0, 'uM')]	Belumosudil (mesylate)
+[('Belumosudil', 0.05, 'uM')]	Belumosudil
+[('Belumosudil', 0.5, 'uM')]	Belumosudil
+[('Belumosudil', 5.0, 'uM')]	Belumosudil
+[('Belzutifan', 0.05, 'uM')]	Belzutifan
+[('Belzutifan', 0.5, 'uM')]	Belzutifan
+[('Belzutifan', 5.0, 'uM')]	Belzutifan
+[('Bendamustine', 0.05, 'uM')]	Bendamustine
+[('Bendamustine', 0.5, 'uM')]	Bendamustine
+[('Bendamustine', 5.0, 'uM')]	Bendamustine
+[('Benproperine (phosphate)', 0.05, 'uM')]	Benproperine (phosphate)
+[('Benproperine (phosphate)', 0.5, 'uM')]	Benproperine (phosphate)
+[('Benproperine (phosphate)', 5.0, 'uM')]	Benproperine (phosphate)
+[('Bentamapimod', 0.05, 'uM')]	Bentamapimod
+[('Bentamapimod', 0.5, 'uM')]	Bentamapimod
+[('Bentamapimod', 5.0, 'uM')]	Bentamapimod
+[('Benztropine (mesylate)', 0.05, 'uM')]	Benztropine (mesylate)
+[('Benztropine (mesylate)', 0.5, 'uM')]	Benztropine (mesylate)
+[('Benztropine (mesylate)', 5.0, 'uM')]	Benztropine (mesylate)
+[('Berbamine (dihydrochloride)', 0.05, 'uM')]	Berbamine (dihydrochloride)
+[('Berbamine (dihydrochloride)', 0.5, 'uM')]	Berbamine (dihydrochloride)
+[('Berbamine (dihydrochloride)', 5.0, 'uM')]	Berbamine (dihydrochloride)
+[('Berbamine', 0.05, 'uM')]	Berbamine
+[('Berbamine', 0.5, 'uM')]	Berbamine
+[('Berbamine', 5.0, 'uM')]	Berbamine
+[('Berberine (chloride hydrate)', 0.05, 'uM')]	Berberine (chloride hydrate)
+[('Berberine (chloride hydrate)', 0.5, 'uM')]	Berberine (chloride hydrate)
+[('Berberine (chloride hydrate)', 5.0, 'uM')]	Berberine (chloride hydrate)
+[('Bergenin', 0.05, 'uM')]	Bergenin
+[('Bergenin', 0.5, 'uM')]	Bergenin
+[('Bergenin', 5.0, 'uM')]	Bergenin
+[('Bestatin (hydrochloride)', 0.05, 'uM')]	Bestatin (hydrochloride)
+[('Bestatin (hydrochloride)', 0.5, 'uM')]	Bestatin (hydrochloride)
+[('Bestatin (hydrochloride)', 5.0, 'uM')]	Bestatin (hydrochloride)
+[('Bestatin', 0.05, 'uM')]	Bestatin
+[('Bestatin', 0.5, 'uM')]	Bestatin
+[('Bestatin', 5.0, 'uM')]	Bestatin
+[('Betamethasone dipropionate', 0.05, 'uM')]	Betamethasone dipropionate
+[('Betamethasone dipropionate', 0.5, 'uM')]	Betamethasone dipropionate
+[('Betamethasone dipropionate', 5.0, 'uM')]	Betamethasone dipropionate
+[('Bexarotene', 0.05, 'uM')]	Bexarotene
+[('Bexarotene', 0.5, 'uM')]	Bexarotene
+[('Bexarotene', 5.0, 'uM')]	Bexarotene
+[('Bicalutamide', 0.05, 'uM')]	Bicalutamide
+[('Bicalutamide', 0.5, 'uM')]	Bicalutamide
+[('Bicalutamide', 5.0, 'uM')]	Bicalutamide
+[('Bimatoprost', 0.05, 'uM')]	Bimatoprost
+[('Bimatoprost', 0.5, 'uM')]	Bimatoprost
+[('Bimatoprost', 5.0, 'uM')]	Bimatoprost
+[('Bimiralisib', 0.05, 'uM')]	Bimiralisib
+[('Bimiralisib', 0.5, 'uM')]	Bimiralisib
+[('Bimiralisib', 5.0, 'uM')]	Bimiralisib
+[('Binimetinib', 0.05, 'uM')]	Binimetinib
+[('Binimetinib', 0.5, 'uM')]	Binimetinib
+[('Binimetinib', 5.0, 'uM')]	Binimetinib
+[('Bisoprolol (hemifumarate)', 0.05, 'uM')]	Bisoprolol (hemifumarate)
+[('Bisoprolol (hemifumarate)', 0.5, 'uM')]	Bisoprolol (hemifumarate)
+[('Bisoprolol (hemifumarate)', 5.0, 'uM')]	Bisoprolol (hemifumarate)
+[('Bortezomib', 0.05, 'uM')]	Bortezomib
+[('Bortezomib', 0.5, 'uM')]	Bortezomib
+[('Bortezomib', 5.0, 'uM')]	Bortezomib
+[('Bosentan (hydrate)', 0.05, 'uM')]	Bosentan (hydrate)
+[('Bosentan (hydrate)', 0.5, 'uM')]	Bosentan (hydrate)
+[('Bosentan (hydrate)', 5.0, 'uM')]	Bosentan (hydrate)
+[('Brimonidine', 0.05, 'uM')]	Brimonidine
+[('Brimonidine', 0.5, 'uM')]	Brimonidine
+[('Brimonidine', 5.0, 'uM')]	Brimonidine
+[('Brivudine', 0.05, 'uM')]	Brivudine
+[('Brivudine', 0.5, 'uM')]	Brivudine
+[('Brivudine', 5.0, 'uM')]	Brivudine
+[('Budesonide', 0.05, 'uM')]	Budesonide
+[('Budesonide', 0.5, 'uM')]	Budesonide
+[('Budesonide', 5.0, 'uM')]	Budesonide
+[('Busulfan', 0.05, 'uM')]	Busulfan
+[('Busulfan', 0.5, 'uM')]	Busulfan
+[('Busulfan', 5.0, 'uM')]	Busulfan
+[('CP21R7', 0.05, 'uM')]	CP21R7
+[('CP21R7', 0.5, 'uM')]	CP21R7
+[('CP21R7', 5.0, 'uM')]	CP21R7
+[('Cabozantinib (S-malate)', 0.05, 'uM')]	Cabozantinib (S-malate)
+[('Cabozantinib (S-malate)', 0.5, 'uM')]	Cabozantinib (S-malate)
+[('Cabozantinib (S-malate)', 5.0, 'uM')]	Cabozantinib (S-malate)
+[('Canagliflozin (hemihydrate)', 0.05, 'uM')]	Canagliflozin (hemihydrate)
+[('Canagliflozin (hemihydrate)', 0.5, 'uM')]	Canagliflozin (hemihydrate)
+[('Canagliflozin (hemihydrate)', 5.0, 'uM')]	Canagliflozin (hemihydrate)
+[('Canagliflozin', 0.05, 'uM')]	Canagliflozin
+[('Canagliflozin', 0.5, 'uM')]	Canagliflozin
+[('Canagliflozin', 5.0, 'uM')]	Canagliflozin
+[('Capivasertib', 0.05, 'uM')]	Capivasertib
+[('Capivasertib', 0.5, 'uM')]	Capivasertib
+[('Capivasertib', 5.0, 'uM')]	Capivasertib
+[('Capmatinib', 0.05, 'uM')]	Capmatinib
+[('Capmatinib', 0.5, 'uM')]	Capmatinib
+[('Capmatinib', 5.0, 'uM')]	Capmatinib
+[('Captopril', 0.05, 'uM')]	Captopril
+[('Captopril', 0.5, 'uM')]	Captopril
+[('Captopril', 5.0, 'uM')]	Captopril
+[('Carbamazepine', 0.05, 'uM')]	Carbamazepine
+[('Carbamazepine', 0.5, 'uM')]	Carbamazepine
+[('Carbamazepine', 5.0, 'uM')]	Carbamazepine
+[('Carbidopa (monohydrate)', 0.05, 'uM')]	Carbidopa (monohydrate)
+[('Carbidopa (monohydrate)', 0.5, 'uM')]	Carbidopa (monohydrate)
+[('Carbidopa (monohydrate)', 5.0, 'uM')]	Carbidopa (monohydrate)
+[('Celecoxib', 0.05, 'uM')]	Celecoxib
+[('Celecoxib', 0.5, 'uM')]	Celecoxib
+[('Celecoxib', 5.0, 'uM')]	Celecoxib
+[('Cepharanthine', 0.05, 'uM')]	Cepharanthine
+[('Cepharanthine', 0.5, 'uM')]	Cepharanthine
+[('Cepharanthine', 5.0, 'uM')]	Cepharanthine
+[('Chlorhexidine (diacetate)', 0.05, 'uM')]	Chlorhexidine (diacetate)
+[('Chlorhexidine (diacetate)', 0.5, 'uM')]	Chlorhexidine (diacetate)
+[('Chlorhexidine (diacetate)', 5.0, 'uM')]	Chlorhexidine (diacetate)
+[('Ciclopirox', 0.05, 'uM')]	Ciclopirox
+[('Ciclopirox', 0.5, 'uM')]	Ciclopirox
+[('Ciclopirox', 5.0, 'uM')]	Ciclopirox
+[('Cilostazol', 0.05, 'uM')]	Cilostazol
+[('Cilostazol', 0.5, 'uM')]	Cilostazol
+[('Cilostazol', 5.0, 'uM')]	Cilostazol
+[('Cinacalcet', 0.05, 'uM')]	Cinacalcet
+[('Cinacalcet', 0.5, 'uM')]	Cinacalcet
+[('Cinacalcet', 5.0, 'uM')]	Cinacalcet
+[('Citalopram (hydrobromide)', 0.05, 'uM')]	Citalopram (hydrobromide)
+[('Citalopram (hydrobromide)', 0.5, 'uM')]	Citalopram (hydrobromide)
+[('Citalopram (hydrobromide)', 5.0, 'uM')]	Citalopram (hydrobromide)
+[('Clobetasol propionate', 0.05, 'uM')]	Clobetasol propionate
+[('Clobetasol propionate', 0.5, 'uM')]	Clobetasol propionate
+[('Clobetasol propionate', 5.0, 'uM')]	Clobetasol propionate
+[('Clofarabine', 0.05, 'uM')]	Clofarabine
+[('Clofarabine', 0.5, 'uM')]	Clofarabine
+[('Clofarabine', 5.0, 'uM')]	Clofarabine
+[('Clonidine (hydrochloride)', 0.05, 'uM')]	Clonidine (hydrochloride)
+[('Clonidine (hydrochloride)', 0.5, 'uM')]	Clonidine (hydrochloride)
+[('Clonidine (hydrochloride)', 5.0, 'uM')]	Clonidine (hydrochloride)
+[('Clopidogrel', 0.05, 'uM')]	Clopidogrel
+[('Clopidogrel', 0.5, 'uM')]	Clopidogrel
+[('Clopidogrel', 5.0, 'uM')]	Clopidogrel
+[('Clotrimazole', 0.05, 'uM')]	Clotrimazole
+[('Clotrimazole', 0.5, 'uM')]	Clotrimazole
+[('Clotrimazole', 5.0, 'uM')]	Clotrimazole
+[('Cloxacillin (sodium)', 0.05, 'uM')]	Cloxacillin (sodium)
+[('Cloxacillin (sodium)', 0.5, 'uM')]	Cloxacillin (sodium)
+[('Cloxacillin (sodium)', 5.0, 'uM')]	Cloxacillin (sodium)
+[('Cobimetinib', 0.05, 'uM')]	Cobimetinib
+[('Cobimetinib', 0.5, 'uM')]	Cobimetinib
+[('Cobimetinib', 5.0, 'uM')]	Cobimetinib
+[('Crizotinib (hydrochloride)', 0.05, 'uM')]	Crizotinib (hydrochloride)
+[('Crizotinib (hydrochloride)', 0.5, 'uM')]	Crizotinib (hydrochloride)
+[('Crizotinib (hydrochloride)', 5.0, 'uM')]	Crizotinib (hydrochloride)
+[('Cyclosporin A', 0.05, 'uM')]	Cyclosporin A
+[('Cyclosporin A', 0.5, 'uM')]	Cyclosporin A
+[('Cyclosporin A', 5.0, 'uM')]	Cyclosporin A
+[('Cysteamine (hydrochloride)', 0.05, 'uM')]	Cysteamine (hydrochloride)
+[('Cysteamine (hydrochloride)', 0.5, 'uM')]	Cysteamine (hydrochloride)
+[('Cysteamine (hydrochloride)', 5.0, 'uM')]	Cysteamine (hydrochloride)
+[('Cytarabine (hydrochloride)', 0.05, 'uM')]	Cytarabine (hydrochloride)
+[('Cytarabine (hydrochloride)', 0.5, 'uM')]	Cytarabine (hydrochloride)
+[('Cytarabine (hydrochloride)', 5.0, 'uM')]	Cytarabine (hydrochloride)
+[('Cytarabine', 0.05, 'uM')]	Cytarabine
+[('Cytarabine', 0.5, 'uM')]	Cytarabine
+[('Cytarabine', 5.0, 'uM')]	Cytarabine
+[('DMSO_TF', 0.0, 'uM')]	DMSO_TF
+[('DT-061', 0.05, 'uM')]	DT-061
+[('DT-061', 0.5, 'uM')]	DT-061
+[('DT-061', 5.0, 'uM')]	DT-061
+[('DTP3', 0.05, 'uM')]	DTP3
+[('DTP3', 0.5, 'uM')]	DTP3
+[('DTP3', 5.0, 'uM')]	DTP3
+[('Dabrafenib', 0.05, 'uM')]	Dabrafenib
+[('Dabrafenib', 0.5, 'uM')]	Dabrafenib
+[('Dabrafenib', 5.0, 'uM')]	Dabrafenib
+[('Daidzin', 0.05, 'uM')]	Daidzin
+[('Daidzin', 0.5, 'uM')]	Daidzin
+[('Daidzin', 5.0, 'uM')]	Daidzin
+[('Dapagliflozin ((2S)-1,2-propanediol, hydrate)', 0.05, 'uM')]	Dapagliflozin ((2S)-1,2-propanediol, hydrate)
+[('Dapagliflozin ((2S)-1,2-propanediol, hydrate)', 0.5, 'uM')]	Dapagliflozin ((2S)-1,2-propanediol, hydrate)
+[('Dapagliflozin ((2S)-1,2-propanediol, hydrate)', 5.0, 'uM')]	Dapagliflozin ((2S)-1,2-propanediol, hydrate)
+[('Dapagliflozin', 0.05, 'uM')]	Dapagliflozin
+[('Dapagliflozin', 0.5, 'uM')]	Dapagliflozin
+[('Dapagliflozin', 5.0, 'uM')]	Dapagliflozin
+[('Daptomycin', 0.05, 'uM')]	Daptomycin
+[('Daptomycin', 0.5, 'uM')]	Daptomycin
+[('Daptomycin', 5.0, 'uM')]	Daptomycin
+[('Darinaparsin', 0.05, 'uM')]	Darinaparsin
+[('Darinaparsin', 0.5, 'uM')]	Darinaparsin
+[('Darinaparsin', 5.0, 'uM')]	Darinaparsin
+[('Darolutamide', 0.05, 'uM')]	Darolutamide
+[('Darolutamide', 0.5, 'uM')]	Darolutamide
+[('Darolutamide', 5.0, 'uM')]	Darolutamide
+[('Decitabine', 0.05, 'uM')]	Decitabine
+[('Decitabine', 0.5, 'uM')]	Decitabine
+[('Decitabine', 5.0, 'uM')]	Decitabine
+[('Delamanid', 0.05, 'uM')]	Delamanid
+[('Delamanid', 0.5, 'uM')]	Delamanid
+[('Delamanid', 5.0, 'uM')]	Delamanid
+[('Demeclocycline', 0.05, 'uM')]	Demeclocycline
+[('Demeclocycline', 0.5, 'uM')]	Demeclocycline
+[('Demeclocycline', 5.0, 'uM')]	Demeclocycline
+[('Dexamethasone', 0.05, 'uM')]	Dexamethasone
+[('Dexamethasone', 0.5, 'uM')]	Dexamethasone
+[('Dexamethasone', 5.0, 'uM')]	Dexamethasone
+[('Dexmedetomidine', 0.05, 'uM')]	Dexmedetomidine
+[('Dexmedetomidine', 0.5, 'uM')]	Dexmedetomidine
+[('Dexmedetomidine', 5.0, 'uM')]	Dexmedetomidine
+[('Diammonium Glycyrrhizinate', 0.05, 'uM')]	Diammonium Glycyrrhizinate
+[('Diammonium Glycyrrhizinate', 0.5, 'uM')]	Diammonium Glycyrrhizinate
+[('Diammonium Glycyrrhizinate', 5.0, 'uM')]	Diammonium Glycyrrhizinate
+[('Digitoxin', 0.05, 'uM')]	Digitoxin
+[('Digitoxin', 0.5, 'uM')]	Digitoxin
+[('Digitoxin', 5.0, 'uM')]	Digitoxin
+[('Dihydroartemisinin', 0.05, 'uM')]	Dihydroartemisinin
+[('Dihydroartemisinin', 0.5, 'uM')]	Dihydroartemisinin
+[('Dihydroartemisinin', 5.0, 'uM')]	Dihydroartemisinin
+[('Dimethyl fumarate', 0.05, 'uM')]	Dimethyl fumarate
+[('Dimethyl fumarate', 0.5, 'uM')]	Dimethyl fumarate
+[('Dimethyl fumarate', 5.0, 'uM')]	Dimethyl fumarate
+[('Dinaciclib', 0.05, 'uM')]	Dinaciclib
+[('Dinaciclib', 0.5, 'uM')]	Dinaciclib
+[('Dinaciclib', 5.0, 'uM')]	Dinaciclib
+[('Diphenhydramine', 0.05, 'uM')]	Diphenhydramine
+[('Diphenhydramine', 0.5, 'uM')]	Diphenhydramine
+[('Diphenhydramine', 5.0, 'uM')]	Diphenhydramine
+[('Docetaxel (Trihydrate)', 0.05, 'uM')]	Docetaxel (Trihydrate)
+[('Docetaxel (Trihydrate)', 0.5, 'uM')]	Docetaxel (Trihydrate)
+[('Docetaxel (Trihydrate)', 5.0, 'uM')]	Docetaxel (Trihydrate)
+[('Docetaxel', 0.05, 'uM')]	Docetaxel
+[('Docetaxel', 0.5, 'uM')]	Docetaxel
+[('Docetaxel', 5.0, 'uM')]	Docetaxel
+[('Dorzolamide (hydrochloride)', 0.05, 'uM')]	Dorzolamide (hydrochloride)
+[('Dorzolamide (hydrochloride)', 0.5, 'uM')]	Dorzolamide (hydrochloride)
+[('Dorzolamide (hydrochloride)', 5.0, 'uM')]	Dorzolamide (hydrochloride)
+[('Doxorubicin (hydrochloride)', 0.05, 'uM')]	Doxorubicin (hydrochloride)
+[('Doxorubicin (hydrochloride)', 0.5, 'uM')]	Doxorubicin (hydrochloride)
+[('Doxorubicin (hydrochloride)', 5.0, 'uM')]	Doxorubicin (hydrochloride)
+[('Doxycycline (monohydrate)', 0.05, 'uM')]	Doxycycline (monohydrate)
+[('Doxycycline (monohydrate)', 0.5, 'uM')]	Doxycycline (monohydrate)
+[('Doxycycline (monohydrate)', 5.0, 'uM')]	Doxycycline (monohydrate)
+[('Drospirenone', 0.05, 'uM')]	Drospirenone
+[('Drospirenone', 0.5, 'uM')]	Drospirenone
+[('Drospirenone', 5.0, 'uM')]	Drospirenone
+[('ERK5-IN-2', 0.05, 'uM')]	ERK5-IN-2
+[('ERK5-IN-2', 0.5, 'uM')]	ERK5-IN-2
+[('ERK5-IN-2', 5.0, 'uM')]	ERK5-IN-2
+[('ETC-206', 0.05, 'uM')]	ETC-206
+[('ETC-206', 0.5, 'uM')]	ETC-206
+[('ETC-206', 5.0, 'uM')]	ETC-206
+[('EX229', 0.05, 'uM')]	EX229
+[('EX229', 0.5, 'uM')]	EX229
+[('EX229', 5.0, 'uM')]	EX229
+[('Econazole', 0.05, 'uM')]	Econazole
+[('Econazole', 0.5, 'uM')]	Econazole
+[('Econazole', 5.0, 'uM')]	Econazole
+[('Edoxaban (tosylate monohydrate)', 0.05, 'uM')]	Edoxaban (tosylate monohydrate)
+[('Edoxaban (tosylate monohydrate)', 0.5, 'uM')]	Edoxaban (tosylate monohydrate)
+[('Edoxaban (tosylate monohydrate)', 5.0, 'uM')]	Edoxaban (tosylate monohydrate)
+[('Elagolix sodium', 0.05, 'uM')]	Elagolix sodium
+[('Elagolix sodium', 0.5, 'uM')]	Elagolix sodium
+[('Elagolix sodium', 5.0, 'uM')]	Elagolix sodium
+[('Elimusertib hydrochloride', 0.05, 'uM')]	Elimusertib hydrochloride
+[('Elimusertib hydrochloride', 0.5, 'uM')]	Elimusertib hydrochloride
+[('Elimusertib hydrochloride', 5.0, 'uM')]	Elimusertib hydrochloride
+[('Encorafenib', 0.05, 'uM')]	Encorafenib
+[('Encorafenib', 0.5, 'uM')]	Encorafenib
+[('Encorafenib', 5.0, 'uM')]	Encorafenib
+[('Entecavir (monohydrate)', 0.05, 'uM')]	Entecavir (monohydrate)
+[('Entecavir (monohydrate)', 0.5, 'uM')]	Entecavir (monohydrate)
+[('Entecavir (monohydrate)', 5.0, 'uM')]	Entecavir (monohydrate)
+[('Entrectinib', 0.05, 'uM')]	Entrectinib
+[('Entrectinib', 0.5, 'uM')]	Entrectinib
+[('Entrectinib', 5.0, 'uM')]	Entrectinib
+[('Epirubicin (hydrochloride)', 0.05, 'uM')]	Epirubicin (hydrochloride)
+[('Epirubicin (hydrochloride)', 0.5, 'uM')]	Epirubicin (hydrochloride)
+[('Epirubicin (hydrochloride)', 5.0, 'uM')]	Epirubicin (hydrochloride)
+[('Eplerenone', 0.05, 'uM')]	Eplerenone
+[('Eplerenone', 0.5, 'uM')]	Eplerenone
+[('Eplerenone', 5.0, 'uM')]	Eplerenone
+[('Erdafitinib ', 0.05, 'uM')]	Erdafitinib 
+[('Erdafitinib ', 0.5, 'uM')]	Erdafitinib 
+[('Erdafitinib ', 5.0, 'uM')]	Erdafitinib 
+[('Erlotinib', 0.05, 'uM')]	Erlotinib
+[('Erlotinib', 0.5, 'uM')]	Erlotinib
+[('Erlotinib', 5.0, 'uM')]	Erlotinib
+[('Erythromycin', 0.05, 'uM')]	Erythromycin
+[('Erythromycin', 0.5, 'uM')]	Erythromycin
+[('Erythromycin', 5.0, 'uM')]	Erythromycin
+[('Esmolol (hydrochloride)', 0.05, 'uM')]	Esmolol (hydrochloride)
+[('Esmolol (hydrochloride)', 0.5, 'uM')]	Esmolol (hydrochloride)
+[('Esmolol (hydrochloride)', 5.0, 'uM')]	Esmolol (hydrochloride)
+[('Estrone sulfate (potassium)', 0.05, 'uM')]	Estrone sulfate (potassium)
+[('Estrone sulfate (potassium)', 0.5, 'uM')]	Estrone sulfate (potassium)
+[('Estrone sulfate (potassium)', 5.0, 'uM')]	Estrone sulfate (potassium)
+[('Everolimus', 0.05, 'uM')]	Everolimus
+[('Everolimus', 0.5, 'uM')]	Everolimus
+[('Everolimus', 5.0, 'uM')]	Everolimus
+[('Fedratinib (hydrochloride hydrate)', 0.05, 'uM')]	Fedratinib (hydrochloride hydrate)
+[('Fedratinib (hydrochloride hydrate)', 0.5, 'uM')]	Fedratinib (hydrochloride hydrate)
+[('Fedratinib (hydrochloride hydrate)', 5.0, 'uM')]	Fedratinib (hydrochloride hydrate)
+[('Fenofibrate', 0.05, 'uM')]	Fenofibrate
+[('Fenofibrate', 0.5, 'uM')]	Fenofibrate
+[('Fenofibrate', 5.0, 'uM')]	Fenofibrate
+[('Ferulic acid', 0.05, 'uM')]	Ferulic acid
+[('Ferulic acid', 0.5, 'uM')]	Ferulic acid
+[('Ferulic acid', 5.0, 'uM')]	Ferulic acid
+[('Filgotinib', 0.05, 'uM')]	Filgotinib
+[('Filgotinib', 0.5, 'uM')]	Filgotinib
+[('Filgotinib', 5.0, 'uM')]	Filgotinib
+[('Finasteride', 0.05, 'uM')]	Finasteride
+[('Finasteride', 0.5, 'uM')]	Finasteride
+[('Finasteride', 5.0, 'uM')]	Finasteride
+[('Fingolimod (hydrochloride)', 0.05, 'uM')]	Fingolimod (hydrochloride)
+[('Fingolimod (hydrochloride)', 0.5, 'uM')]	Fingolimod (hydrochloride)
+[('Fingolimod (hydrochloride)', 5.0, 'uM')]	Fingolimod (hydrochloride)
+[('Flumatinib (mesylate)', 0.05, 'uM')]	Flumatinib (mesylate)
+[('Flumatinib (mesylate)', 0.5, 'uM')]	Flumatinib (mesylate)
+[('Flumatinib (mesylate)', 5.0, 'uM')]	Flumatinib (mesylate)
+[('Flutamide', 0.05, 'uM')]	Flutamide
+[('Flutamide', 0.5, 'uM')]	Flutamide
+[('Flutamide', 5.0, 'uM')]	Flutamide
+[('Fluvoxamine (maleate)', 0.05, 'uM')]	Fluvoxamine (maleate)
+[('Fluvoxamine (maleate)', 0.5, 'uM')]	Fluvoxamine (maleate)
+[('Fluvoxamine (maleate)', 5.0, 'uM')]	Fluvoxamine (maleate)
+[('Fluvoxamine', 0.05, 'uM')]	Fluvoxamine
+[('Fluvoxamine', 0.5, 'uM')]	Fluvoxamine
+[('Fluvoxamine', 5.0, 'uM')]	Fluvoxamine
+[('Folic acid', 0.05, 'uM')]	Folic acid
+[('Folic acid', 0.5, 'uM')]	Folic acid
+[('Folic acid', 5.0, 'uM')]	Folic acid
+[('Fostamatinib (disodium hexahydrate)', 0.05, 'uM')]	Fostamatinib (disodium hexahydrate)
+[('Fostamatinib (disodium hexahydrate)', 0.5, 'uM')]	Fostamatinib (disodium hexahydrate)
+[('Fostamatinib (disodium hexahydrate)', 5.0, 'uM')]	Fostamatinib (disodium hexahydrate)
+[('Fulvestrant', 0.05, 'uM')]	Fulvestrant
+[('Fulvestrant', 0.5, 'uM')]	Fulvestrant
+[('Fulvestrant', 5.0, 'uM')]	Fulvestrant
+[('Fumaric acid', 0.05, 'uM')]	Fumaric acid
+[('Fumaric acid', 0.5, 'uM')]	Fumaric acid
+[('Fumaric acid', 5.0, 'uM')]	Fumaric acid
+[('Furosemide', 0.05, 'uM')]	Furosemide
+[('Furosemide', 0.5, 'uM')]	Furosemide
+[('Furosemide', 5.0, 'uM')]	Furosemide
+[('Fusidic acid', 0.05, 'uM')]	Fusidic acid
+[('Fusidic acid', 0.5, 'uM')]	Fusidic acid
+[('Fusidic acid', 5.0, 'uM')]	Fusidic acid
+[('Futibatinib', 0.05, 'uM')]	Futibatinib
+[('Futibatinib', 0.5, 'uM')]	Futibatinib
+[('Futibatinib', 5.0, 'uM')]	Futibatinib
+[('GSK1059615', 0.05, 'uM')]	GSK1059615
+[('GSK1059615', 0.5, 'uM')]	GSK1059615
+[('GSK1059615', 5.0, 'uM')]	GSK1059615
+[('Gallic acid (hydrate)', 0.05, 'uM')]	Gallic acid (hydrate)
+[('Gallic acid (hydrate)', 0.5, 'uM')]	Gallic acid (hydrate)
+[('Gallic acid (hydrate)', 5.0, 'uM')]	Gallic acid (hydrate)
+[('Gallic acid', 0.05, 'uM')]	Gallic acid
+[('Gallic acid', 0.5, 'uM')]	Gallic acid
+[('Gallic acid', 5.0, 'uM')]	Gallic acid
+[('Gefitinib', 0.05, 'uM')]	Gefitinib
+[('Gefitinib', 0.5, 'uM')]	Gefitinib
+[('Gefitinib', 5.0, 'uM')]	Gefitinib
+[('Gemcitabine', 0.05, 'uM')]	Gemcitabine
+[('Gemcitabine', 0.5, 'uM')]	Gemcitabine
+[('Gemcitabine', 5.0, 'uM')]	Gemcitabine
+[('Gemfibrozil', 0.05, 'uM')]	Gemfibrozil
+[('Gemfibrozil', 0.5, 'uM')]	Gemfibrozil
+[('Gemfibrozil', 5.0, 'uM')]	Gemfibrozil
+[('Glasdegib', 0.05, 'uM')]	Glasdegib
+[('Glasdegib', 0.5, 'uM')]	Glasdegib
+[('Glasdegib', 5.0, 'uM')]	Glasdegib
+[('Glycyrrhizic acid', 0.05, 'uM')]	Glycyrrhizic acid
+[('Glycyrrhizic acid', 0.5, 'uM')]	Glycyrrhizic acid
+[('Glycyrrhizic acid', 5.0, 'uM')]	Glycyrrhizic acid
+[('Goserelin (acetate)', 0.05, 'uM')]	Goserelin (acetate)
+[('Goserelin (acetate)', 0.5, 'uM')]	Goserelin (acetate)
+[('Goserelin (acetate)', 5.0, 'uM')]	Goserelin (acetate)
+[('HI-TOPK-032', 0.05, 'uM')]	HI-TOPK-032
+[('HI-TOPK-032', 0.5, 'uM')]	HI-TOPK-032
+[('HI-TOPK-032', 5.0, 'uM')]	HI-TOPK-032
+[('Harringtonine', 0.05, 'uM')]	Harringtonine
+[('Harringtonine', 0.5, 'uM')]	Harringtonine
+[('Harringtonine', 5.0, 'uM')]	Harringtonine
+[('Hesperidin', 0.05, 'uM')]	Hesperidin
+[('Hesperidin', 0.5, 'uM')]	Hesperidin
+[('Hesperidin', 5.0, 'uM')]	Hesperidin
+[('Hexylresorcinol', 0.05, 'uM')]	Hexylresorcinol
+[('Hexylresorcinol', 0.5, 'uM')]	Hexylresorcinol
+[('Hexylresorcinol', 5.0, 'uM')]	Hexylresorcinol
+[('Homoharringtonine', 0.05, 'uM')]	Homoharringtonine
+[('Homoharringtonine', 0.5, 'uM')]	Homoharringtonine
+[('Homoharringtonine', 5.0, 'uM')]	Homoharringtonine
+[('Hydroxyfasudil', 0.05, 'uM')]	Hydroxyfasudil
+[('Hydroxyfasudil', 0.5, 'uM')]	Hydroxyfasudil
+[('Hydroxyfasudil', 5.0, 'uM')]	Hydroxyfasudil
+[('Hydroxyurea', 0.05, 'uM')]	Hydroxyurea
+[('Hydroxyurea', 0.5, 'uM')]	Hydroxyurea
+[('Hydroxyurea', 5.0, 'uM')]	Hydroxyurea
+[('IQ 1', 0.05, 'uM')]	IQ 1
+[('IQ 1', 0.5, 'uM')]	IQ 1
+[('IQ 1', 5.0, 'uM')]	IQ 1
+[('Idarubicin (hydrochloride)', 0.05, 'uM')]	Idarubicin (hydrochloride)
+[('Idarubicin (hydrochloride)', 0.5, 'uM')]	Idarubicin (hydrochloride)
+[('Idarubicin (hydrochloride)', 5.0, 'uM')]	Idarubicin (hydrochloride)
+[('Idoxuridine', 0.05, 'uM')]	Idoxuridine
+[('Idoxuridine', 0.5, 'uM')]	Idoxuridine
+[('Idoxuridine', 5.0, 'uM')]	Idoxuridine
+[('Imiquimod (hydrochloride)', 0.05, 'uM')]	Imiquimod (hydrochloride)
+[('Imiquimod (hydrochloride)', 0.5, 'uM')]	Imiquimod (hydrochloride)
+[('Imiquimod (hydrochloride)', 5.0, 'uM')]	Imiquimod (hydrochloride)
+[('Imiquimod (maleate)', 0.05, 'uM')]	Imiquimod (maleate)
+[('Imiquimod (maleate)', 0.5, 'uM')]	Imiquimod (maleate)
+[('Imiquimod (maleate)', 5.0, 'uM')]	Imiquimod (maleate)
+[('Indacaterol (maleate)', 0.05, 'uM')]	Indacaterol (maleate)
+[('Indacaterol (maleate)', 0.5, 'uM')]	Indacaterol (maleate)
+[('Indacaterol (maleate)', 5.0, 'uM')]	Indacaterol (maleate)
+[('Infigratinib', 0.05, 'uM')]	Infigratinib
+[('Infigratinib', 0.5, 'uM')]	Infigratinib
+[('Infigratinib', 5.0, 'uM')]	Infigratinib
+[('Ipatasertib', 0.05, 'uM')]	Ipatasertib
+[('Ipatasertib', 0.5, 'uM')]	Ipatasertib
+[('Ipatasertib', 5.0, 'uM')]	Ipatasertib
+[('Irinotecan (hydrochloride)', 0.05, 'uM')]	Irinotecan (hydrochloride)
+[('Irinotecan (hydrochloride)', 0.5, 'uM')]	Irinotecan (hydrochloride)
+[('Irinotecan (hydrochloride)', 5.0, 'uM')]	Irinotecan (hydrochloride)
+[('Irinotecan', 0.05, 'uM')]	Irinotecan
+[('Irinotecan', 0.5, 'uM')]	Irinotecan
+[('Irinotecan', 5.0, 'uM')]	Irinotecan
+[('Isocorydine', 0.05, 'uM')]	Isocorydine
+[('Isocorydine', 0.5, 'uM')]	Isocorydine
+[('Isocorydine', 5.0, 'uM')]	Isocorydine
+[('Ivabradine (hydrochloride)', 0.05, 'uM')]	Ivabradine (hydrochloride)
+[('Ivabradine (hydrochloride)', 0.5, 'uM')]	Ivabradine (hydrochloride)
+[('Ivabradine (hydrochloride)', 5.0, 'uM')]	Ivabradine (hydrochloride)
+[('Ivermectin', 0.05, 'uM')]	Ivermectin
+[('Ivermectin', 0.5, 'uM')]	Ivermectin
+[('Ivermectin', 5.0, 'uM')]	Ivermectin
+[('Ixazomib citrate', 0.05, 'uM')]	Ixazomib citrate
+[('Ixazomib citrate', 0.5, 'uM')]	Ixazomib citrate
+[('Ixazomib citrate', 5.0, 'uM')]	Ixazomib citrate
+[('Ixazomib', 0.05, 'uM')]	Ixazomib
+[('Ixazomib', 0.5, 'uM')]	Ixazomib
+[('Ixazomib', 5.0, 'uM')]	Ixazomib
+[('L-Eflornithine (monohydrochloride)', 0.05, 'uM')]	L-Eflornithine (monohydrochloride)
+[('L-Eflornithine (monohydrochloride)', 0.5, 'uM')]	L-Eflornithine (monohydrochloride)
+[('L-Eflornithine (monohydrochloride)', 5.0, 'uM')]	L-Eflornithine (monohydrochloride)
+[('L-Thyroxine (sodium salt pentahydrate)', 0.05, 'uM')]	L-Thyroxine (sodium salt pentahydrate)
+[('L-Thyroxine (sodium salt pentahydrate)', 0.5, 'uM')]	L-Thyroxine (sodium salt pentahydrate)
+[('L-Thyroxine (sodium salt pentahydrate)', 5.0, 'uM')]	L-Thyroxine (sodium salt pentahydrate)
+[('LB-100', 0.05, 'uM')]	LB-100
+[('LB-100', 0.5, 'uM')]	LB-100
+[('LB-100', 5.0, 'uM')]	LB-100
+[('LJI308', 0.05, 'uM')]	LJI308
+[('LJI308', 0.5, 'uM')]	LJI308
+[('LJI308', 5.0, 'uM')]	LJI308
+[('LY-2584702 (tosylate salt)', 0.05, 'uM')]	LY-2584702 (tosylate salt)
+[('LY-2584702 (tosylate salt)', 0.5, 'uM')]	LY-2584702 (tosylate salt)
+[('LY-2584702 (tosylate salt)', 5.0, 'uM')]	LY-2584702 (tosylate salt)
+[('LY2090314', 0.05, 'uM')]	LY2090314
+[('LY2090314', 0.5, 'uM')]	LY2090314
+[('LY2090314', 5.0, 'uM')]	LY2090314
+[('Lactate (calcium)', 0.05, 'uM')]	Lactate (calcium)
+[('Lactate (calcium)', 0.5, 'uM')]	Lactate (calcium)
+[('Lactate (calcium)', 5.0, 'uM')]	Lactate (calcium)
+[('Lapatinib ditosylate', 0.05, 'uM')]	Lapatinib ditosylate
+[('Lapatinib ditosylate', 0.5, 'uM')]	Lapatinib ditosylate
+[('Lapatinib ditosylate', 5.0, 'uM')]	Lapatinib ditosylate
+[('Larotrectinib sulfate', 0.05, 'uM')]	Larotrectinib sulfate
+[('Larotrectinib sulfate', 0.5, 'uM')]	Larotrectinib sulfate
+[('Larotrectinib sulfate', 5.0, 'uM')]	Larotrectinib sulfate
+[('Larotrectinib', 0.05, 'uM')]	Larotrectinib
+[('Larotrectinib', 0.5, 'uM')]	Larotrectinib
+[('Larotrectinib', 5.0, 'uM')]	Larotrectinib
+[('Lenalidomide (hemihydrate)', 0.05, 'uM')]	Lenalidomide (hemihydrate)
+[('Lenalidomide (hemihydrate)', 0.5, 'uM')]	Lenalidomide (hemihydrate)
+[('Lenalidomide (hemihydrate)', 5.0, 'uM')]	Lenalidomide (hemihydrate)
+[('Levobupivacaine (hydrochloride)', 0.05, 'uM')]	Levobupivacaine (hydrochloride)
+[('Levobupivacaine (hydrochloride)', 0.5, 'uM')]	Levobupivacaine (hydrochloride)
+[('Levobupivacaine (hydrochloride)', 5.0, 'uM')]	Levobupivacaine (hydrochloride)
+[('Lidocaine (hydrochloride)', 0.05, 'uM')]	Lidocaine (hydrochloride)
+[('Lidocaine (hydrochloride)', 0.5, 'uM')]	Lidocaine (hydrochloride)
+[('Lidocaine (hydrochloride)', 5.0, 'uM')]	Lidocaine (hydrochloride)
+[('Ligustrazine', 0.05, 'uM')]	Ligustrazine
+[('Ligustrazine', 0.5, 'uM')]	Ligustrazine
+[('Ligustrazine', 5.0, 'uM')]	Ligustrazine
+[('Lipoic acid', 0.05, 'uM')]	Lipoic acid
+[('Lipoic acid', 0.5, 'uM')]	Lipoic acid
+[('Lipoic acid', 5.0, 'uM')]	Lipoic acid
+[('Lonafarnib', 0.05, 'uM')]	Lonafarnib
+[('Lonafarnib', 0.5, 'uM')]	Lonafarnib
+[('Lonafarnib', 5.0, 'uM')]	Lonafarnib
+[('Loperamide (hydrochloride)', 0.05, 'uM')]	Loperamide (hydrochloride)
+[('Loperamide (hydrochloride)', 0.5, 'uM')]	Loperamide (hydrochloride)
+[('Loperamide (hydrochloride)', 5.0, 'uM')]	Loperamide (hydrochloride)
+[('Lopinavir', 0.05, 'uM')]	Lopinavir
+[('Lopinavir', 0.5, 'uM')]	Lopinavir
+[('Lopinavir', 5.0, 'uM')]	Lopinavir
+[('Lucanthone', 0.05, 'uM')]	Lucanthone
+[('Lucanthone', 0.5, 'uM')]	Lucanthone
+[('Lucanthone', 5.0, 'uM')]	Lucanthone
+[('Lumateperone (tosylate)', 0.05, 'uM')]	Lumateperone (tosylate)
+[('Lumateperone (tosylate)', 0.5, 'uM')]	Lumateperone (tosylate)
+[('Lumateperone (tosylate)', 5.0, 'uM')]	Lumateperone (tosylate)
+[('MK-3903', 0.05, 'uM')]	MK-3903
+[('MK-3903', 0.5, 'uM')]	MK-3903
+[('MK-3903', 5.0, 'uM')]	MK-3903
+[('MK-8353', 0.05, 'uM')]	MK-8353
+[('MK-8353', 0.5, 'uM')]	MK-8353
+[('MK-8353', 5.0, 'uM')]	MK-8353
+[('ML264', 0.05, 'uM')]	ML264
+[('ML264', 0.5, 'uM')]	ML264
+[('ML264', 5.0, 'uM')]	ML264
+[('Macitentan', 0.05, 'uM')]	Macitentan
+[('Macitentan', 0.5, 'uM')]	Macitentan
+[('Macitentan', 5.0, 'uM')]	Macitentan
+[('Malotilate', 0.05, 'uM')]	Malotilate
+[('Malotilate', 0.5, 'uM')]	Malotilate
+[('Malotilate', 5.0, 'uM')]	Malotilate
+[('Mebendazole', 0.05, 'uM')]	Mebendazole
+[('Mebendazole', 0.5, 'uM')]	Mebendazole
+[('Mebendazole', 5.0, 'uM')]	Mebendazole
+[('Medroxyprogesterone acetate', 0.05, 'uM')]	Medroxyprogesterone acetate
+[('Medroxyprogesterone acetate', 0.5, 'uM')]	Medroxyprogesterone acetate
+[('Medroxyprogesterone acetate', 5.0, 'uM')]	Medroxyprogesterone acetate
+[('Megestrol', 0.05, 'uM')]	Megestrol
+[('Megestrol', 0.5, 'uM')]	Megestrol
+[('Megestrol', 5.0, 'uM')]	Megestrol
+[('Meloxicam', 0.05, 'uM')]	Meloxicam
+[('Meloxicam', 0.5, 'uM')]	Meloxicam
+[('Meloxicam', 5.0, 'uM')]	Meloxicam
+[('Menadione', 0.05, 'uM')]	Menadione
+[('Menadione', 0.5, 'uM')]	Menadione
+[('Menadione', 5.0, 'uM')]	Menadione
+[('Methotrexate', 0.05, 'uM')]	Methotrexate
+[('Methotrexate', 0.5, 'uM')]	Methotrexate
+[('Methotrexate', 5.0, 'uM')]	Methotrexate
+[('Methyl aminolevulinate (hydrochloride)', 0.05, 'uM')]	Methyl aminolevulinate (hydrochloride)
+[('Methyl aminolevulinate (hydrochloride)', 0.5, 'uM')]	Methyl aminolevulinate (hydrochloride)
+[('Methyl aminolevulinate (hydrochloride)', 5.0, 'uM')]	Methyl aminolevulinate (hydrochloride)
+[('Methylprednisolone succinate', 0.05, 'uM')]	Methylprednisolone succinate
+[('Methylprednisolone succinate', 0.5, 'uM')]	Methylprednisolone succinate
+[('Methylprednisolone succinate', 5.0, 'uM')]	Methylprednisolone succinate
+[('Methylthiouracil', 0.05, 'uM')]	Methylthiouracil
+[('Methylthiouracil', 0.5, 'uM')]	Methylthiouracil
+[('Methylthiouracil', 5.0, 'uM')]	Methylthiouracil
+[('Mifepristone', 0.05, 'uM')]	Mifepristone
+[('Mifepristone', 0.5, 'uM')]	Mifepristone
+[('Mifepristone', 5.0, 'uM')]	Mifepristone
+[('Minodronic acid', 0.05, 'uM')]	Minodronic acid
+[('Minodronic acid', 0.5, 'uM')]	Minodronic acid
+[('Minodronic acid', 5.0, 'uM')]	Minodronic acid
+[('Mitoxantrone (dihydrochloride)', 0.05, 'uM')]	Mitoxantrone (dihydrochloride)
+[('Mitoxantrone (dihydrochloride)', 0.5, 'uM')]	Mitoxantrone (dihydrochloride)
+[('Mitoxantrone (dihydrochloride)', 5.0, 'uM')]	Mitoxantrone (dihydrochloride)
+[('Monocrotaline', 0.05, 'uM')]	Monocrotaline
+[('Monocrotaline', 0.5, 'uM')]	Monocrotaline
+[('Monocrotaline', 5.0, 'uM')]	Monocrotaline
+[('Mozavaptan', 0.05, 'uM')]	Mozavaptan
+[('Mozavaptan', 0.5, 'uM')]	Mozavaptan
+[('Mozavaptan', 5.0, 'uM')]	Mozavaptan
+[('NG25', 0.05, 'uM')]	NG25
+[('NG25', 0.5, 'uM')]	NG25
+[('NG25', 5.0, 'uM')]	NG25
+[('NVP-BHG712', 0.05, 'uM')]	NVP-BHG712
+[('NVP-BHG712', 0.5, 'uM')]	NVP-BHG712
+[('NVP-BHG712', 5.0, 'uM')]	NVP-BHG712
+[('Nafamostat (mesylate)', 0.05, 'uM')]	Nafamostat (mesylate)
+[('Nafamostat (mesylate)', 0.5, 'uM')]	Nafamostat (mesylate)
+[('Nafamostat (mesylate)', 5.0, 'uM')]	Nafamostat (mesylate)
+[('Naproxen', 0.05, 'uM')]	Naproxen
+[('Naproxen', 0.5, 'uM')]	Naproxen
+[('Naproxen', 5.0, 'uM')]	Naproxen
+[('Neratinib (maleate)', 0.05, 'uM')]	Neratinib (maleate)
+[('Neratinib (maleate)', 0.5, 'uM')]	Neratinib (maleate)
+[('Neratinib (maleate)', 5.0, 'uM')]	Neratinib (maleate)
+[('Neratinib', 0.05, 'uM')]	Neratinib
+[('Neratinib', 0.5, 'uM')]	Neratinib
+[('Neratinib', 5.0, 'uM')]	Neratinib
+[('Nevirapine', 0.05, 'uM')]	Nevirapine
+[('Nevirapine', 0.5, 'uM')]	Nevirapine
+[('Nevirapine', 5.0, 'uM')]	Nevirapine
+[('Niclosamide (olamine)', 0.05, 'uM')]	Niclosamide (olamine)
+[('Niclosamide (olamine)', 0.5, 'uM')]	Niclosamide (olamine)
+[('Niclosamide (olamine)', 5.0, 'uM')]	Niclosamide (olamine)
+[('Nimesulide', 0.05, 'uM')]	Nimesulide
+[('Nimesulide', 0.5, 'uM')]	Nimesulide
+[('Nimesulide', 5.0, 'uM')]	Nimesulide
+[('Norepinephrine (hydrochloride)', 0.05, 'uM')]	Norepinephrine (hydrochloride)
+[('Norepinephrine (hydrochloride)', 0.5, 'uM')]	Norepinephrine (hydrochloride)
+[('Norepinephrine (hydrochloride)', 5.0, 'uM')]	Norepinephrine (hydrochloride)
+[('OTS514', 0.05, 'uM')]	OTS514
+[('OTS514', 0.5, 'uM')]	OTS514
+[('OTS514', 5.0, 'uM')]	OTS514
+[('Olanzapine', 0.05, 'uM')]	Olanzapine
+[('Olanzapine', 0.5, 'uM')]	Olanzapine
+[('Olanzapine', 5.0, 'uM')]	Olanzapine
+[('Oleic acid', 0.05, 'uM')]	Oleic acid
+[('Oleic acid', 0.5, 'uM')]	Oleic acid
+[('Oleic acid', 5.0, 'uM')]	Oleic acid
+[('Omeprazole (sodium)', 0.05, 'uM')]	Omeprazole (sodium)
+[('Omeprazole (sodium)', 0.5, 'uM')]	Omeprazole (sodium)
+[('Omeprazole (sodium)', 5.0, 'uM')]	Omeprazole (sodium)
+[('Omeprazole', 0.05, 'uM')]	Omeprazole
+[('Omeprazole', 0.5, 'uM')]	Omeprazole
+[('Omeprazole', 5.0, 'uM')]	Omeprazole
+[('Orlistat', 0.05, 'uM')]	Orlistat
+[('Orlistat', 0.5, 'uM')]	Orlistat
+[('Orlistat', 5.0, 'uM')]	Orlistat
+[('Ornidazole', 0.05, 'uM')]	Ornidazole
+[('Ornidazole', 0.5, 'uM')]	Ornidazole
+[('Ornidazole', 5.0, 'uM')]	Ornidazole
+[('Osimertinib (mesylate)', 0.05, 'uM')]	Osimertinib (mesylate)
+[('Osimertinib (mesylate)', 0.5, 'uM')]	Osimertinib (mesylate)
+[('Osimertinib (mesylate)', 5.0, 'uM')]	Osimertinib (mesylate)
+[('Ouabain (Octahydrate)', 0.05, 'uM')]	Ouabain (Octahydrate)
+[('Ouabain (Octahydrate)', 0.5, 'uM')]	Ouabain (Octahydrate)
+[('Ouabain (Octahydrate)', 5.0, 'uM')]	Ouabain (Octahydrate)
+[('Oxaliplatin', 0.05, 'uM')]	Oxaliplatin
+[('Oxaliplatin', 0.5, 'uM')]	Oxaliplatin
+[('Oxaliplatin', 5.0, 'uM')]	Oxaliplatin
+[('Oxaprozin', 0.05, 'uM')]	Oxaprozin
+[('Oxaprozin', 0.5, 'uM')]	Oxaprozin
+[('Oxaprozin', 5.0, 'uM')]	Oxaprozin
+[('PF-06260933', 0.05, 'uM')]	PF-06260933
+[('PF-06260933', 0.5, 'uM')]	PF-06260933
+[('PF-06260933', 5.0, 'uM')]	PF-06260933
+[('PH-797804', 0.05, 'uM')]	PH-797804
+[('PH-797804', 0.5, 'uM')]	PH-797804
+[('PH-797804', 5.0, 'uM')]	PH-797804
+[('Paclitaxel', 0.05, 'uM')]	Paclitaxel
+[('Paclitaxel', 0.5, 'uM')]	Paclitaxel
+[('Paclitaxel', 5.0, 'uM')]	Paclitaxel
+[('Palmatine (chloride)', 0.05, 'uM')]	Palmatine (chloride)
+[('Palmatine (chloride)', 0.5, 'uM')]	Palmatine (chloride)
+[('Palmatine (chloride)', 5.0, 'uM')]	Palmatine (chloride)
+[('Panobinostat', 0.05, 'uM')]	Panobinostat
+[('Panobinostat', 0.5, 'uM')]	Panobinostat
+[('Panobinostat', 5.0, 'uM')]	Panobinostat
+[('Pasireotide (acetate)', 0.05, 'uM')]	Pasireotide (acetate)
+[('Pasireotide (acetate)', 0.5, 'uM')]	Pasireotide (acetate)
+[('Pasireotide (acetate)', 5.0, 'uM')]	Pasireotide (acetate)
+[('Pemetrexed', 0.05, 'uM')]	Pemetrexed
+[('Pemetrexed', 0.5, 'uM')]	Pemetrexed
+[('Pemetrexed', 5.0, 'uM')]	Pemetrexed
+[('Pemigatinib', 0.05, 'uM')]	Pemigatinib
+[('Pemigatinib', 0.5, 'uM')]	Pemigatinib
+[('Pemigatinib', 5.0, 'uM')]	Pemigatinib
+[('Penfluridol', 0.05, 'uM')]	Penfluridol
+[('Penfluridol', 0.5, 'uM')]	Penfluridol
+[('Penfluridol', 5.0, 'uM')]	Penfluridol
+[('Pentagastrin', 0.05, 'uM')]	Pentagastrin
+[('Pentagastrin', 0.5, 'uM')]	Pentagastrin
+[('Pentagastrin', 5.0, 'uM')]	Pentagastrin
+[('Pentamidine (isethionate)', 0.05, 'uM')]	Pentamidine (isethionate)
+[('Pentamidine (isethionate)', 0.5, 'uM')]	Pentamidine (isethionate)
+[('Pentamidine (isethionate)', 5.0, 'uM')]	Pentamidine (isethionate)
+[('Pentoxifylline', 0.05, 'uM')]	Pentoxifylline
+[('Pentoxifylline', 0.5, 'uM')]	Pentoxifylline
+[('Pentoxifylline', 5.0, 'uM')]	Pentoxifylline
+[('Peretinoin', 0.05, 'uM')]	Peretinoin
+[('Peretinoin', 0.5, 'uM')]	Peretinoin
+[('Peretinoin', 5.0, 'uM')]	Peretinoin
+[('Perindopril (erbumine)', 0.05, 'uM')]	Perindopril (erbumine)
+[('Perindopril (erbumine)', 0.5, 'uM')]	Perindopril (erbumine)
+[('Perindopril (erbumine)', 5.0, 'uM')]	Perindopril (erbumine)
+[('Pexidartinib (hydrochloride)', 0.05, 'uM')]	Pexidartinib (hydrochloride)
+[('Pexidartinib (hydrochloride)', 0.5, 'uM')]	Pexidartinib (hydrochloride)
+[('Pexidartinib (hydrochloride)', 5.0, 'uM')]	Pexidartinib (hydrochloride)
+[('Phenylephrine (hydrochloride)', 0.05, 'uM')]	Phenylephrine (hydrochloride)
+[('Phenylephrine (hydrochloride)', 0.5, 'uM')]	Phenylephrine (hydrochloride)
+[('Phenylephrine (hydrochloride)', 5.0, 'uM')]	Phenylephrine (hydrochloride)
+[('Phenytoin (sodium)', 0.05, 'uM')]	Phenytoin (sodium)
+[('Phenytoin (sodium)', 0.5, 'uM')]	Phenytoin (sodium)
+[('Phenytoin (sodium)', 5.0, 'uM')]	Phenytoin (sodium)
+[('Pimitespib', 0.05, 'uM')]	Pimitespib
+[('Pimitespib', 0.5, 'uM')]	Pimitespib
+[('Pimitespib', 5.0, 'uM')]	Pimitespib
+[('Pimozide', 0.05, 'uM')]	Pimozide
+[('Pimozide', 0.5, 'uM')]	Pimozide
+[('Pimozide', 5.0, 'uM')]	Pimozide
+[('Pioglitazone', 0.05, 'uM')]	Pioglitazone
+[('Pioglitazone', 0.5, 'uM')]	Pioglitazone
+[('Pioglitazone', 5.0, 'uM')]	Pioglitazone
+[('Piroxicam', 0.05, 'uM')]	Piroxicam
+[('Piroxicam', 0.5, 'uM')]	Piroxicam
+[('Piroxicam', 5.0, 'uM')]	Piroxicam
+[('Pitavastatin (Calcium)', 0.05, 'uM')]	Pitavastatin (Calcium)
+[('Pitavastatin (Calcium)', 0.5, 'uM')]	Pitavastatin (Calcium)
+[('Pitavastatin (Calcium)', 5.0, 'uM')]	Pitavastatin (Calcium)
+[('Plicamycin', 0.05, 'uM')]	Plicamycin
+[('Plicamycin', 0.5, 'uM')]	Plicamycin
+[('Plicamycin', 5.0, 'uM')]	Plicamycin
+[('Ponatinib', 0.05, 'uM')]	Ponatinib
+[('Ponatinib', 0.5, 'uM')]	Ponatinib
+[('Ponatinib', 5.0, 'uM')]	Ponatinib
+[('Posaconazole', 0.05, 'uM')]	Posaconazole
+[('Posaconazole', 0.5, 'uM')]	Posaconazole
+[('Posaconazole', 5.0, 'uM')]	Posaconazole
+[('Pralsetinib', 0.05, 'uM')]	Pralsetinib
+[('Pralsetinib', 0.5, 'uM')]	Pralsetinib
+[('Pralsetinib', 5.0, 'uM')]	Pralsetinib
+[('Pravastatin (sodium)', 0.05, 'uM')]	Pravastatin (sodium)
+[('Pravastatin (sodium)', 0.5, 'uM')]	Pravastatin (sodium)
+[('Pravastatin (sodium)', 5.0, 'uM')]	Pravastatin (sodium)
+[('Procainamide (hydrochloride)', 0.05, 'uM')]	Procainamide (hydrochloride)
+[('Procainamide (hydrochloride)', 0.5, 'uM')]	Procainamide (hydrochloride)
+[('Procainamide (hydrochloride)', 5.0, 'uM')]	Procainamide (hydrochloride)
+[('Proglumide', 0.05, 'uM')]	Proglumide
+[('Proglumide', 0.5, 'uM')]	Proglumide
+[('Proglumide', 5.0, 'uM')]	Proglumide
+[('Pyridoxine (hydrochloride)', 0.05, 'uM')]	Pyridoxine (hydrochloride)
+[('Pyridoxine (hydrochloride)', 0.5, 'uM')]	Pyridoxine (hydrochloride)
+[('Pyridoxine (hydrochloride)', 5.0, 'uM')]	Pyridoxine (hydrochloride)
+[('Pyridoxine', 0.05, 'uM')]	Pyridoxine
+[('Pyridoxine', 0.5, 'uM')]	Pyridoxine
+[('Pyridoxine', 5.0, 'uM')]	Pyridoxine
+[('Quinestrol', 0.05, 'uM')]	Quinestrol
+[('Quinestrol', 0.5, 'uM')]	Quinestrol
+[('Quinestrol', 5.0, 'uM')]	Quinestrol
+[('Quinidine (15% dihydroquinidine)', 0.05, 'uM')]	Quinidine (15% dihydroquinidine)
+[('Quinidine (15% dihydroquinidine)', 0.5, 'uM')]	Quinidine (15% dihydroquinidine)
+[('Quinidine (15% dihydroquinidine)', 5.0, 'uM')]	Quinidine (15% dihydroquinidine)
+[('RMC-6236', 0.05, 'uM')]	RMC-6236
+[('RMC-6236', 0.5, 'uM')]	RMC-6236
+[('RMC-6236', 5.0, 'uM')]	RMC-6236
+[('Radotinib', 0.05, 'uM')]	Radotinib
+[('Radotinib', 0.5, 'uM')]	Radotinib
+[('Radotinib', 5.0, 'uM')]	Radotinib
+[('Ralimetinib dimesylate', 0.05, 'uM')]	Ralimetinib dimesylate
+[('Ralimetinib dimesylate', 0.5, 'uM')]	Ralimetinib dimesylate
+[('Ralimetinib dimesylate', 5.0, 'uM')]	Ralimetinib dimesylate
+[('Raltitrexed', 0.05, 'uM')]	Raltitrexed
+[('Raltitrexed', 0.5, 'uM')]	Raltitrexed
+[('Raltitrexed', 5.0, 'uM')]	Raltitrexed
+[('Ranolazine', 0.05, 'uM')]	Ranolazine
+[('Ranolazine', 0.5, 'uM')]	Ranolazine
+[('Ranolazine', 5.0, 'uM')]	Ranolazine
+[('Rapamycin', 0.05, 'uM')]	Rapamycin
+[('Rapamycin', 0.5, 'uM')]	Rapamycin
+[('Rapamycin', 5.0, 'uM')]	Rapamycin
+[('Regorafenib', 0.05, 'uM')]	Regorafenib
+[('Regorafenib', 0.5, 'uM')]	Regorafenib
+[('Regorafenib', 5.0, 'uM')]	Regorafenib
+[('Relugolix', 0.05, 'uM')]	Relugolix
+[('Relugolix', 0.5, 'uM')]	Relugolix
+[('Relugolix', 5.0, 'uM')]	Relugolix
+[('Resveratrol', 0.05, 'uM')]	Resveratrol
+[('Resveratrol', 0.5, 'uM')]	Resveratrol
+[('Resveratrol', 5.0, 'uM')]	Resveratrol
+[('Retinoic acid', 0.05, 'uM')]	Retinoic acid
+[('Retinoic acid', 0.5, 'uM')]	Retinoic acid
+[('Retinoic acid', 5.0, 'uM')]	Retinoic acid
+[('Ribociclib', 0.05, 'uM')]	Ribociclib
+[('Ribociclib', 0.5, 'uM')]	Ribociclib
+[('Ribociclib', 5.0, 'uM')]	Ribociclib
+[('Rifaximin', 0.05, 'uM')]	Rifaximin
+[('Rifaximin', 0.5, 'uM')]	Rifaximin
+[('Rifaximin', 5.0, 'uM')]	Rifaximin
+[('Riluzole hydrochloride', 0.05, 'uM')]	Riluzole hydrochloride
+[('Riluzole hydrochloride', 0.5, 'uM')]	Riluzole hydrochloride
+[('Riluzole hydrochloride', 5.0, 'uM')]	Riluzole hydrochloride
+[('Rimonabant (Hydrochloride)', 0.05, 'uM')]	Rimonabant (Hydrochloride)
+[('Rimonabant (Hydrochloride)', 0.5, 'uM')]	Rimonabant (Hydrochloride)
+[('Rimonabant (Hydrochloride)', 5.0, 'uM')]	Rimonabant (Hydrochloride)
+[('Rimonabant', 0.05, 'uM')]	Rimonabant
+[('Rimonabant', 0.5, 'uM')]	Rimonabant
+[('Rimonabant', 5.0, 'uM')]	Rimonabant
+[('Ritonavir', 0.05, 'uM')]	Ritonavir
+[('Ritonavir', 0.5, 'uM')]	Ritonavir
+[('Ritonavir', 5.0, 'uM')]	Ritonavir
+[('Ropivacaine (hydrochloride monohydrate)', 0.05, 'uM')]	Ropivacaine (hydrochloride monohydrate)
+[('Ropivacaine (hydrochloride monohydrate)', 0.5, 'uM')]	Ropivacaine (hydrochloride monohydrate)
+[('Ropivacaine (hydrochloride monohydrate)', 5.0, 'uM')]	Ropivacaine (hydrochloride monohydrate)
+[('Rosiglitazone', 0.05, 'uM')]	Rosiglitazone
+[('Rosiglitazone', 0.5, 'uM')]	Rosiglitazone
+[('Rosiglitazone', 5.0, 'uM')]	Rosiglitazone
+[('Roxadustat', 0.05, 'uM')]	Roxadustat
+[('Roxadustat', 0.5, 'uM')]	Roxadustat
+[('Roxadustat', 5.0, 'uM')]	Roxadustat
+[('Rucaparib (phosphate)', 0.05, 'uM')]	Rucaparib (phosphate)
+[('Rucaparib (phosphate)', 0.5, 'uM')]	Rucaparib (phosphate)
+[('Rucaparib (phosphate)', 5.0, 'uM')]	Rucaparib (phosphate)
+[('Rutin (trihydrate)', 0.05, 'uM')]	Rutin (trihydrate)
+[('Rutin (trihydrate)', 0.5, 'uM')]	Rutin (trihydrate)
+[('Rutin (trihydrate)', 5.0, 'uM')]	Rutin (trihydrate)
+[('S-Adenosyl-L-methionine (disulfate tosylate)', 0.05, 'uM')]	S-Adenosyl-L-methionine (disulfate tosylate)
+[('S-Adenosyl-L-methionine (disulfate tosylate)', 0.5, 'uM')]	S-Adenosyl-L-methionine (disulfate tosylate)
+[('S-Adenosyl-L-methionine (disulfate tosylate)', 5.0, 'uM')]	S-Adenosyl-L-methionine (disulfate tosylate)
+[('SBI-0640756', 0.05, 'uM')]	SBI-0640756
+[('SBI-0640756', 0.5, 'uM')]	SBI-0640756
+[('SBI-0640756', 5.0, 'uM')]	SBI-0640756
+[('Sacubitril/Valsartan', 0.05, 'uM')]	Sacubitril/Valsartan
+[('Sacubitril/Valsartan', 0.5, 'uM')]	Sacubitril/Valsartan
+[('Sacubitril/Valsartan', 5.0, 'uM')]	Sacubitril/Valsartan
+[('Salicylic acid', 0.05, 'uM')]	Salicylic acid
+[('Salicylic acid', 0.5, 'uM')]	Salicylic acid
+[('Salicylic acid', 5.0, 'uM')]	Salicylic acid
+[('Sapanisertib', 0.05, 'uM')]	Sapanisertib
+[('Sapanisertib', 0.5, 'uM')]	Sapanisertib
+[('Sapanisertib', 5.0, 'uM')]	Sapanisertib
+[('Saquinavir', 0.05, 'uM')]	Saquinavir
+[('Saquinavir', 0.5, 'uM')]	Saquinavir
+[('Saquinavir', 5.0, 'uM')]	Saquinavir
+[('Selinexor ', 0.05, 'uM')]	Selinexor 
+[('Selinexor ', 0.5, 'uM')]	Selinexor 
+[('Selinexor ', 5.0, 'uM')]	Selinexor 
+[('Sildenafil', 0.05, 'uM')]	Sildenafil
+[('Sildenafil', 0.5, 'uM')]	Sildenafil
+[('Sildenafil', 5.0, 'uM')]	Sildenafil
+[('Silodosin', 0.05, 'uM')]	Silodosin
+[('Silodosin', 0.5, 'uM')]	Silodosin
+[('Silodosin', 5.0, 'uM')]	Silodosin
+[('Simotinib', 0.05, 'uM')]	Simotinib
+[('Simotinib', 0.5, 'uM')]	Simotinib
+[('Simotinib', 5.0, 'uM')]	Simotinib
+[('Sinomenine', 0.05, 'uM')]	Sinomenine
+[('Sinomenine', 0.5, 'uM')]	Sinomenine
+[('Sinomenine', 5.0, 'uM')]	Sinomenine
+[('Sivelestat (sodium tetrahydrate)', 0.05, 'uM')]	Sivelestat (sodium tetrahydrate)
+[('Sivelestat (sodium tetrahydrate)', 0.5, 'uM')]	Sivelestat (sodium tetrahydrate)
+[('Sivelestat (sodium tetrahydrate)', 5.0, 'uM')]	Sivelestat (sodium tetrahydrate)
+[('Sodium Salicylate', 0.05, 'uM')]	Sodium Salicylate
+[('Sodium Salicylate', 0.5, 'uM')]	Sodium Salicylate
+[('Sodium Salicylate', 5.0, 'uM')]	Sodium Salicylate
+[('Sonidegib', 0.05, 'uM')]	Sonidegib
+[('Sonidegib', 0.5, 'uM')]	Sonidegib
+[('Sonidegib', 5.0, 'uM')]	Sonidegib
+[('Sulfatinib', 0.05, 'uM')]	Sulfatinib
+[('Sulfatinib', 0.5, 'uM')]	Sulfatinib
+[('Sulfatinib', 5.0, 'uM')]	Sulfatinib
+[('Sulfisoxazole', 0.05, 'uM')]	Sulfisoxazole
+[('Sulfisoxazole', 0.5, 'uM')]	Sulfisoxazole
+[('Sulfisoxazole', 5.0, 'uM')]	Sulfisoxazole
+[('Sunitinib', 0.05, 'uM')]	Sunitinib
+[('Sunitinib', 0.5, 'uM')]	Sunitinib
+[('Sunitinib', 5.0, 'uM')]	Sunitinib
+[('TAK-733', 0.05, 'uM')]	TAK-733
+[('TAK-733', 0.5, 'uM')]	TAK-733
+[('TAK-733', 5.0, 'uM')]	TAK-733
+[('TAK-901', 0.05, 'uM')]	TAK-901
+[('TAK-901', 0.5, 'uM')]	TAK-901
+[('TAK-901', 5.0, 'uM')]	TAK-901
+[('Tadalafil', 0.05, 'uM')]	Tadalafil
+[('Tadalafil', 0.5, 'uM')]	Tadalafil
+[('Tadalafil', 5.0, 'uM')]	Tadalafil
+[('Talc', 0.05, 'uM')]	Talc
+[('Talc', 0.5, 'uM')]	Talc
+[('Talc', 5.0, 'uM')]	Talc
+[('Tazarotene', 0.05, 'uM')]	Tazarotene
+[('Tazarotene', 0.5, 'uM')]	Tazarotene
+[('Tazarotene', 5.0, 'uM')]	Tazarotene
+[('Temsirolimus', 0.05, 'uM')]	Temsirolimus
+[('Temsirolimus', 0.5, 'uM')]	Temsirolimus
+[('Temsirolimus', 5.0, 'uM')]	Temsirolimus
+[('Temuterkib', 0.05, 'uM')]	Temuterkib
+[('Temuterkib', 0.5, 'uM')]	Temuterkib
+[('Temuterkib', 5.0, 'uM')]	Temuterkib
+[('Terfenadine', 0.05, 'uM')]	Terfenadine
+[('Terfenadine', 0.5, 'uM')]	Terfenadine
+[('Terfenadine', 5.0, 'uM')]	Terfenadine
+[('Tetracycline (hydrochloride)', 0.05, 'uM')]	Tetracycline (hydrochloride)
+[('Tetracycline (hydrochloride)', 0.5, 'uM')]	Tetracycline (hydrochloride)
+[('Tetracycline (hydrochloride)', 5.0, 'uM')]	Tetracycline (hydrochloride)
+[('Thymol', 0.05, 'uM')]	Thymol
+[('Thymol', 0.5, 'uM')]	Thymol
+[('Thymol', 5.0, 'uM')]	Thymol
+[('Thymopentin', 0.05, 'uM')]	Thymopentin
+[('Thymopentin', 0.5, 'uM')]	Thymopentin
+[('Thymopentin', 5.0, 'uM')]	Thymopentin
+[('Tirabrutinib (hydrochloride)', 0.05, 'uM')]	Tirabrutinib (hydrochloride)
+[('Tirabrutinib (hydrochloride)', 0.5, 'uM')]	Tirabrutinib (hydrochloride)
+[('Tirabrutinib (hydrochloride)', 5.0, 'uM')]	Tirabrutinib (hydrochloride)
+[('Tirabrutinib', 0.05, 'uM')]	Tirabrutinib
+[('Tirabrutinib', 0.5, 'uM')]	Tirabrutinib
+[('Tirabrutinib', 5.0, 'uM')]	Tirabrutinib
+[('Tofacitinib (citrate)', 0.05, 'uM')]	Tofacitinib (citrate)
+[('Tofacitinib (citrate)', 0.5, 'uM')]	Tofacitinib (citrate)
+[('Tofacitinib (citrate)', 5.0, 'uM')]	Tofacitinib (citrate)
+[('Tofacitinib', 0.05, 'uM')]	Tofacitinib
+[('Tofacitinib', 0.5, 'uM')]	Tofacitinib
+[('Tofacitinib', 5.0, 'uM')]	Tofacitinib
+[('Tolcapone', 0.05, 'uM')]	Tolcapone
+[('Tolcapone', 0.5, 'uM')]	Tolcapone
+[('Tolcapone', 5.0, 'uM')]	Tolcapone
+[('Tolmetin', 0.05, 'uM')]	Tolmetin
+[('Tolmetin', 0.5, 'uM')]	Tolmetin
+[('Tolmetin', 5.0, 'uM')]	Tolmetin
+[('Tomivosertib', 0.05, 'uM')]	Tomivosertib
+[('Tomivosertib', 0.5, 'uM')]	Tomivosertib
+[('Tomivosertib', 5.0, 'uM')]	Tomivosertib
+[('Topotecan (hydrochloride)', 0.05, 'uM')]	Topotecan (hydrochloride)
+[('Topotecan (hydrochloride)', 0.5, 'uM')]	Topotecan (hydrochloride)
+[('Topotecan (hydrochloride)', 5.0, 'uM')]	Topotecan (hydrochloride)
+[('Torkinib', 0.05, 'uM')]	Torkinib
+[('Torkinib', 0.5, 'uM')]	Torkinib
+[('Torkinib', 5.0, 'uM')]	Torkinib
+[('Trametinib (DMSO_TF solvate)', 0.05, 'uM')]	Trametinib (DMSO_TF solvate)
+[('Trametinib (DMSO_TF solvate)', 0.5, 'uM')]	Trametinib (DMSO_TF solvate)
+[('Trametinib (DMSO_TF solvate)', 5.0, 'uM')]	Trametinib (DMSO_TF solvate)
+[('Trametinib', 0.05, 'uM')]	Trametinib
+[('Trametinib', 0.5, 'uM')]	Trametinib
+[('Trametinib', 5.0, 'uM')]	Trametinib
+[('Tranilast', 0.05, 'uM')]	Tranilast
+[('Tranilast', 0.5, 'uM')]	Tranilast
+[('Tranilast', 5.0, 'uM')]	Tranilast
+[('Triamcinolone', 0.05, 'uM')]	Triamcinolone
+[('Triamcinolone', 0.5, 'uM')]	Triamcinolone
+[('Triamcinolone', 5.0, 'uM')]	Triamcinolone
+[('Triclosan', 0.05, 'uM')]	Triclosan
+[('Triclosan', 0.5, 'uM')]	Triclosan
+[('Triclosan', 5.0, 'uM')]	Triclosan
+[('Trifluridine', 0.05, 'uM')]	Trifluridine
+[('Trifluridine', 0.5, 'uM')]	Trifluridine
+[('Trifluridine', 5.0, 'uM')]	Trifluridine
+[('Trimetrexate', 0.05, 'uM')]	Trimetrexate
+[('Trimetrexate', 0.5, 'uM')]	Trimetrexate
+[('Trimetrexate', 5.0, 'uM')]	Trimetrexate
+[('Tubulin inhibitor 6', 0.05, 'uM')]	Tubulin inhibitor 6
+[('Tubulin inhibitor 6', 0.5, 'uM')]	Tubulin inhibitor 6
+[('Tubulin inhibitor 6', 5.0, 'uM')]	Tubulin inhibitor 6
+[('Tucatinib', 0.05, 'uM')]	Tucatinib
+[('Tucatinib', 0.5, 'uM')]	Tucatinib
+[('Tucatinib', 5.0, 'uM')]	Tucatinib
+[('Tucidinostat', 0.05, 'uM')]	Tucidinostat
+[('Tucidinostat', 0.5, 'uM')]	Tucidinostat
+[('Tucidinostat', 5.0, 'uM')]	Tucidinostat
+[('ULK-101', 0.05, 'uM')]	ULK-101
+[('ULK-101', 0.5, 'uM')]	ULK-101
+[('ULK-101', 5.0, 'uM')]	ULK-101
+[('Uridine', 0.05, 'uM')]	Uridine
+[('Uridine', 0.5, 'uM')]	Uridine
+[('Uridine', 5.0, 'uM')]	Uridine
+[('Valdecoxib', 0.05, 'uM')]	Valdecoxib
+[('Valdecoxib', 0.5, 'uM')]	Valdecoxib
+[('Valdecoxib', 5.0, 'uM')]	Valdecoxib
+[('Vandetanib', 0.05, 'uM')]	Vandetanib
+[('Vandetanib', 0.5, 'uM')]	Vandetanib
+[('Vandetanib', 5.0, 'uM')]	Vandetanib
+[('Vemurafenib', 0.05, 'uM')]	Vemurafenib
+[('Vemurafenib', 0.5, 'uM')]	Vemurafenib
+[('Vemurafenib', 5.0, 'uM')]	Vemurafenib
+[('Verapamil', 0.05, 'uM')]	Verapamil
+[('Verapamil', 0.5, 'uM')]	Verapamil
+[('Verapamil', 5.0, 'uM')]	Verapamil
+[('Verteporfin', 0.05, 'uM')]	Verteporfin
+[('Verteporfin', 0.5, 'uM')]	Verteporfin
+[('Verteporfin', 5.0, 'uM')]	Verteporfin
+[('Vilanterol', 0.05, 'uM')]	Vilanterol
+[('Vilanterol', 0.5, 'uM')]	Vilanterol
+[('Vilanterol', 5.0, 'uM')]	Vilanterol
+[('Vinblastine (sulfate)', 0.05, 'uM')]	Vinblastine (sulfate)
+[('Vinblastine (sulfate)', 0.5, 'uM')]	Vinblastine (sulfate)
+[('Vinblastine (sulfate)', 5.0, 'uM')]	Vinblastine (sulfate)
+[('Vismodegib', 0.05, 'uM')]	Vismodegib
+[('Vismodegib', 0.5, 'uM')]	Vismodegib
+[('Vismodegib', 5.0, 'uM')]	Vismodegib
+[('Vitamin K4', 0.05, 'uM')]	Vitamin K4
+[('Vitamin K4', 0.5, 'uM')]	Vitamin K4
+[('Vitamin K4', 5.0, 'uM')]	Vitamin K4
+[('Volasertib', 0.05, 'uM')]	Volasertib
+[('Volasertib', 0.5, 'uM')]	Volasertib
+[('Volasertib', 5.0, 'uM')]	Volasertib
+[('Voriconazole', 0.05, 'uM')]	Voriconazole
+[('Voriconazole', 0.5, 'uM')]	Voriconazole
+[('Voriconazole', 5.0, 'uM')]	Voriconazole
+[('Vortioxetine', 0.05, 'uM')]	Vortioxetine
+[('Vortioxetine', 0.5, 'uM')]	Vortioxetine
+[('Vortioxetine', 5.0, 'uM')]	Vortioxetine
+[('XRK3F2', 0.05, 'uM')]	XRK3F2
+[('XRK3F2', 0.5, 'uM')]	XRK3F2
+[('XRK3F2', 5.0, 'uM')]	XRK3F2
+[('Zileuton', 0.05, 'uM')]	Zileuton
+[('Zileuton', 0.5, 'uM')]	Zileuton
+[('Zileuton', 5.0, 'uM')]	Zileuton
+[('c-Kit-IN-1', 0.05, 'uM')]	c-Kit-IN-1
+[('c-Kit-IN-1', 0.5, 'uM')]	c-Kit-IN-1
+[('c-Kit-IN-1', 5.0, 'uM')]	c-Kit-IN-1
+[('crizotinib', 0.05, 'uM')]	crizotinib
+[('crizotinib', 0.5, 'uM')]	crizotinib
+[('crizotinib', 5.0, 'uM')]	crizotinib
+[('olaparib', 0.05, 'uM')]	olaparib
+[('olaparib', 0.5, 'uM')]	olaparib
+[('olaparib', 5.0, 'uM')]	olaparib
+[('palbociclib', 0.05, 'uM')]	palbociclib
+[('palbociclib', 0.5, 'uM')]	palbociclib
+[('palbociclib', 5.0, 'uM')]	palbociclib
+[('venetoclax', 0.05, 'uM')]	venetoclax
+[('venetoclax', 0.5, 'uM')]	venetoclax
+[('venetoclax', 5.0, 'uM')]	venetoclax
+[('vincristine', 0.05, 'uM')]	vincristine
+[('vincristine', 0.5, 'uM')]	vincristine
+[('vincristine', 5.0, 'uM')]	vincristine
+[('γ-Oryzanol', 0.05, 'uM')]	γ-Oryzanol
+[('γ-Oryzanol', 0.5, 'uM')]	γ-Oryzanol
+[('γ-Oryzanol', 5.0, 'uM')]	γ-Oryzanol

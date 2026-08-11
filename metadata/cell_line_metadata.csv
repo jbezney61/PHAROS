@@ -1,0 +1,1080 @@
+,cell_name,Cell_ID_DepMap,Cell_ID_Cellosaur,Organ,Driver_Gene_Symbol,Driver_VarZyg,Driver_VarType,Driver_ProtEffect_or_CdnaEffect,Driver_Mech_InferDM,Driver_GeneType_DM
+0,A549,ACH-000681,CVCL_0023,Lung,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+1,A549,ACH-000681,CVCL_0023,Lung,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+2,A549,ACH-000681,CVCL_0023,Lung,KRAS,Hom,Missense,p.G12S,GoF,Oncogene
+3,A549,ACH-000681,CVCL_0023,Lung,SMARCA4,Hom,Frameshift,p.Q729fs,LoF,Suppressor
+4,A549,ACH-000681,CVCL_0023,Lung,STK11,Hom,Stopgain,p.Q37*,LoF,Suppressor
+5,A549,ACH-000681,CVCL_0023,Lung,ZFHX3,Het,Missense,p.L1473F,,Suppressor
+6,HOP-92,ACH-000825,CVCL_1286,Lung,ACVR2A,Het,Missense,p.K133M,LoF,Suppressor
+7,HOP-92,ACH-000825,CVCL_1286,Lung,GNAS,Het,Missense,p.V117M,,Oncogene
+8,HOP-92,ACH-000825,CVCL_1286,Lung,NF1,Het,Frameshift,p.M799fs,LoF,Suppressor
+9,HOP-92,ACH-000825,CVCL_1286,Lung,SOS1,Het,Missense,p.N233Y,GoF,Oncogene
+10,HOP-92,ACH-000825,CVCL_1286,Lung,TP53,Hom,Missense,p.R175L,LoF,Suppressor
+11,HMVII,ACH-002040,CVCL_1282,Vulva/Vagina,B2M,Hom,Deletion,DEL,LoF,Suppressor
+12,HMVII,ACH-002040,CVCL_1282,Vulva/Vagina,BRAF,Het,Missense,p.G469V,GoF,Oncogene
+13,HMVII,ACH-002040,CVCL_1282,Vulva/Vagina,BRCA2,Het,Missense,p.M784V,,Suppressor
+14,HMVII,ACH-002040,CVCL_1282,Vulva/Vagina,NRAS,Het,Missense,p.Q61K,GoF,Oncogene
+15,HMVII,ACH-002040,CVCL_1282,Vulva/Vagina,RB1,Het,Missense,p.L819V,,Suppressor
+16,HMVII,ACH-002040,CVCL_1282,Vulva/Vagina,TP53,Het,Missense,p.N268I,LoF,Suppressor
+17,Hs 936.T(C1),,CVCL_1034,Skin,NRAS,Het,Missense,p.Q61K,GoF,Oncogene
+18,MM485,ACH-001973,CVCL_2610,Skin,APC,Het,Missense,p.P2783S,LoF,Suppressor
+19,MM485,ACH-001973,CVCL_2610,Skin,CDKN2A,Hom,Stopgain,p.W59*,LoF,Suppressor
+20,MM485,ACH-001973,CVCL_2610,Skin,NRAS,Het,Missense,p.Q61R,GoF,Oncogene
+21,MM485,ACH-001973,CVCL_2610,Skin,SMARCB1,Het,Missense,p.W349L,LoF,Suppressor
+22,MM485,ACH-001973,CVCL_2610,Skin,TP53,Hom,Stopgain,p.R196*,LoF,Suppressor
+23,MM415,ACH-001569,CVCL_2608,Skin,KMT2D,Het,Missense,p.T680P,,Suppressor
+24,MM415,ACH-001569,CVCL_2608,Skin,MTOR,Het,Missense,p.L2185F,,Oncogene
+25,MM415,ACH-001569,CVCL_2608,Skin,NF1,Het,Stopgain,p.R1276*,LoF,Suppressor
+26,MM415,ACH-001569,CVCL_2608,Skin,NRAS,Het,Missense,p.Q61L,GoF,Oncogene
+27,MM415,ACH-001569,CVCL_2608,Skin,SMARCB1,Het,Missense,p.T214M,LoF,Suppressor
+28,MM415,ACH-001569,CVCL_2608,Skin,TP53,Hom,Missense,p.A347V,,Suppressor
+29,MCF-7,ACH-000019,CVCL_0031,Breast,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+30,MCF-7,ACH-000019,CVCL_0031,Breast,GNAS,,Gain,GAIN,GoF,Oncogene
+31,MCF-7,ACH-000019,CVCL_0031,Breast,NRAS,,Gain,GAIN,GoF,Oncogene
+32,MCF-7,ACH-000019,CVCL_0031,Breast,PIK3CA,Het,Missense,p.E545K,GoF,Oncogene
+33,MCF-7,ACH-000019,CVCL_0031,Breast,SMAD3,Het,Splice_site,p.V90F,LoF,Suppressor
+34,MCF-7,ACH-000019,CVCL_0031,Breast,WNK2,Het,Missense,p.L312Q,,Suppressor
+35,SK-MEL-30,ACH-000810,CVCL_0039,Skin,APC,Het,Missense,p.G1339R,,Suppressor
+36,SK-MEL-30,ACH-000810,CVCL_0039,Skin,APC,Het,Stopgain,p.Q1406*,LoF,Suppressor
+37,SK-MEL-30,ACH-000810,CVCL_0039,Skin,BRAF,Het,Missense,p.E275K,,Oncogene
+38,SK-MEL-30,ACH-000810,CVCL_0039,Skin,CDKN2A,Hom,Missense,p.P63L,LoF,Suppressor
+39,SK-MEL-30,ACH-000810,CVCL_0039,Skin,NRAS,Het,Missense,p.Q61K,GoF,Oncogene
+40,SK-MEL-30,ACH-000810,CVCL_0039,Skin,TERT,,Promoter,1-124C>T,GoF,Oncogene
+41,SK-MEL-30,ACH-000810,CVCL_0039,Skin,TP53,Het,Missense,p.R273H,LoF,Suppressor
+42,SK-MEL-30,ACH-000810,CVCL_0039,Skin,TP53,Het,Frameshift,p.T284fs,LoF,Suppressor
+43,SW620,ACH-000651,CVCL_0547,Bowel,APC,Hom,Stopgain,p.Q1338*,LoF,Suppressor
+44,SW620,ACH-000651,CVCL_0547,Bowel,EGFR,Het,Missense,p.C186S,,Oncogene
+45,SW620,ACH-000651,CVCL_0547,Bowel,EP300,Het,Missense,p.P1440L,LoF,Suppressor
+46,SW620,ACH-000651,CVCL_0547,Bowel,KRAS,,Gain,GAIN,GoF,Oncogene
+47,SW620,ACH-000651,CVCL_0547,Bowel,KRAS,Hom,Missense,p.G12V,GoF,Oncogene
+48,SW620,ACH-000651,CVCL_0547,Bowel,MYC,,Gain,GAIN,GoF,Oncogene
+49,SW620,ACH-000651,CVCL_0547,Bowel,TP53,Hom,Missense,p.P309S,LoF,Suppressor
+50,SW620,ACH-000651,CVCL_0547,Bowel,TP53,Hom,Missense,p.R273H,LoF,Suppressor
+51,COLO 205,ACH-001039,CVCL_0218,Bowel,APC,Hom,Frameshift,p.T1556fs,LoF,Suppressor
+52,COLO 205,ACH-001039,CVCL_0218,Bowel,BRAF,Het,Missense,p.V600E,GoF,Oncogene
+53,COLO 205,ACH-001039,CVCL_0218,Bowel,CTNNB1,Hom,Missense,p.N287S,,Oncogene
+54,COLO 205,ACH-001039,CVCL_0218,Bowel,GNAS,Het,Missense,p.S95I,,Oncogene
+55,COLO 205,ACH-001039,CVCL_0218,Bowel,MTOR,Het,Missense,p.P1193L,,Oncogene
+56,COLO 205,ACH-001039,CVCL_0218,Bowel,PMS2,Het,Missense,p.E504Q,,Suppressor
+57,COLO 205,ACH-001039,CVCL_0218,Bowel,TP53,Hom,Frameshift,p.Y103fs,LoF,Suppressor
+58,COLO 205,ACH-001039,CVCL_0218,Bowel,TP53,Hom,Frameshift,p.Y107fs,LoF,Suppressor
+59,HCC-2998,ACH-001081,CVCL_1266,Bowel,ACVR2A,Het,Stopgain,p.E112*,LoF,Suppressor
+60,HCC-2998,ACH-001081,CVCL_1266,Bowel,APC,Het,Missense,p.I2167S,LoF,Suppressor
+61,HCC-2998,ACH-001081,CVCL_1266,Bowel,APC,Het,Stopgain,p.L665*,LoF,Suppressor
+62,HCC-2998,ACH-001081,CVCL_1266,Bowel,APC,Het,Missense,p.N2720K,,Suppressor
+63,HCC-2998,ACH-001081,CVCL_1266,Bowel,APC,Het,Stopgain,p.R1450*,LoF,Suppressor
+64,HCC-2998,ACH-001081,CVCL_1266,Bowel,APC,Het,Missense,p.R168I,LoF,Suppressor
+65,HCC-2998,ACH-001081,CVCL_1266,Bowel,APC,Het,Missense,p.S1864Y,LoF,Suppressor
+66,HCC-2998,ACH-001081,CVCL_1266,Bowel,ARID1A,Het,Stopgain,p.R1772*,LoF,Suppressor
+67,HCC-2998,ACH-001081,CVCL_1266,Bowel,ATM,Het,Missense,p.E1133K,,Suppressor
+68,HCC-2998,ACH-001081,CVCL_1266,Bowel,ATM,Het,Stopgain,p.E277*,LoF,Suppressor
+69,HCC-2998,ACH-001081,CVCL_1266,Bowel,ATM,Het,Missense,p.L1439I,,Suppressor
+70,HCC-2998,ACH-001081,CVCL_1266,Bowel,ATM,Het,Stopgain,p.R250*,LoF,Suppressor
+71,HCC-2998,ACH-001081,CVCL_1266,Bowel,ATM,Het,Missense,p.R337C,LoF,Suppressor
+72,HCC-2998,ACH-001081,CVCL_1266,Bowel,B2M,Het,Stopgain,p.E56*,LoF,Suppressor
+73,HCC-2998,ACH-001081,CVCL_1266,Bowel,BRCA2,Het,Missense,p.D1177N,,Suppressor
+74,HCC-2998,ACH-001081,CVCL_1266,Bowel,BRCA2,Het,Missense,p.E3342K,,Suppressor
+75,HCC-2998,ACH-001081,CVCL_1266,Bowel,BRCA2,Het,Missense,p.K817N,,Suppressor
+76,HCC-2998,ACH-001081,CVCL_1266,Bowel,BRCA2,Het,Missense,p.K981N,,Suppressor
+77,HCC-2998,ACH-001081,CVCL_1266,Bowel,BRCA2,Het,Missense,p.L2136V,,Suppressor
+78,HCC-2998,ACH-001081,CVCL_1266,Bowel,BRCA2,Het,Missense,p.P288S,,Suppressor
+79,HCC-2998,ACH-001081,CVCL_1266,Bowel,BRCA2,Het,Missense,p.R2896C,,Suppressor
+80,HCC-2998,ACH-001081,CVCL_1266,Bowel,CDKN2A,Het,Missense,p.A36G,LoF,Suppressor
+81,HCC-2998,ACH-001081,CVCL_1266,Bowel,EP300,Het,Stopgain,p.E465*,LoF,Suppressor
+82,HCC-2998,ACH-001081,CVCL_1266,Bowel,EP300,Het,Missense,p.L1584R,LoF,Suppressor
+83,HCC-2998,ACH-001081,CVCL_1266,Bowel,FBXW7,Het,Missense,p.R609W,LoF,Suppressor
+84,HCC-2998,ACH-001081,CVCL_1266,Bowel,JAK1,Het,Missense,p.R755Q,,Oncogene
+85,HCC-2998,ACH-001081,CVCL_1266,Bowel,KMT2D,Het,Missense,p.T2131P,,Suppressor
+86,HCC-2998,ACH-001081,CVCL_1266,Bowel,KRAS,Het,Missense,p.A146T,GoF,Oncogene
+87,HCC-2998,ACH-001081,CVCL_1266,Bowel,MSH6,Het,Missense,p.K885N,,Suppressor
+88,HCC-2998,ACH-001081,CVCL_1266,Bowel,MTOR,Het,Missense,p.I2500M,GoF,Oncogene
+89,HCC-2998,ACH-001081,CVCL_1266,Bowel,MYCL,Het,Missense,p.R357I,,Oncogene
+90,HCC-2998,ACH-001081,CVCL_1266,Bowel,NF1,Het,Missense,p.K609N,,Suppressor
+91,HCC-2998,ACH-001081,CVCL_1266,Bowel,NF2,Het,Missense,p.K99T,LoF,Suppressor
+92,HCC-2998,ACH-001081,CVCL_1266,Bowel,PIK3CB,Het,Missense,p.R149Q,,Oncogene
+93,HCC-2998,ACH-001081,CVCL_1266,Bowel,PIK3CB,Het,Missense,p.R562Q,,Oncogene
+94,HCC-2998,ACH-001081,CVCL_1266,Bowel,PIK3R1,Het,Stopgain,p.R98*,LoF,Suppressor
+95,HCC-2998,ACH-001081,CVCL_1266,Bowel,PIK3R1,Het,Splice_site,,LoF,Suppressor
+96,HCC-2998,ACH-001081,CVCL_1266,Bowel,PMS2,Het,Missense,p.A854T,,Suppressor
+97,HCC-2998,ACH-001081,CVCL_1266,Bowel,PMS2,Het,Missense,p.D286E,,Suppressor
+98,HCC-2998,ACH-001081,CVCL_1266,Bowel,POLE,Het,Missense,p.P286R,LoF,Suppressor
+99,HCC-2998,ACH-001081,CVCL_1266,Bowel,PRDM2,Het,Missense,p.L595V,,Suppressor
+100,HCC-2998,ACH-001081,CVCL_1266,Bowel,PRDM2,Het,Missense,p.S470Y,,Suppressor
+101,HCC-2998,ACH-001081,CVCL_1266,Bowel,PTEN,Het,Missense,p.F341V,LoF,Suppressor
+102,HCC-2998,ACH-001081,CVCL_1266,Bowel,PTEN,Het,Missense,p.R130Q,LoF,Suppressor
+103,HCC-2998,ACH-001081,CVCL_1266,Bowel,PTEN,Het,Missense,p.Y46C,LoF,Suppressor
+104,HCC-2998,ACH-001081,CVCL_1266,Bowel,PTPN11,Het,Missense,p.I54T,,Oncogene
+105,HCC-2998,ACH-001081,CVCL_1266,Bowel,RAF1,Het,Missense,p.S257L,GoF,Oncogene
+106,HCC-2998,ACH-001081,CVCL_1266,Bowel,RB1,Het,Stopgain,p.E137*,LoF,Suppressor
+107,HCC-2998,ACH-001081,CVCL_1266,Bowel,RB1,Het,Missense,p.F473C,LoF,Suppressor
+108,HCC-2998,ACH-001081,CVCL_1266,Bowel,RB1,Het,Missense,p.K80N,,Suppressor
+109,HCC-2998,ACH-001081,CVCL_1266,Bowel,SMAD2,Het,Missense,p.R321Q,LoF,Suppressor
+110,HCC-2998,ACH-001081,CVCL_1266,Bowel,SMAD2,Het,Missense,p.S276L,LoF,Suppressor
+111,HCC-2998,ACH-001081,CVCL_1266,Bowel,SMAD3,Het,Missense,p.S222L,LoF,Suppressor
+112,HCC-2998,ACH-001081,CVCL_1266,Bowel,SOS1,Het,Missense,p.I736R,,Oncogene
+113,HCC-2998,ACH-001081,CVCL_1266,Bowel,TP53,Het,Stopgain,p.R213*,LoF,Suppressor
+114,HCC-2998,ACH-001081,CVCL_1266,Bowel,XPO1,Het,Missense,p.E571K,GoF,Oncogene
+115,HCC-2998,ACH-001081,CVCL_1266,Bowel,XPO1,Het,Missense,p.R712I,,Oncogene
+116,NCI-H1385,ACH-000737,CVCL_1466,Lung,KRAS,Het,Missense,p.G12C,GoF,Oncogene
+117,SW1463,ACH-000470,CVCL_1718,Bowel,APC,Hom,Frameshift,p.V452fs,LoF,Suppressor
+118,SW1463,ACH-000470,CVCL_1718,Bowel,ARID1A,Het,Missense,p.L2042V,,Suppressor
+119,SW1463,ACH-000470,CVCL_1718,Bowel,FBXW7,Het,Missense,p.R399Q,LoF,Suppressor
+120,SW1463,ACH-000470,CVCL_1718,Bowel,KRAS,Hom,Missense,p.G12C,GoF,Oncogene
+121,SW1463,ACH-000470,CVCL_1718,Bowel,MTOR,Het,Missense,p.A1099G,,Oncogene
+122,SW1463,ACH-000470,CVCL_1718,Bowel,RNF43,Het,Missense,p.R223P,,Suppressor
+123,SW1463,ACH-000470,CVCL_1718,Bowel,SMAD4,Hom,Missense,p.R265G,LoF,Suppressor
+124,SW1463,ACH-000470,CVCL_1718,Bowel,TP53,Hom,Missense,p.R248Q,LoF,Suppressor
+125,SW837,ACH-000421,CVCL_1729,Bowel,ACVR2A,Hom,Splice_site,,LoF,Suppressor
+126,SW837,ACH-000421,CVCL_1729,Bowel,APC,Het,Stopgain,p.R1450*,LoF,Suppressor
+127,SW837,ACH-000421,CVCL_1729,Bowel,APC,Het,Stopgain,p.R213*,LoF,Suppressor
+128,SW837,ACH-000421,CVCL_1729,Bowel,ATM,Het,Missense,p.H448R,,Suppressor
+129,SW837,ACH-000421,CVCL_1729,Bowel,EGFR,Het,Missense,p.C186S,,Oncogene
+130,SW837,ACH-000421,CVCL_1729,Bowel,EGFR,Het,Missense,p.R264G,,Oncogene
+131,SW837,ACH-000421,CVCL_1729,Bowel,FBXW7,Hom,Frameshift,p.L323fs,LoF,Suppressor
+132,SW837,ACH-000421,CVCL_1729,Bowel,KRAS,Het,Missense,p.G12C,GoF,Oncogene
+133,SW837,ACH-000421,CVCL_1729,Bowel,TP53,Hom,Missense,p.R248W,LoF,Suppressor
+134,LU65,ACH-000438,CVCL_1392,Lung,CDKN2A,Het,Missense,p.D23P,,Suppressor
+135,LU65,ACH-000438,CVCL_1392,Lung,CDKN2A,Hom,Missense,p.H15R,LoF,Suppressor
+136,LU65,ACH-000438,CVCL_1392,Lung,EGFR,Het,Missense,p.L858R,,Oncogene
+137,LU65,ACH-000438,CVCL_1392,Lung,KRAS,,Gain,GAIN,GoF,Oncogene
+138,LU65,ACH-000438,CVCL_1392,Lung,KRAS,Het,Missense,p.G12C,GoF,Oncogene
+139,LU65,ACH-000438,CVCL_1392,Lung,RB1,Hom,Stopgain,p.S82*,LoF,Suppressor
+140,LU65,ACH-000438,CVCL_1392,Lung,STK11,Hom,Splice_site,,LoF,Suppressor
+141,LU65,ACH-000438,CVCL_1392,Lung,TP53,Het,Missense,p.E11Q,,Suppressor
+142,LU65,ACH-000438,CVCL_1392,Lung,TP53,Hom,Splice_site,p.T125T,LoF,Suppressor
+143,LU65,ACH-000438,CVCL_1392,Lung,WNK2,Hom,Missense,p.V1821M,,Suppressor
+144,LU99,ACH-000444,CVCL_3015,Lung,BRCA2,Het,Missense,p.M784V,,Suppressor
+145,LU99,ACH-000444,CVCL_3015,Lung,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+146,LU99,ACH-000444,CVCL_3015,Lung,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+147,LU99,ACH-000444,CVCL_3015,Lung,EP300,Hom,Frameshift,p.I967fs,LoF,Suppressor
+148,LU99,ACH-000444,CVCL_3015,Lung,KRAS,Het,Missense,p.G12C,GoF,Oncogene
+149,LU99,ACH-000444,CVCL_3015,Lung,NF2,Hom,Splice_site,,LoF,Suppressor
+150,LU99,ACH-000444,CVCL_3015,Lung,PIK3CA,Het,Missense,p.T1025A,GoF,Oncogene
+151,LU99,ACH-000444,CVCL_3015,Lung,POLE,Het,Missense,p.D535Y,LoF,Suppressor
+152,LU99,ACH-000444,CVCL_3015,Lung,ZFHX3,Hom,Missense,p.E1900A,,Suppressor
+153,HT-29,ACH-000552,CVCL_0320,Bowel,APC,Het,Stopgain,p.E853*,LoF,Suppressor
+154,HT-29,ACH-000552,CVCL_0320,Bowel,APC,Het,Frameshift,p.T1556fs,LoF,Suppressor
+155,HT-29,ACH-000552,CVCL_0320,Bowel,BRAF,Het,Missense,p.V600E,GoF,Oncogene
+156,HT-29,ACH-000552,CVCL_0320,Bowel,MYC,,Gain,GAIN,GoF,Oncogene
+157,HT-29,ACH-000552,CVCL_0320,Bowel,PIK3CA,Het,Missense,p.P449T,,Oncogene
+158,HT-29,ACH-000552,CVCL_0320,Bowel,SMAD4,Hom,Stopgain,p.Q311*,LoF,Suppressor
+159,HT-29,ACH-000552,CVCL_0320,Bowel,TP53,Hom,Missense,p.R273H,LoF,Suppressor
+160,HT-29,ACH-000552,CVCL_0320,Bowel,ZFHX3,Het,Missense,p.I1217M,,Suppressor
+161,KYSE-410,ACH-000809,CVCL_1352,Esophagus/Stomach,APC,Het,Missense,p.D1810E,,Suppressor
+162,KYSE-410,ACH-000809,CVCL_1352,Esophagus/Stomach,ATM,Het,Missense,p.R924W,,Suppressor
+163,KYSE-410,ACH-000809,CVCL_1352,Esophagus/Stomach,CCND1,,Gain,GAIN,GoF,Oncogene
+164,KYSE-410,ACH-000809,CVCL_1352,Esophagus/Stomach,ERBB2,,Gain,GAIN,GoF,Oncogene
+165,KYSE-410,ACH-000809,CVCL_1352,Esophagus/Stomach,KMT2D,Het,Missense,p.Q3904H,,Suppressor
+166,KYSE-410,ACH-000809,CVCL_1352,Esophagus/Stomach,KRAS,Het,Missense,p.G12C,GoF,Oncogene
+167,KYSE-410,ACH-000809,CVCL_1352,Esophagus/Stomach,SMARCA4,Het,Missense,p.V1207I,,Suppressor
+168,KYSE-410,ACH-000809,CVCL_1352,Esophagus/Stomach,TP53,Hom,Missense,p.R337C,LoF,Suppressor
+169,NCI-H358,ACH-000860,CVCL_1559,Lung,ERBB3,Het,Missense,p.R421K,,Oncogene
+170,NCI-H358,ACH-000860,CVCL_1559,Lung,KRAS,Het,Missense,p.G12C,GoF,Oncogene
+171,NCI-H358,ACH-000860,CVCL_1559,Lung,POLE,Het,Missense,p.V1270F,,Suppressor
+172,NCI-H358,ACH-000860,CVCL_1559,Lung,TP53,Hom,Deletion,DEL,LoF,Suppressor
+173,NCI-H358,ACH-000860,CVCL_1559,Lung,ZFHX3,Het,Missense,p.R1402C,LoF,Suppressor
+174,NCI-H1373,ACH-000845,CVCL_1465,Lung,ATM,Het,Stopgain,p.E2943*,LoF,Suppressor
+175,NCI-H1373,ACH-000845,CVCL_1465,Lung,CDKN2A,Hom,Stopgain,p.C21*,LoF,Suppressor
+176,NCI-H1373,ACH-000845,CVCL_1465,Lung,CHEK2,Het,Missense,p.D207Y,,Suppressor
+177,NCI-H1373,ACH-000845,CVCL_1465,Lung,KRAS,Het,Missense,p.G12C,GoF,Oncogene
+178,NCI-H1373,ACH-000845,CVCL_1465,Lung,NF1,Het,Missense,p.I1806M,LoF,Suppressor
+179,NCI-H1373,ACH-000845,CVCL_1465,Lung,TP53,Hom,Stopgain,p.E339*,LoF,Suppressor
+180,NCI-H1373,ACH-000845,CVCL_1465,Lung,TP53,Hom,Missense,p.P47L,,Suppressor
+181,NCI-H1373,ACH-000845,CVCL_1465,Lung,WNK2,Het,Missense,p.G431R,,Suppressor
+182,NCI-H1373,ACH-000845,CVCL_1465,Lung,WNK2,Het,Missense,p.P1097S,,Suppressor
+183,NCI-H1373,ACH-000845,CVCL_1465,Lung,WNK2,Het,Missense,p.S1520I,,Suppressor
+184,Calu-1,ACH-000511,CVCL_0608,Lung,KRAS,Het,Missense,p.G12C,GoF,Oncogene
+185,Calu-1,ACH-000511,CVCL_0608,Lung,SETD1B,Het,Missense,p.Q1589P,,Suppressor
+186,Calu-1,ACH-000511,CVCL_0608,Lung,TERT,,Promoter,1-124C>T,GoF,Oncogene
+187,Calu-1,ACH-000511,CVCL_0608,Lung,TP53,Hom,Deletion,DEL,LoF,Suppressor
+188,DLD-1,ACH-001061,CVCL_0248,Bowel,ACVR2A,Hom,Frameshift,p.K437fs,LoF,Suppressor
+189,DLD-1,ACH-001061,CVCL_0248,Bowel,APC,Hom,Frameshift,p.I1417fs,LoF,Suppressor
+190,DLD-1,ACH-001061,CVCL_0248,Bowel,APC,Het,Missense,p.K993N,,Suppressor
+191,DLD-1,ACH-001061,CVCL_0248,Bowel,APC,Het,Stopgain,p.R2166*,LoF,Suppressor
+192,DLD-1,ACH-001061,CVCL_0248,Bowel,APC,Het,Missense,p.R727M,LoF,Suppressor
+193,DLD-1,ACH-001061,CVCL_0248,Bowel,B2M,Het,Stopgain,p.Y30*,LoF,Suppressor
+194,DLD-1,ACH-001061,CVCL_0248,Bowel,B2M,Het,Splice_site,,LoF,Suppressor
+195,DLD-1,ACH-001061,CVCL_0248,Bowel,BRCA2,Het,Missense,p.L1053S,,Suppressor
+196,DLD-1,ACH-001061,CVCL_0248,Bowel,BRCA2,Het,Frameshift,p.N1784fs,LoF,Suppressor
+197,DLD-1,ACH-001061,CVCL_0248,Bowel,BRCA2,Het,Missense,p.R2784Q,LoF,Suppressor
+198,DLD-1,ACH-001061,CVCL_0248,Bowel,CHEK2,Het,Missense,p.A247D,LoF,Suppressor
+199,DLD-1,ACH-001061,CVCL_0248,Bowel,CHEK2,Het,Missense,p.R145W,LoF,Suppressor
+200,DLD-1,ACH-001061,CVCL_0248,Bowel,EP300,Het,Stopgain,p.E1014*,LoF,Suppressor
+201,DLD-1,ACH-001061,CVCL_0248,Bowel,EP300,Het,Missense,p.R838C,,Suppressor
+202,DLD-1,ACH-001061,CVCL_0248,Bowel,ERBB3,Het,Missense,p.R667H,,Oncogene
+203,DLD-1,ACH-001061,CVCL_0248,Bowel,FBXW7,Het,Missense,p.P29S,,Suppressor
+204,DLD-1,ACH-001061,CVCL_0248,Bowel,GNAS,Het,Missense,p.K338N,,Oncogene
+205,DLD-1,ACH-001061,CVCL_0248,Bowel,KMT2D,Het,Missense,p.E1517D,,Suppressor
+206,DLD-1,ACH-001061,CVCL_0248,Bowel,KMT2D,Het,Missense,p.E1667D,,Suppressor
+207,DLD-1,ACH-001061,CVCL_0248,Bowel,KMT2D,Het,Missense,p.F5284L,,Suppressor
+208,DLD-1,ACH-001061,CVCL_0248,Bowel,KMT2D,Het,Missense,p.L2304M,,Suppressor
+209,DLD-1,ACH-001061,CVCL_0248,Bowel,KMT2D,Het,Missense,p.P1931H,,Suppressor
+210,DLD-1,ACH-001061,CVCL_0248,Bowel,KRAS,Het,Missense,p.G13D,GoF,Oncogene
+211,DLD-1,ACH-001061,CVCL_0248,Bowel,MSH6,Het,Frameshift,p.D1171fs,LoF,Suppressor
+212,DLD-1,ACH-001061,CVCL_0248,Bowel,MSH6,Het,Frameshift,p.L290fs,LoF,Suppressor
+213,DLD-1,ACH-001061,CVCL_0248,Bowel,MSH6,Het,Missense,p.R1172del,,Suppressor
+214,DLD-1,ACH-001061,CVCL_0248,Bowel,MSH6,Het,Missense,p.Y469F,,Suppressor
+215,DLD-1,ACH-001061,CVCL_0248,Bowel,NF1,Het,Missense,p.A2596V,,Suppressor
+216,DLD-1,ACH-001061,CVCL_0248,Bowel,PIK3CA,Het,Missense,p.D549N,GoF,Oncogene
+217,DLD-1,ACH-001061,CVCL_0248,Bowel,PIK3CA,Het,Missense,p.E545K,GoF,Oncogene
+218,DLD-1,ACH-001061,CVCL_0248,Bowel,PIK3R1,Het,Missense,p.P312L,,Suppressor
+219,DLD-1,ACH-001061,CVCL_0248,Bowel,RNF43,Het,Frameshift,p.G659fs,LoF,Suppressor
+220,DLD-1,ACH-001061,CVCL_0248,Bowel,RNF43,Het,Missense,p.L214M,,Suppressor
+221,DLD-1,ACH-001061,CVCL_0248,Bowel,SETD1B,Het,Missense,p.D159N,,Suppressor
+222,DLD-1,ACH-001061,CVCL_0248,Bowel,SETD1B,Het,Frameshift,p.H8fs,LoF,Suppressor
+223,DLD-1,ACH-001061,CVCL_0248,Bowel,SETD1B,Het,Missense,p.Q780H,LoF,Suppressor
+224,DLD-1,ACH-001061,CVCL_0248,Bowel,SMARCA4,Het,Missense,p.R885C,LoF,Suppressor
+225,DLD-1,ACH-001061,CVCL_0248,Bowel,TGFBR2,Het,Frameshift,p.K128fs,LoF,Suppressor
+226,DLD-1,ACH-001061,CVCL_0248,Bowel,TGFBR2,Het,Missense,p.L452P,LoF,Suppressor
+227,DLD-1,ACH-001061,CVCL_0248,Bowel,TP53,Het,Missense,p.S241F,LoF,Suppressor
+228,DLD-1,ACH-001061,CVCL_0248,Bowel,TP53,Het,Splice_site,,LoF,Suppressor
+229,DLD-1,ACH-001061,CVCL_0248,Bowel,ZFHX3,Het,Missense,p.P1707H,,Suppressor
+230,DLD-1,ACH-001061,CVCL_0248,Bowel,ZFHX3,Het,Missense,p.P3069T,LoF,Suppressor
+231,LS123,ACH-000501,CVCL_1383,Bowel,ACVR2A,Het,Missense,p.R400H,LoF,Suppressor
+232,LS123,ACH-000501,CVCL_1383,Bowel,APC,Het,Missense,p.M431I,,Suppressor
+233,LS123,ACH-000501,CVCL_1383,Bowel,APC,Het,Stopgain,p.Q625*,LoF,Suppressor
+234,LS123,ACH-000501,CVCL_1383,Bowel,APC,Het,Stopgain,p.R1450*,LoF,Suppressor
+235,LS123,ACH-000501,CVCL_1383,Bowel,KRAS,Het,Missense,p.G12S,GoF,Oncogene
+236,LS123,ACH-000501,CVCL_1383,Bowel,MTOR,Het,Missense,p.A1099G,,Oncogene
+237,LS123,ACH-000501,CVCL_1383,Bowel,SMAD4,Hom,Stopgain,p.E234*,LoF,Suppressor
+238,LS123,ACH-000501,CVCL_1383,Bowel,TP53,Hom,Missense,p.R175H,LoF,Suppressor
+239,Caco-2,ACH-000003,CVCL_0025,Bowel,APC,Hom,Stopgain,p.Q1367*,LoF,Suppressor
+240,Caco-2,ACH-000003,CVCL_0025,Bowel,CHEK2,,Deletion,DEL,LoF,Suppressor
+241,Caco-2,ACH-000003,CVCL_0025,Bowel,CTNNB1,Het,Missense,p.G245A,,Oncogene
+242,Caco-2,ACH-000003,CVCL_0025,Bowel,EP300,,Deletion,DEL,LoF,Suppressor
+243,Caco-2,ACH-000003,CVCL_0025,Bowel,NF2,,Deletion,DEL,LoF,Suppressor
+244,Caco-2,ACH-000003,CVCL_0025,Bowel,SMAD4,Hom,Missense,p.D351H,,Suppressor
+245,Caco-2,ACH-000003,CVCL_0025,Bowel,SMARCB1,,Deletion,DEL,LoF,Suppressor
+246,Caco-2,ACH-000003,CVCL_0025,Bowel,TP53,Hom,Stopgain,p.E204*,LoF,Suppressor
+247,HCT-8,ACH-001084,CVCL_2478,Bowel,APC,,Frameshift,p.I1417fs,LoF,Suppressor
+248,HCT-8,ACH-001084,CVCL_2478,Bowel,APC,,Missense,p.K993N,,Suppressor
+249,HCT-8,ACH-001084,CVCL_2478,Bowel,APC,,Stopgain,p.R2166*,LoF,Suppressor
+250,HCT-8,ACH-001084,CVCL_2478,Bowel,APC,,Missense,p.R727M,LoF,Suppressor
+251,HCT-8,ACH-001084,CVCL_2478,Bowel,CTNNB1,,Missense,p.V79I,,Oncogene
+252,HCT-8,ACH-001084,CVCL_2478,Bowel,KRAS,,Missense,p.G13D,GoF,Oncogene
+253,HCT-8,ACH-001084,CVCL_2478,Bowel,PIK3CA,,Missense,p.D549N,GoF,Oncogene
+254,HCT-8,ACH-001084,CVCL_2478,Bowel,PIK3CA,,Missense,p.E545K,GoF,Oncogene
+255,HCT-8,ACH-001084,CVCL_2478,Bowel,SMAD2,,Frameshift,p.P164fs,LoF,Suppressor
+256,HCT-8,ACH-001084,CVCL_2478,Bowel,SMAD3,,Missense,p.V244I,,Suppressor
+257,SK-CO-1,ACH-000400,CVCL_0626,Bowel,APC,Het,Frameshift,p.F1089fs,LoF,Suppressor
+258,SK-CO-1,ACH-000400,CVCL_0626,Bowel,APC,Het,Frameshift,p.P1443fs,LoF,Suppressor
+259,SK-CO-1,ACH-000400,CVCL_0626,Bowel,EP300,Het,Missense,p.P842S,,Suppressor
+260,SK-CO-1,ACH-000400,CVCL_0626,Bowel,GNAS,Het,Missense,p.R201C,,Oncogene
+261,SK-CO-1,ACH-000400,CVCL_0626,Bowel,KRAS,Het,Missense,p.G12V,GoF,Oncogene
+262,SK-CO-1,ACH-000400,CVCL_0626,Bowel,SETD1B,Het,Missense,p.Q1589P,,Suppressor
+263,SW480,ACH-000842,CVCL_0546,Bowel,APC,Hom,Stopgain,p.Q1338*,LoF,Suppressor
+264,SW480,ACH-000842,CVCL_0546,Bowel,ATM,Het,Missense,p.R2461P,LoF,Suppressor
+265,SW480,ACH-000842,CVCL_0546,Bowel,KRAS,Hom,Missense,p.G12V,GoF,Oncogene
+266,SW480,ACH-000842,CVCL_0546,Bowel,MYC,,Gain,GAIN,GoF,Oncogene
+267,SW480,ACH-000842,CVCL_0546,Bowel,TP53,Hom,Missense,p.P309S,LoF,Suppressor
+268,SW480,ACH-000842,CVCL_0546,Bowel,TP53,Hom,Missense,p.R273H,LoF,Suppressor
+269,SW 1573,ACH-000677,CVCL_1720,Lung,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+270,SW 1573,ACH-000677,CVCL_1720,Lung,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+271,SW 1573,ACH-000677,CVCL_1720,Lung,CTNNB1,Het,Missense,p.S33F,GoF,Oncogene
+272,SW 1573,ACH-000677,CVCL_1720,Lung,KRAS,Hom,Missense,p.G12C,GoF,Oncogene
+273,SW 1573,ACH-000677,CVCL_1720,Lung,PIK3CA,Het,Missense,p.K111E,GoF,Oncogene
+274,SW 1573,ACH-000677,CVCL_1720,Lung,PRDM2,Hom,Missense,p.L824Q,,Suppressor
+275,SW 1573,ACH-000677,CVCL_1720,Lung,SMAD4,Hom,Deletion,DEL,LoF,Suppressor
+276,SW 1573,ACH-000677,CVCL_1720,Lung,SMARCB1,Hom,Splice_site,,LoF,Suppressor
+277,HCC1143,ACH-000374,CVCL_1245,Breast,AKT1,,Gain,GAIN,GoF,Oncogene
+278,HCC1143,ACH-000374,CVCL_1245,Breast,CCND1,,Gain,GAIN,GoF,Oncogene
+279,HCC1143,ACH-000374,CVCL_1245,Breast,FGFR2,Het,Missense,p.R203C,,Oncogene
+280,HCC1143,ACH-000374,CVCL_1245,Breast,SMARCA4,Het,Missense,p.R1323H,LoF,Suppressor
+281,HCC1143,ACH-000374,CVCL_1245,Breast,TP53,Hom,Missense,p.R248Q,LoF,Suppressor
+282,HS-578T,ACH-000148,CVCL_0332,Breast,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+283,HS-578T,ACH-000148,CVCL_0332,Breast,HNF1A,Het,Missense,p.K273E,LoF,Suppressor
+284,HS-578T,ACH-000148,CVCL_0332,Breast,HRAS,Het,Missense,p.G12D,GoF,Oncogene
+285,HS-578T,ACH-000148,CVCL_0332,Breast,NF1,Het,Missense,p.G2724R,,Suppressor
+286,HS-578T,ACH-000148,CVCL_0332,Breast,PIK3R1,Hom,Missense,p.89_90insN,,Suppressor
+287,HS-578T,ACH-000148,CVCL_0332,Breast,TP53,Hom,Missense,p.V157F,LoF,Suppressor
+288,SW1116,ACH-000489,CVCL_0544,Bowel,APC,Het,Frameshift,p.Q1429fs,LoF,Suppressor
+289,SW1116,ACH-000489,CVCL_0544,Bowel,APC,Het,Stopgain,p.Q264*,LoF,Suppressor
+290,SW1116,ACH-000489,CVCL_0544,Bowel,FBXW7,Het,Missense,p.H380Y,LoF,Suppressor
+291,SW1116,ACH-000489,CVCL_0544,Bowel,KRAS,Het,Missense,p.G12A,GoF,Oncogene
+292,SW1116,ACH-000489,CVCL_0544,Bowel,TP53,Hom,Missense,p.A159D,LoF,Suppressor
+293,SW1116,ACH-000489,CVCL_0544,Bowel,WNK2,Het,Missense,p.A1048G,,Suppressor
+294,SW1116,ACH-000489,CVCL_0544,Bowel,ZFHX3,Het,Missense,p.G918R,,Suppressor
+295,LoVo,ACH-000950,CVCL_0399,Bowel,ACVR2A,Hom,Frameshift,p.K437fs,LoF,Suppressor
+296,LoVo,ACH-000950,CVCL_0399,Bowel,APC,Het,Frameshift,p.M1431fs,LoF,Suppressor
+297,LoVo,ACH-000950,CVCL_0399,Bowel,APC,Het,Stopgain,p.R1114*,LoF,Suppressor
+298,LoVo,ACH-000950,CVCL_0399,Bowel,APC,Het,Missense,p.R2816Q,,Suppressor
+299,LoVo,ACH-000950,CVCL_0399,Bowel,ARID1A,Het,Frameshift,p.F1924fs,LoF,Suppressor
+300,LoVo,ACH-000950,CVCL_0399,Bowel,B2M,Hom,Frameshift,p.L15fs,LoF,Suppressor
+301,LoVo,ACH-000950,CVCL_0399,Bowel,CHEK2,Het,Frameshift,p.T389fs,LoF,Suppressor
+302,LoVo,ACH-000950,CVCL_0399,Bowel,FBXW7,Het,Missense,p.R425C,LoF,Suppressor
+303,LoVo,ACH-000950,CVCL_0399,Bowel,FGFR3,Het,Missense,p.I533V,,Oncogene
+304,LoVo,ACH-000950,CVCL_0399,Bowel,HNF1A,Het,Missense,p.V446M,LoF,Suppressor
+305,LoVo,ACH-000950,CVCL_0399,Bowel,KMT2D,Het,Frameshift,p.H77fs,LoF,Suppressor
+306,LoVo,ACH-000950,CVCL_0399,Bowel,KRAS,Het,Missense,p.G13D,GoF,Oncogene
+307,LoVo,ACH-000950,CVCL_0399,Bowel,NF1,Het,Missense,p.R1674Q,,Suppressor
+308,LoVo,ACH-000950,CVCL_0399,Bowel,PIK3CB,Het,Missense,p.E1051K,,Oncogene
+309,LoVo,ACH-000950,CVCL_0399,Bowel,PRDM2,Het,Missense,p.S1618G,,Suppressor
+310,LoVo,ACH-000950,CVCL_0399,Bowel,PRDM2,Het,Frameshift,p.V1490fs,LoF,Suppressor
+311,LoVo,ACH-000950,CVCL_0399,Bowel,RAF1,Het,Missense,p.V98A,,Oncogene
+312,LoVo,ACH-000950,CVCL_0399,Bowel,SETD1B,Het,Frameshift,p.H8fs,LoF,Suppressor
+313,LoVo,ACH-000950,CVCL_0399,Bowel,SETD1B,Het,Missense,p.V1447I,,Suppressor
+314,LoVo,ACH-000950,CVCL_0399,Bowel,SMAD2,Het,Missense,p.A292V,LoF,Suppressor
+315,LoVo,ACH-000950,CVCL_0399,Bowel,TGFBR2,Hom,Frameshift,p.K128fs,LoF,Suppressor
+316,LoVo,ACH-000950,CVCL_0399,Bowel,WNK2,Het,Missense,p.R2073C,,Suppressor
+317,LoVo,ACH-000950,CVCL_0399,Bowel,WNK2,Het,Missense,p.V1544A,,Suppressor
+318,SW948,ACH-000680,CVCL_0632,Bowel,APC,Het,Stopgain,p.Q1429*,LoF,Suppressor
+319,SW948,ACH-000680,CVCL_0632,Bowel,APC,Het,Stopgain,p.R1114*,LoF,Suppressor
+320,SW948,ACH-000680,CVCL_0632,Bowel,ARID1A,Het,Missense,p.G701A,,Suppressor
+321,SW948,ACH-000680,CVCL_0632,Bowel,ATM,Het,Stopgain,p.Q2210*,LoF,Suppressor
+322,SW948,ACH-000680,CVCL_0632,Bowel,EP300,Het,Splice_site,,LoF,Suppressor
+323,SW948,ACH-000680,CVCL_0632,Bowel,KMT2D,Het,Missense,p.N2030H,,Suppressor
+324,SW948,ACH-000680,CVCL_0632,Bowel,KMT2D,Het,Missense,p.R5120C,LoF,Suppressor
+325,SW948,ACH-000680,CVCL_0632,Bowel,KRAS,Het,Missense,p.Q61L,GoF,Oncogene
+326,SW948,ACH-000680,CVCL_0632,Bowel,PIK3CA,Hom,Missense,p.E542K,GoF,Oncogene
+327,SW948,ACH-000680,CVCL_0632,Bowel,SMAD4,Hom,Missense,p.D441Y,LoF,Suppressor
+328,SW948,ACH-000680,CVCL_0632,Bowel,TP53,Hom,Frameshift,p.T118fs,LoF,Suppressor
+329,LS 174T,,CVCL_1384,Bowel,CTNNB1,Hom,Missense,p.S45F,GoF,Oncogene
+330,LS 174T,,CVCL_1384,Bowel,KRAS,Het,Missense,p.G12D,GoF,Oncogene
+331,LS 174T,,CVCL_1384,Bowel,PIK3CA,,Missense,p.H1047R,GoF,Oncogene
+332,SW1417,ACH-000236,CVCL_1717,Bowel,APC,Hom,Stopgain,p.R1450*,LoF,Suppressor
+333,SW1417,ACH-000236,CVCL_1717,Bowel,BRAF,Het,Missense,p.V600E,GoF,Oncogene
+334,SW1417,ACH-000236,CVCL_1717,Bowel,PIK3R1,Hom,Deletion,DEL,LoF,Suppressor
+335,SW1417,ACH-000236,CVCL_1717,Bowel,TP53,Hom,Frameshift,p.C238fs,LoF,Suppressor
+336,RKO,ACH-000943,CVCL_0504,Bowel,ACVR2A,Het,Frameshift,p.K437fs,LoF,Suppressor
+337,RKO,ACH-000943,CVCL_0504,Bowel,ARID1A,Het,Frameshift,p.D1633fs,LoF,Suppressor
+338,RKO,ACH-000943,CVCL_0504,Bowel,ARID1A,Het,Frameshift,p.P1115fs,LoF,Suppressor
+339,RKO,ACH-000943,CVCL_0504,Bowel,B2M,Het,Stopgain,p.R117*,LoF,Suppressor
+340,RKO,ACH-000943,CVCL_0504,Bowel,BRAF,Het,Missense,p.V600E,GoF,Oncogene
+341,RKO,ACH-000943,CVCL_0504,Bowel,BRCA2,Het,Frameshift,p.N1784fs,LoF,Suppressor
+342,RKO,ACH-000943,CVCL_0504,Bowel,EP300,Het,Frameshift,p.K292fs,LoF,Suppressor
+343,RKO,ACH-000943,CVCL_0504,Bowel,EP300,Het,Frameshift,p.M1470fs,LoF,Suppressor
+344,RKO,ACH-000943,CVCL_0504,Bowel,HNF1A,Het,Frameshift,p.P379fs,LoF,Suppressor
+345,RKO,ACH-000943,CVCL_0504,Bowel,KMT2D,Het,Frameshift,p.G1960fs,LoF,Suppressor
+346,RKO,ACH-000943,CVCL_0504,Bowel,KMT2D,Het,Stopgain,p.G3465*,LoF,Suppressor
+347,RKO,ACH-000943,CVCL_0504,Bowel,KMT2D,Het,Missense,p.L1600P,LoF,Suppressor
+348,RKO,ACH-000943,CVCL_0504,Bowel,KMT2D,Het,Missense,p.L5056P,LoF,Suppressor
+349,RKO,ACH-000943,CVCL_0504,Bowel,KMT2D,Het,Frameshift,p.P2550fs,LoF,Suppressor
+350,RKO,ACH-000943,CVCL_0504,Bowel,MSH6,Het,Frameshift,p.Y1066fs,LoF,Suppressor
+351,RKO,ACH-000943,CVCL_0504,Bowel,NF1,Het,Frameshift,p.N2320fs,LoF,Suppressor
+352,RKO,ACH-000943,CVCL_0504,Bowel,NF1,Het,Missense,p.V2184A,LoF,Suppressor
+353,RKO,ACH-000943,CVCL_0504,Bowel,NF1,Het,Frameshift,p.Y628fs,LoF,Suppressor
+354,RKO,ACH-000943,CVCL_0504,Bowel,NF2,Het,Frameshift,p.P275fs,LoF,Suppressor
+355,RKO,ACH-000943,CVCL_0504,Bowel,PIK3CA,Het,Missense,p.H1047R,GoF,Oncogene
+356,RKO,ACH-000943,CVCL_0504,Bowel,POLE,Het,Missense,p.K995E,,Suppressor
+357,RKO,ACH-000943,CVCL_0504,Bowel,PRDM2,Het,Missense,p.S876G,,Suppressor
+358,RKO,ACH-000943,CVCL_0504,Bowel,RNF43,Hom,Frameshift,p.G659fs,LoF,Suppressor
+359,RKO,ACH-000943,CVCL_0504,Bowel,RNF43,Het,Missense,p.H549N,,Suppressor
+360,RKO,ACH-000943,CVCL_0504,Bowel,SETD1B,Het,Frameshift,p.H8fs,LoF,Suppressor
+361,RKO,ACH-000943,CVCL_0504,Bowel,SETD1B,Het,Missense,p.T1700A,LoF,Suppressor
+362,RKO,ACH-000943,CVCL_0504,Bowel,SMAD3,Het,Missense,p.A13T,,Suppressor
+363,RKO,ACH-000943,CVCL_0504,Bowel,TGFBR2,Het,Frameshift,p.K128fs,LoF,Suppressor
+364,RKO,ACH-000943,CVCL_0504,Bowel,TGFBR2,Het,Missense,p.L452P,LoF,Suppressor
+365,RKO,ACH-000943,CVCL_0504,Bowel,ZFHX3,Het,Frameshift,p.F1596fs,LoF,Suppressor
+366,RKO,ACH-000943,CVCL_0504,Bowel,ZFHX3,Het,Missense,p.S112N,,Suppressor
+367,T84,ACH-000381,CVCL_0555,Bowel,APC,Hom,Frameshift,p.L1488fs,LoF,Suppressor
+368,T84,ACH-000381,CVCL_0555,Bowel,KRAS,Het,Missense,p.G13D,GoF,Oncogene
+369,T84,ACH-000381,CVCL_0555,Bowel,PIK3CA,Het,Missense,p.E542K,GoF,Oncogene
+370,T84,ACH-000381,CVCL_0555,Bowel,SMAD4,Hom,Missense,p.K244N,LoF,Suppressor
+371,T84,ACH-000381,CVCL_0555,Bowel,TP53,Hom,Splice_site,,LoF,Suppressor
+372,T84,ACH-000381,CVCL_0555,Bowel,ZFHX3,Het,Missense,p.A3398P,,Suppressor
+373,SHP-77,ACH-000790,CVCL_1693,Lung,ABL1,Het,Missense,p.V1128E,,Oncogene
+374,SHP-77,ACH-000790,CVCL_1693,Lung,ACVR2A,Hom,Missense,p.L147R,LoF,Suppressor
+375,SHP-77,ACH-000790,CVCL_1693,Lung,ARID1A,Het,Missense,p.P253S,,Suppressor
+376,SHP-77,ACH-000790,CVCL_1693,Lung,EGFR,Het,Missense,p.Q656R,,Oncogene
+377,SHP-77,ACH-000790,CVCL_1693,Lung,KMT2D,Hom,Missense,p.Q3950R,,Suppressor
+378,SHP-77,ACH-000790,CVCL_1693,Lung,KRAS,Hom,Missense,p.G12V,GoF,Oncogene
+379,SHP-77,ACH-000790,CVCL_1693,Lung,RAC1,Het,Missense,p.Y32C,,Oncogene
+380,SHP-77,ACH-000790,CVCL_1693,Lung,SETD1B,Het,Missense,p.T482M,,Suppressor
+381,SHP-77,ACH-000790,CVCL_1693,Lung,TP53,Hom,Missense,p.C176W,LoF,Suppressor
+382,SW 900,ACH-000669,CVCL_1731,Lung,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+383,SW 900,ACH-000669,CVCL_1731,Lung,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+384,SW 900,ACH-000669,CVCL_1731,Lung,KMT2D,Hom,Stopgain,p.K5522*,LoF,Suppressor
+385,SW 900,ACH-000669,CVCL_1731,Lung,KRAS,Het,Missense,p.G12V,GoF,Oncogene
+386,SW 900,ACH-000669,CVCL_1731,Lung,SMAD3,Hom,Missense,p.K334E,LoF,Suppressor
+387,SW 900,ACH-000669,CVCL_1731,Lung,TP53,Hom,Stopgain,p.Q167*,LoF,Suppressor
+388,MIA PaCa-2,ACH-000601,CVCL_0428,Pancreas,ARID1A,Het,Missense,p.P1723L,,Suppressor
+389,MIA PaCa-2,ACH-000601,CVCL_0428,Pancreas,ARID1A,Hom,Stopgain,p.Q321*,LoF,Suppressor
+390,MIA PaCa-2,ACH-000601,CVCL_0428,Pancreas,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+391,MIA PaCa-2,ACH-000601,CVCL_0428,Pancreas,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+392,MIA PaCa-2,ACH-000601,CVCL_0428,Pancreas,KRAS,Hom,Missense,p.G12C,GoF,Oncogene
+393,MIA PaCa-2,ACH-000601,CVCL_0428,Pancreas,TP53,Hom,Missense,p.R248W,LoF,Suppressor
+394,HCT15,ACH-000997,CVCL_0292,Bowel,ACVR2A,Hom,Frameshift,p.K437fs,LoF,Suppressor
+395,HCT15,ACH-000997,CVCL_0292,Bowel,APC,Het,Missense,p.E2550Q,,Suppressor
+396,HCT15,ACH-000997,CVCL_0292,Bowel,APC,Hom,Frameshift,p.I1417fs,LoF,Suppressor
+397,HCT15,ACH-000997,CVCL_0292,Bowel,APC,Het,Missense,p.I1779M,,Suppressor
+398,HCT15,ACH-000997,CVCL_0292,Bowel,APC,Het,Missense,p.K1561N,,Suppressor
+399,HCT15,ACH-000997,CVCL_0292,Bowel,APC,Het,Missense,p.K993N,,Suppressor
+400,HCT15,ACH-000997,CVCL_0292,Bowel,APC,Het,Stopgain,p.R2166*,LoF,Suppressor
+401,HCT15,ACH-000997,CVCL_0292,Bowel,APC,Het,Missense,p.R727M,LoF,Suppressor
+402,HCT15,ACH-000997,CVCL_0292,Bowel,ARID1A,Het,Missense,p.R270H,,Suppressor
+403,HCT15,ACH-000997,CVCL_0292,Bowel,ATM,Het,Missense,p.E586D,,Suppressor
+404,HCT15,ACH-000997,CVCL_0292,Bowel,B2M,Het,Stopgain,p.Y30*,LoF,Suppressor
+405,HCT15,ACH-000997,CVCL_0292,Bowel,B2M,Het,Splice_site,,LoF,Suppressor
+406,HCT15,ACH-000997,CVCL_0292,Bowel,BRCA2,Het,Missense,p.A487V,,Suppressor
+407,HCT15,ACH-000997,CVCL_0292,Bowel,BRCA2,Het,Frameshift,p.N1784fs,LoF,Suppressor
+408,HCT15,ACH-000997,CVCL_0292,Bowel,BRCA2,Het,Missense,p.R2784Q,LoF,Suppressor
+409,HCT15,ACH-000997,CVCL_0292,Bowel,CHEK2,Het,Missense,p.A247D,LoF,Suppressor
+410,HCT15,ACH-000997,CVCL_0292,Bowel,CHEK2,Het,Missense,p.R145W,LoF,Suppressor
+411,HCT15,ACH-000997,CVCL_0292,Bowel,EP300,Hom,Stopgain,p.E1014*,LoF,Suppressor
+412,HCT15,ACH-000997,CVCL_0292,Bowel,ERBB3,Het,Missense,p.R667H,,Oncogene
+413,HCT15,ACH-000997,CVCL_0292,Bowel,GNAS,Het,Missense,p.K338N,,Oncogene
+414,HCT15,ACH-000997,CVCL_0292,Bowel,KMT2D,Het,Missense,p.E1517D,,Suppressor
+415,HCT15,ACH-000997,CVCL_0292,Bowel,KMT2D,Het,Missense,p.P1152H,,Suppressor
+416,HCT15,ACH-000997,CVCL_0292,Bowel,KMT2D,Het,Missense,p.P1931H,,Suppressor
+417,HCT15,ACH-000997,CVCL_0292,Bowel,KRAS,Het,Missense,p.G13D,GoF,Oncogene
+418,HCT15,ACH-000997,CVCL_0292,Bowel,MSH6,Het,Frameshift,p.D1171fs,LoF,Suppressor
+419,HCT15,ACH-000997,CVCL_0292,Bowel,MSH6,Het,Frameshift,p.L290fs,LoF,Suppressor
+420,HCT15,ACH-000997,CVCL_0292,Bowel,MSH6,Het,Missense,p.R1172del,,Suppressor
+421,HCT15,ACH-000997,CVCL_0292,Bowel,MSH6,Het,Missense,p.T1189I,LoF,Suppressor
+422,HCT15,ACH-000997,CVCL_0292,Bowel,NF1,Het,Missense,p.A2596V,,Suppressor
+423,HCT15,ACH-000997,CVCL_0292,Bowel,NF1,Het,Missense,p.A74D,,Suppressor
+424,HCT15,ACH-000997,CVCL_0292,Bowel,NF1,Het,Missense,p.P2456S,,Suppressor
+425,HCT15,ACH-000997,CVCL_0292,Bowel,PIK3CA,Het,Missense,p.D549N,GoF,Oncogene
+426,HCT15,ACH-000997,CVCL_0292,Bowel,PIK3CA,Het,Missense,p.E545K,GoF,Oncogene
+427,HCT15,ACH-000997,CVCL_0292,Bowel,PIK3R1,Het,Missense,p.P312L,,Suppressor
+428,HCT15,ACH-000997,CVCL_0292,Bowel,POLE,Het,Missense,p.A1375V,,Suppressor
+429,HCT15,ACH-000997,CVCL_0292,Bowel,PRDM2,Het,Stopgain,p.E1259*,LoF,Suppressor
+430,HCT15,ACH-000997,CVCL_0292,Bowel,PRDM2,Het,Stopgain,p.Q1699*,LoF,Suppressor
+431,HCT15,ACH-000997,CVCL_0292,Bowel,RNF43,Het,Frameshift,p.G659fs,LoF,Suppressor
+432,HCT15,ACH-000997,CVCL_0292,Bowel,RNF43,Het,Missense,p.L214M,,Suppressor
+433,HCT15,ACH-000997,CVCL_0292,Bowel,SETD1B,Het,Missense,p.D159N,,Suppressor
+434,HCT15,ACH-000997,CVCL_0292,Bowel,SETD1B,Het,Missense,p.Q780H,LoF,Suppressor
+435,HCT15,ACH-000997,CVCL_0292,Bowel,SMARCA4,Het,Missense,p.R885C,LoF,Suppressor
+436,HCT15,ACH-000997,CVCL_0292,Bowel,TGFBR2,Het,Missense,p.L452P,LoF,Suppressor
+437,HCT15,ACH-000997,CVCL_0292,Bowel,TP53,Het,Missense,p.S241F,LoF,Suppressor
+438,HCT15,ACH-000997,CVCL_0292,Bowel,TP53,Het,Splice_site,,LoF,Suppressor
+439,HCT15,ACH-000997,CVCL_0292,Bowel,WNK2,Het,Missense,p.V1971M,,Suppressor
+440,HCT15,ACH-000997,CVCL_0292,Bowel,ZFHX3,Het,Frameshift,p.E763fs,LoF,Suppressor
+441,HCT15,ACH-000997,CVCL_0292,Bowel,ZFHX3,Het,Missense,p.P1707H,,Suppressor
+442,HCT15,ACH-000997,CVCL_0292,Bowel,ZFHX3,Het,Missense,p.P3069T,LoF,Suppressor
+443,HCT15,ACH-000997,CVCL_0292,Bowel,ZFHX3,Het,Missense,p.R1402C,LoF,Suppressor
+444,HCT15,ACH-000997,CVCL_0292,Bowel,ZFHX3,Het,Missense,p.S1180N,,Suppressor
+445,CFPAC-1,ACH-000138,CVCL_1119,Pancreas,KRAS,Het,Missense,p.G12V,GoF,Oncogene
+446,CFPAC-1,ACH-000138,CVCL_1119,Pancreas,SMAD4,Hom,Deletion,DEL,LoF,Suppressor
+447,CFPAC-1,ACH-000138,CVCL_1119,Pancreas,TP53,Hom,Missense,p.C242R,LoF,Suppressor
+448,AsPC-1,ACH-000222,CVCL_0152,Pancreas,CDKN2A,Het,Frameshift,p.L27fs,LoF,Suppressor
+449,AsPC-1,ACH-000222,CVCL_0152,Pancreas,FBXW7,Het,Missense,p.R385C,LoF,Suppressor
+450,AsPC-1,ACH-000222,CVCL_0152,Pancreas,KRAS,Hom,Missense,p.G12D,GoF,Oncogene
+451,AsPC-1,ACH-000222,CVCL_0152,Pancreas,RNF43,Hom,Stopgain,p.S720*,LoF,Suppressor
+452,AsPC-1,ACH-000222,CVCL_0152,Pancreas,SMAD4,Hom,Missense,p.R100T,LoF,Suppressor
+453,AsPC-1,ACH-000222,CVCL_0152,Pancreas,TP53,Hom,Frameshift,p.C135fs,LoF,Suppressor
+454,Panc 02.13,ACH-000031,CVCL_1634,Pancreas,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+455,Panc 02.13,ACH-000031,CVCL_1634,Pancreas,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+456,Panc 02.13,ACH-000031,CVCL_1634,Pancreas,KRAS,Het,Missense,p.Q61R,GoF,Oncogene
+457,Panc 02.13,ACH-000031,CVCL_1634,Pancreas,SMARCA4,Het,Missense,p.T910M,LoF,Suppressor
+458,Panc 02.13,ACH-000031,CVCL_1634,Pancreas,TP53,Hom,Missense,p.R273C,LoF,Suppressor
+459,Hs 766T,ACH-000178,CVCL_0334,Pancreas,ARID1A,Het,Stopgain,p.Q538*,LoF,Suppressor
+460,Hs 766T,ACH-000178,CVCL_0334,Pancreas,CDKN2A,Hom,Splice_site,,LoF,Suppressor
+461,Hs 766T,ACH-000178,CVCL_0334,Pancreas,KRAS,Hom,Missense,p.Q61H,GoF,Oncogene
+462,Hs 766T,ACH-000178,CVCL_0334,Pancreas,SMAD4,Hom,Deletion,DEL,LoF,Suppressor
+463,BxPC-3,ACH-000535,CVCL_0186,Pancreas,BRAF,Het,Missense,p.V487_492NA,,Oncogene
+464,BxPC-3,ACH-000535,CVCL_0186,Pancreas,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+465,BxPC-3,ACH-000535,CVCL_0186,Pancreas,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+466,BxPC-3,ACH-000535,CVCL_0186,Pancreas,EP300,Het,Stopgain,p.R397*,LoF,Suppressor
+467,BxPC-3,ACH-000535,CVCL_0186,Pancreas,RNF43,Hom,Missense,p.S495Y,,Suppressor
+468,BxPC-3,ACH-000535,CVCL_0186,Pancreas,SMAD4,Hom,Deletion,DEL,LoF,Suppressor
+469,BxPC-3,ACH-000535,CVCL_0186,Pancreas,SMARCB1,Hom,Deletion,DEL,LoF,Suppressor
+470,BxPC-3,ACH-000535,CVCL_0186,Pancreas,TP53,Hom,Missense,p.Y220C,LoF,Suppressor
+471,PANC-1,ACH-000164,CVCL_0480,Pancreas,AKT2,,Gain,GAIN,GoF,Oncogene
+472,PANC-1,ACH-000164,CVCL_0480,Pancreas,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+473,PANC-1,ACH-000164,CVCL_0480,Pancreas,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+474,PANC-1,ACH-000164,CVCL_0480,Pancreas,KRAS,Het,Missense,p.G12D,GoF,Oncogene
+475,PANC-1,ACH-000164,CVCL_0480,Pancreas,TP53,Hom,Missense,p.R273H,LoF,Suppressor
+476,KLE,ACH-000293,CVCL_1329,Uterus,AKT2,,Gain,GAIN,GoF,Oncogene
+477,KLE,ACH-000293,CVCL_1329,Uterus,CCNE1,,Gain,GAIN,GoF,Oncogene
+478,KLE,ACH-000293,CVCL_1329,Uterus,FBXW7,Het,Missense,p.R399Q,LoF,Suppressor
+479,KLE,ACH-000293,CVCL_1329,Uterus,KRAS,,Gain,GAIN,GoF,Oncogene
+480,KLE,ACH-000293,CVCL_1329,Uterus,TP53,Hom,Missense,p.R175H,LoF,Suppressor
+481,BT-474,ACH-000927,CVCL_0179,Breast,ACVR2A,Het,Missense,p.S17F,,Suppressor
+482,BT-474,ACH-000927,CVCL_0179,Breast,ATM,Het,Missense,p.E2468K,LoF,Suppressor
+483,BT-474,ACH-000927,CVCL_0179,Breast,BRCA2,Het,Stopgain,p.S3094*,LoF,Suppressor
+484,BT-474,ACH-000927,CVCL_0179,Breast,ERBB2,,Gain,GAIN,GoF,Oncogene
+485,BT-474,ACH-000927,CVCL_0179,Breast,HNF1A,Het,Stopgain,p.Q495*,LoF,Suppressor
+486,BT-474,ACH-000927,CVCL_0179,Breast,KMT2D,Het,Missense,p.E1623K,,Suppressor
+487,BT-474,ACH-000927,CVCL_0179,Breast,LASP1,,Gain,GAIN,GoF,Oncogene
+488,BT-474,ACH-000927,CVCL_0179,Breast,MAPK1,Het,Missense,p.H61Q,,Oncogene
+489,BT-474,ACH-000927,CVCL_0179,Breast,PIK3CA,Het,Missense,p.K111N,GoF,Oncogene
+490,BT-474,ACH-000927,CVCL_0179,Breast,TGFBR2,Het,Missense,p.M36I,,Suppressor
+491,BT-474,ACH-000927,CVCL_0179,Breast,TP53,Hom,Missense,p.E285K,LoF,Suppressor
+492,BT-474,ACH-000927,CVCL_0179,Breast,WNK2,Het,Missense,p.E398Q,,Suppressor
+493,SW48,ACH-000958,CVCL_1724,Bowel,ACVR2A,Hom,Frameshift,p.K437fs,LoF,Suppressor
+494,SW48,ACH-000958,CVCL_1724,Bowel,APC,Het,Missense,p.R2714C,,Suppressor
+495,SW48,ACH-000958,CVCL_1724,Bowel,ARID1A,Het,Frameshift,p.A339fs,LoF,Suppressor
+496,SW48,ACH-000958,CVCL_1724,Bowel,B2M,Het,Stopgain,p.Q22*,LoF,Suppressor
+497,SW48,ACH-000958,CVCL_1724,Bowel,B2M,Het,Frameshift,p.V69fs,LoF,Suppressor
+498,SW48,ACH-000958,CVCL_1724,Bowel,BRCA2,Het,Frameshift,p.K1691fs,LoF,Suppressor
+499,SW48,ACH-000958,CVCL_1724,Bowel,BRCA2,Het,Frameshift,p.N1784fs,LoF,Suppressor
+500,SW48,ACH-000958,CVCL_1724,Bowel,CTNNB1,Het,Missense,p.S33Y,GoF,Oncogene
+501,SW48,ACH-000958,CVCL_1724,Bowel,EGFR,Het,Missense,p.G674S,GoF,Oncogene
+502,SW48,ACH-000958,CVCL_1724,Bowel,EP300,Het,Frameshift,p.M1470fs,LoF,Suppressor
+503,SW48,ACH-000958,CVCL_1724,Bowel,EP300,Het,Missense,p.T594M,LoF,Suppressor
+504,SW48,ACH-000958,CVCL_1724,Bowel,FBXW7,Het,Frameshift,p.S588fs,LoF,Suppressor
+505,SW48,ACH-000958,CVCL_1724,Bowel,KMT2D,Het,Stopgain,p.R4904*,LoF,Suppressor
+506,SW48,ACH-000958,CVCL_1724,Bowel,KMT2D,Het,Frameshift,p.R755fs,LoF,Suppressor
+507,SW48,ACH-000958,CVCL_1724,Bowel,MAP2K1,Het,Missense,p.D175G,,Oncogene
+508,SW48,ACH-000958,CVCL_1724,Bowel,MAP2K1,Het,Missense,p.Q56P,GoF,Oncogene
+509,SW48,ACH-000958,CVCL_1724,Bowel,PIK3CA,Het,Missense,p.G914R,GoF,Oncogene
+510,SW48,ACH-000958,CVCL_1724,Bowel,RNF43,Het,Frameshift,p.G659fs,LoF,Suppressor
+511,SW48,ACH-000958,CVCL_1724,Bowel,RNF43,Het,Frameshift,p.V299fs,LoF,Suppressor
+512,SW48,ACH-000958,CVCL_1724,Bowel,SETD1B,Hom,Frameshift,p.H8fs,LoF,Suppressor
+513,SW48,ACH-000958,CVCL_1724,Bowel,SMARCA4,Het,Missense,p.A703V,,Suppressor
+514,SW48,ACH-000958,CVCL_1724,Bowel,TGFBR2,Hom,Frameshift,p.K128fs,LoF,Suppressor
+515,SW48,ACH-000958,CVCL_1724,Bowel,ZFHX3,Het,Frameshift,p.A3407fs,LoF,Suppressor
+516,LS411N,ACH-000985,CVCL_1385,Bowel,ACVR2A,Hom,Frameshift,p.K437fs,LoF,Suppressor
+517,LS411N,ACH-000985,CVCL_1385,Bowel,APC,Het,Stopgain,p.Q789*,LoF,Suppressor
+518,LS411N,ACH-000985,CVCL_1385,Bowel,APC,Het,Frameshift,p.T1556fs,LoF,Suppressor
+519,LS411N,ACH-000985,CVCL_1385,Bowel,ARID1A,Het,Frameshift,p.P1326fs,LoF,Suppressor
+520,LS411N,ACH-000985,CVCL_1385,Bowel,BRAF,Het,Missense,p.V600E,GoF,Oncogene
+521,LS411N,ACH-000985,CVCL_1385,Bowel,BRCA2,Het,Missense,p.E3111K,LoF,Suppressor
+522,LS411N,ACH-000985,CVCL_1385,Bowel,CHEK2,Het,Missense,p.P85H,,Suppressor
+523,LS411N,ACH-000985,CVCL_1385,Bowel,EP300,Het,Frameshift,p.H2324fs,LoF,Suppressor
+524,LS411N,ACH-000985,CVCL_1385,Bowel,ERBB2,Het,Missense,p.E744K,,Oncogene
+525,LS411N,ACH-000985,CVCL_1385,Bowel,FBXW7,Het,Missense,p.R425H,LoF,Suppressor
+526,LS411N,ACH-000985,CVCL_1385,Bowel,GNAS,Het,Missense,p.R160C,,Oncogene
+527,LS411N,ACH-000985,CVCL_1385,Bowel,GNAS,Het,Missense,p.R356C,,Oncogene
+528,LS411N,ACH-000985,CVCL_1385,Bowel,HNF1A,Het,Missense,p.L408I,LoF,Suppressor
+529,LS411N,ACH-000985,CVCL_1385,Bowel,KMT2D,Het,Missense,p.E1018D,,Suppressor
+530,LS411N,ACH-000985,CVCL_1385,Bowel,KMT2D,Het,Missense,p.G4437V,LoF,Suppressor
+531,LS411N,ACH-000985,CVCL_1385,Bowel,KMT2D,Het,Frameshift,p.P853fs,LoF,Suppressor
+532,LS411N,ACH-000985,CVCL_1385,Bowel,MAPK3,Het,Missense,p.S172C,,Oncogene
+533,LS411N,ACH-000985,CVCL_1385,Bowel,MET,Het,Missense,p.T86I,,Oncogene
+534,LS411N,ACH-000985,CVCL_1385,Bowel,NF1,Het,Missense,p.T2784I,,Suppressor
+535,LS411N,ACH-000985,CVCL_1385,Bowel,PTEN,Het,Frameshift,p.C105fs,LoF,Suppressor
+536,LS411N,ACH-000985,CVCL_1385,Bowel,PTEN,Het,Frameshift,p.K164fs,LoF,Suppressor
+537,LS411N,ACH-000985,CVCL_1385,Bowel,RNF43,Het,Frameshift,p.G659fs,LoF,Suppressor
+538,LS411N,ACH-000985,CVCL_1385,Bowel,SETD1B,Hom,Frameshift,p.H8fs,LoF,Suppressor
+539,LS411N,ACH-000985,CVCL_1385,Bowel,SETD1B,Het,Frameshift,p.K42fs,LoF,Suppressor
+540,LS411N,ACH-000985,CVCL_1385,Bowel,SETD1B,Het,Missense,p.V65A,,Suppressor
+541,LS411N,ACH-000985,CVCL_1385,Bowel,SETD1B,Het,Missense,p.V723A,LoF,Suppressor
+542,LS411N,ACH-000985,CVCL_1385,Bowel,TP53,Hom,Stopgain,p.Y126*,LoF,Suppressor
+543,LS411N,ACH-000985,CVCL_1385,Bowel,WNK2,Het,Splice_site,p.S612S,LoF,Suppressor
+544,LS411N,ACH-000985,CVCL_1385,Bowel,WNK2,Het,Splice_site,,LoF,Suppressor
+545,LS411N,ACH-000985,CVCL_1385,Bowel,ZFHX3,Het,Missense,p.C3029Y,LoF,Suppressor
+546,LS411N,ACH-000985,CVCL_1385,Bowel,ZFHX3,Het,Missense,p.P802L,,Suppressor
+547,HOP62,ACH-000861,CVCL_1285,Lung,B2M,Het,Missense,p.E70Q,,Suppressor
+548,HOP62,ACH-000861,CVCL_1285,Lung,KRAS,Het,Missense,p.G12C,GoF,Oncogene
+549,HOP62,ACH-000861,CVCL_1285,Lung,MSH6,Het,Missense,p.E221D,,Suppressor
+550,HOP62,ACH-000861,CVCL_1285,Lung,POLE,Het,Missense,p.K604N,,Suppressor
+551,HOP62,ACH-000861,CVCL_1285,Lung,RAF1,Het,Missense,p.R143Q,,Oncogene
+552,HOP62,ACH-000861,CVCL_1285,Lung,TERT,Het,Promoter,1-124C>T,GoF,Oncogene
+553,HOP62,ACH-000861,CVCL_1285,Lung,TP53,Hom,Splice_site,,LoF,Suppressor
+554,J82,ACH-000396,CVCL_0359,Bladder/Urinary Tract,APC,Het,Missense,p.S770P,,Suppressor
+555,J82,ACH-000396,CVCL_0359,Bladder/Urinary Tract,ERBB2,Het,Missense,p.R678Q,GoF,Oncogene
+556,J82,ACH-000396,CVCL_0359,Bladder/Urinary Tract,FGFR3,Het,Missense,p.K651E,GoF,Oncogene
+557,J82,ACH-000396,CVCL_0359,Bladder/Urinary Tract,PIK3CA,Het,Missense,p.P124L,,Oncogene
+558,J82,ACH-000396,CVCL_0359,Bladder/Urinary Tract,PTEN,Hom,Frameshift,p.N212fs,LoF,Suppressor
+559,J82,ACH-000396,CVCL_0359,Bladder/Urinary Tract,RB1,Hom,Splice_site,,LoF,Suppressor
+560,J82,ACH-000396,CVCL_0359,Bladder/Urinary Tract,TERT,,Promoter,1-124C>T,GoF,Oncogene
+561,J82,ACH-000396,CVCL_0359,Bladder/Urinary Tract,TP53,Het,Missense,p.E271K,LoF,Suppressor
+562,J82,ACH-000396,CVCL_0359,Bladder/Urinary Tract,TP53,Het,Missense,p.K320N,LoF,Suppressor
+563,CCF-STTG1,ACH-000329,CVCL_1118,CNS/Brain,ARID1A,Het,Missense,p.P1144T,,Suppressor
+564,CCF-STTG1,ACH-000329,CVCL_1118,CNS/Brain,PTEN,Hom,Missense,p.L112R,LoF,Suppressor
+565,CCF-STTG1,ACH-000329,CVCL_1118,CNS/Brain,PTPN11,Het,Missense,p.R498W,GoF,Oncogene
+566,BT-20,ACH-000536,CVCL_0178,Breast,BRCA2,Hom,Missense,p.T3357R,,Suppressor
+567,BT-20,ACH-000536,CVCL_0178,Breast,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+568,BT-20,ACH-000536,CVCL_0178,Breast,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+569,BT-20,ACH-000536,CVCL_0178,Breast,EGFR,,Gain,GAIN,GoF,Oncogene
+570,BT-20,ACH-000536,CVCL_0178,Breast,NRAS,,Gain,GAIN,GoF,Oncogene
+571,BT-20,ACH-000536,CVCL_0178,Breast,PIK3CA,Het,Missense,p.H1047R,GoF,Oncogene
+572,BT-20,ACH-000536,CVCL_0178,Breast,PIK3CA,Het,Missense,p.P539R,GoF,Oncogene
+573,BT-20,ACH-000536,CVCL_0178,Breast,RB1,Hom,Missense,p.I388S,LoF,Suppressor
+574,BT-20,ACH-000536,CVCL_0178,Breast,RB1,Het,Missense,p.P515L,LoF,Suppressor
+575,BT-20,ACH-000536,CVCL_0178,Breast,TP53,Hom,Missense,p.K132Q,LoF,Suppressor
+576,DU4475,ACH-000258,CVCL_1183,Breast,APC,Hom,Stopgain,p.E1577*,LoF,Suppressor
+577,DU4475,ACH-000258,CVCL_1183,Breast,BRAF,Het,Missense,p.V600E,GoF,Oncogene
+578,DU4475,ACH-000258,CVCL_1183,Breast,RB1,Hom,Deletion,DEL,LoF,Suppressor
+579,DU4475,ACH-000258,CVCL_1183,Breast,SETD1B,Het,Missense,p.Q1402R,,Suppressor
+580,DU4475,ACH-000258,CVCL_1183,Breast,ZFHX3,Het,Missense,p.A2398D,,Suppressor
+581,LS 180,ACH-000957,CVCL_0397,Bowel,ACVR2A,Hom,Frameshift,p.K437fs,LoF,Suppressor
+582,LS 180,ACH-000957,CVCL_0397,Bowel,APC,Het,Missense,p.R1788C,,Suppressor
+583,LS 180,ACH-000957,CVCL_0397,Bowel,ARID1A,Het,Frameshift,p.K1094fs,LoF,Suppressor
+584,LS 180,ACH-000957,CVCL_0397,Bowel,BRAF,Het,Missense,p.D211G,,Oncogene
+585,LS 180,ACH-000957,CVCL_0397,Bowel,BRCA2,Het,Frameshift,p.T3033fs,LoF,Suppressor
+586,LS 180,ACH-000957,CVCL_0397,Bowel,CTNNB1,Hom,Missense,p.S45F,GoF,Oncogene
+587,LS 180,ACH-000957,CVCL_0397,Bowel,EP300,Het,Missense,p.G30V,,Suppressor
+588,LS 180,ACH-000957,CVCL_0397,Bowel,HNF1A,Het,Frameshift,p.P291fs,LoF,Suppressor
+589,LS 180,ACH-000957,CVCL_0397,Bowel,JAK1,Het,Missense,p.R681W,,Oncogene
+590,LS 180,ACH-000957,CVCL_0397,Bowel,KRAS,Het,Missense,p.G12D,GoF,Oncogene
+591,LS 180,ACH-000957,CVCL_0397,Bowel,PIK3CA,Het,Missense,p.H1047R,GoF,Oncogene
+592,LS 180,ACH-000957,CVCL_0397,Bowel,PRDM2,Het,Frameshift,p.V1490fs,LoF,Suppressor
+593,LS 180,ACH-000957,CVCL_0397,Bowel,PTEN,Het,Missense,p.I67K,LoF,Suppressor
+594,LS 180,ACH-000957,CVCL_0397,Bowel,RNF43,Het,Missense,p.K108E,,Suppressor
+595,LS 180,ACH-000957,CVCL_0397,Bowel,RNF43,Het,Missense,p.R389H,,Suppressor
+596,LS 180,ACH-000957,CVCL_0397,Bowel,SETD1B,Hom,Frameshift,p.H8fs,LoF,Suppressor
+597,LS 180,ACH-000957,CVCL_0397,Bowel,SETD1B,Het,Frameshift,p.Q1589fs,LoF,Suppressor
+598,LS 180,ACH-000957,CVCL_0397,Bowel,STK11,Het,Missense,p.I46T,LoF,Suppressor
+599,LS 180,ACH-000957,CVCL_0397,Bowel,TGFBR2,Hom,Frameshift,p.K128fs,LoF,Suppressor
+600,LS 180,ACH-000957,CVCL_0397,Bowel,WNK2,Het,Missense,p.A1529T,,Suppressor
+601,LS 180,ACH-000957,CVCL_0397,Bowel,WNK2,Het,Frameshift,p.D1638fs,LoF,Suppressor
+602,LS 180,ACH-000957,CVCL_0397,Bowel,ZFHX3,Het,Frameshift,p.A3407fs,LoF,Suppressor
+603,LS 180,ACH-000957,CVCL_0397,Bowel,ZFHX3,Het,Missense,p.D3699G,LoF,Suppressor
+604,COLO 201,ACH-000253,CVCL_1987,Bowel,APC,Hom,Frameshift,p.T1556fs,LoF,Suppressor
+605,COLO 201,ACH-000253,CVCL_1987,Bowel,BRAF,Het,Missense,p.V600E,GoF,Oncogene
+606,COLO 201,ACH-000253,CVCL_1987,Bowel,CTNNB1,Hom,Missense,p.N287S,,Oncogene
+607,COLO 201,ACH-000253,CVCL_1987,Bowel,GNAS,Het,Missense,p.S95I,,Oncogene
+608,COLO 201,ACH-000253,CVCL_1987,Bowel,MTOR,Het,Missense,p.P1193L,,Oncogene
+609,COLO 201,ACH-000253,CVCL_1987,Bowel,TP53,Hom,Frameshift,p.Y103fs,LoF,Suppressor
+610,COLO 201,ACH-000253,CVCL_1987,Bowel,TP53,Hom,Frameshift,p.Y107fs,LoF,Suppressor
+611,HepG2/C3A,ACH-001021,CVCL_1098,Liver,ATM,Het,Missense,p.V2906I,,Suppressor
+612,HepG2/C3A,ACH-001021,CVCL_1098,Liver,EGFR,Het,Missense,p.C186S,,Oncogene
+613,HepG2/C3A,ACH-001021,CVCL_1098,Liver,ERBB3,Het,Missense,p.R421K,,Oncogene
+614,HepG2/C3A,ACH-001021,CVCL_1098,Liver,NRAS,Het,Missense,p.Q61L,GoF,Oncogene
+615,HepG2/C3A,ACH-001021,CVCL_1098,Liver,TERT,,Promoter,1-124C>T,GoF,Oncogene
+616,RPMI-7951,ACH-000348,CVCL_1666,Skin,BRAF,Het,Missense,p.V600E,GoF,Oncogene
+617,RPMI-7951,ACH-000348,CVCL_1666,Skin,CDKN2A,Hom,Missense,p.L16R,LoF,Suppressor
+618,RPMI-7951,ACH-000348,CVCL_1666,Skin,PTEN,Hom,Deletion,DEL,LoF,Suppressor
+619,RPMI-7951,ACH-000348,CVCL_1666,Skin,TERT,,Promoter,242_243CC>TT,,Oncogene
+620,RPMI-7951,ACH-000348,CVCL_1666,Skin,TP53,Hom,Stopgain,p.S166*,LoF,Suppressor
+621,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,ACVR2A,Het,Frameshift,p.K437fs,LoF,Suppressor
+622,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,ARID1A,Het,Frameshift,p.Y551fs,LoF,Suppressor
+623,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,CDKN2B,Het,Missense,p.A23V,,Suppressor
+624,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,FBXW7,Het,Missense,p.G104V,,Suppressor
+625,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,KMT2D,Het,Missense,p.G4397V,,Suppressor
+626,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,KMT2D,Het,Missense,p.P4209Q,,Suppressor
+627,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,KRAS,Het,Missense,p.G13C,GoF,Oncogene
+628,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,MSH6,Het,Missense,p.A35T,,Suppressor
+629,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,NF1,Het,Frameshift,p.P678fs,LoF,Suppressor
+630,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,PIK3CA,Het,Missense,p.H1047Y,GoF,Oncogene
+631,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,POLE,Het,Missense,p.D2166N,,Suppressor
+632,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,POLE,Het,Missense,p.S828Y,LoF,Suppressor
+633,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,PRDM2,Het,Missense,p.E278D,,Suppressor
+634,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,PTEN,Het,Frameshift,p.K267fs,LoF,Suppressor
+635,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,RNF43,Het,Missense,p.C298Y,LoF,Suppressor
+636,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,RNF43,Het,Frameshift,p.G659fs,LoF,Suppressor
+637,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,SETD1B,Het,Missense,p.E1078D,,Suppressor
+638,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,SMARCA4,Het,Stopgain,p.E419*,LoF,Suppressor
+639,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,STK11,Hom,Frameshift,p.P281fs,LoF,Suppressor
+640,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,WNK2,Het,Stopgain,p.G1139*,LoF,Suppressor
+641,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,WNK2,Het,Missense,p.L71P,,Suppressor
+642,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,WNK2,Het,Missense,p.S1520N,,Suppressor
+643,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,ZFHX3,Het,Frameshift,p.A3407fs,LoF,Suppressor
+644,TOV-21G,ACH-000885,CVCL_3613,Ovary/Fallopian Tube,ZFHX3,Het,Missense,p.P2787L,,Suppressor
+645,Panc 10.05,ACH-000060,CVCL_1639,Pancreas,EP300,Hom,Frameshift,p.K1488fs,LoF,Suppressor
+646,Panc 10.05,ACH-000060,CVCL_1639,Pancreas,KRAS,Het,Missense,p.G12D,GoF,Oncogene
+647,Panc 10.05,ACH-000060,CVCL_1639,Pancreas,NF1,Het,Missense,p.G1417S,LoF,Suppressor
+648,Panc 10.05,ACH-000060,CVCL_1639,Pancreas,RNF43,Hom,Frameshift,p.M18fs,LoF,Suppressor
+649,Panc 10.05,ACH-000060,CVCL_1639,Pancreas,TGFBR2,Hom,Frameshift,p.S156fs,LoF,Suppressor
+650,Panc 10.05,ACH-000060,CVCL_1639,Pancreas,TP53,Hom,Missense,p.I255N,LoF,Suppressor
+651,HCT116,ACH-000971,CVCL_0291,Bowel,ABL1,Het,Missense,p.Y276C,,Oncogene
+652,HCT116,ACH-000971,CVCL_0291,Bowel,ACVR2A,Hom,Frameshift,p.K437fs,LoF,Suppressor
+653,HCT116,ACH-000971,CVCL_0291,Bowel,ATM,Het,Missense,p.A1127V,,Suppressor
+654,HCT116,ACH-000971,CVCL_0291,Bowel,BRCA2,Het,Frameshift,p.I2675fs,LoF,Suppressor
+655,HCT116,ACH-000971,CVCL_0291,Bowel,CDKN2A,Het,Frameshift,p.E33fs,LoF,Suppressor
+656,HCT116,ACH-000971,CVCL_0291,Bowel,CDKN2A,Het,Frameshift,p.R24fs,LoF,Suppressor
+657,HCT116,ACH-000971,CVCL_0291,Bowel,CHEK2,Het,Missense,p.L355P,LoF,Suppressor
+658,HCT116,ACH-000971,CVCL_0291,Bowel,CTNNB1,Het,Missense,p.S45NA,,Oncogene
+659,HCT116,ACH-000971,CVCL_0291,Bowel,EP300,Het,Frameshift,p.M1470fs,LoF,Suppressor
+660,HCT116,ACH-000971,CVCL_0291,Bowel,EP300,Het,Frameshift,p.N1700fs,LoF,Suppressor
+661,HCT116,ACH-000971,CVCL_0291,Bowel,GNAS,Het,Missense,p.Y318C,,Oncogene
+662,HCT116,ACH-000971,CVCL_0291,Bowel,HNF1A,Het,Frameshift,p.P291fs,LoF,Suppressor
+663,HCT116,ACH-000971,CVCL_0291,Bowel,KMT2D,Het,Frameshift,p.R2443fs,LoF,Suppressor
+664,HCT116,ACH-000971,CVCL_0291,Bowel,KMT2D,Het,Missense,p.V160M,LoF,Suppressor
+665,HCT116,ACH-000971,CVCL_0291,Bowel,KRAS,Het,Missense,p.G13D,GoF,Oncogene
+666,HCT116,ACH-000971,CVCL_0291,Bowel,NF1,Het,Missense,p.P388T,LoF,Suppressor
+667,HCT116,ACH-000971,CVCL_0291,Bowel,PIK3CA,Het,Missense,p.H1047R,GoF,Oncogene
+668,HCT116,ACH-000971,CVCL_0291,Bowel,PRDM2,Hom,Frameshift,p.V1490fs,LoF,Suppressor
+669,HCT116,ACH-000971,CVCL_0291,Bowel,SETD1B,Hom,Frameshift,p.H8fs,LoF,Suppressor
+670,HCT116,ACH-000971,CVCL_0291,Bowel,SETD1B,Het,Frameshift,p.R1623fs,LoF,Suppressor
+671,HCT116,ACH-000971,CVCL_0291,Bowel,SETD1B,Het,Frameshift,p.S1055fs,LoF,Suppressor
+672,HCT116,ACH-000971,CVCL_0291,Bowel,SMARCA4,Het,Missense,p.L1163P,LoF,Suppressor
+673,HCT116,ACH-000971,CVCL_0291,Bowel,SMARCA4,Het,Frameshift,p.S122fs,LoF,Suppressor
+674,HCT116,ACH-000971,CVCL_0291,Bowel,TGFBR2,Hom,Frameshift,p.K128fs,LoF,Suppressor
+675,HCT116,ACH-000971,CVCL_0291,Bowel,WNK2,Het,Frameshift,p.D1638fs,LoF,Suppressor
+676,HCT116,ACH-000971,CVCL_0291,Bowel,WNK2,Het,Frameshift,p.H758fs,LoF,Suppressor
+677,HCT116,ACH-000971,CVCL_0291,Bowel,ZFHX3,Het,Missense,p.G3519S,,Suppressor
+678,Panc 03.27,ACH-000139,CVCL_1635,Pancreas,ATM,Het,Missense,p.E2351G,LoF,Suppressor
+679,Panc 03.27,ACH-000139,CVCL_1635,Pancreas,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+680,Panc 03.27,ACH-000139,CVCL_1635,Pancreas,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+681,Panc 03.27,ACH-000139,CVCL_1635,Pancreas,KRAS,Het,Missense,p.G12V,GoF,Oncogene
+682,Panc 03.27,ACH-000139,CVCL_1635,Pancreas,TP53,Hom,Splice_site,375+5G>T,LoF,Suppressor
+683,Panc 03.27,ACH-000139,CVCL_1635,Pancreas,ZFHX3,Hom,Missense,p.P802A,,Suppressor
+684,Hs 852.T,ACH-000274,CVCL_0950,Skin,CCND1,,Gain,GAIN,GoF,Oncogene
+685,Hs 852.T,ACH-000274,CVCL_0950,Skin,EGFR,,Gain,GAIN,GoF,Oncogene
+686,Hs 852.T,ACH-000274,CVCL_0950,Skin,FGFR3,,Gain,GAIN,GoF,Oncogene
+687,Hs 852.T,ACH-000274,CVCL_0950,Skin,NRAS,Het,Missense,p.G12V,GoF,Oncogene
+688,Hs 852.T,ACH-000274,CVCL_0950,Skin,POLE,Het,Missense,p.R2159H,,Suppressor
+689,Hs 852.T,ACH-000274,CVCL_0950,Skin,TERT,,Gain,GAIN,GoF,Oncogene
+690,AGS,ACH-000880,CVCL_0139,Esophagus/Stomach,CDKN2A,Het,Missense,p.D23P,,Suppressor
+691,AGS,ACH-000880,CVCL_0139,Esophagus/Stomach,CDKN2B,Het,Missense,p.D76A,LoF,Suppressor
+692,AGS,ACH-000880,CVCL_0139,Esophagus/Stomach,CTNNB1,Het,Missense,p.G34E,GoF,Oncogene
+693,AGS,ACH-000880,CVCL_0139,Esophagus/Stomach,EP300,Het,Stopgain,p.E1025*,LoF,Suppressor
+694,AGS,ACH-000880,CVCL_0139,Esophagus/Stomach,EP300,Het,Stopgain,p.E643*,LoF,Suppressor
+695,AGS,ACH-000880,CVCL_0139,Esophagus/Stomach,EP300,Het,Missense,p.K350R,LoF,Suppressor
+696,AGS,ACH-000880,CVCL_0139,Esophagus/Stomach,GNAS,Het,Missense,p.F219V,,Oncogene
+697,AGS,ACH-000880,CVCL_0139,Esophagus/Stomach,KRAS,Het,Missense,p.G12D,GoF,Oncogene
+698,AGS,ACH-000880,CVCL_0139,Esophagus/Stomach,NF1,Het,Missense,p.E1438G,LoF,Suppressor
+699,AGS,ACH-000880,CVCL_0139,Esophagus/Stomach,PIK3CA,Het,Missense,p.E453K,GoF,Oncogene
+700,AGS,ACH-000880,CVCL_0139,Esophagus/Stomach,PIK3CA,Het,Missense,p.E545A,GoF,Oncogene
+701,AGS,ACH-000880,CVCL_0139,Esophagus/Stomach,PRDM2,Het,Missense,p.P1326S,,Suppressor
+702,AGS,ACH-000880,CVCL_0139,Esophagus/Stomach,SOS1,Het,Missense,p.E783G,,Oncogene
+703,AGS,ACH-000880,CVCL_0139,Esophagus/Stomach,XPO1,Het,Missense,p.C585F,,Oncogene
+704,AGS,ACH-000880,CVCL_0139,Esophagus/Stomach,ZFHX3,Het,Missense,p.F3474L,LoF,Suppressor
+705,NCI-N87,ACH-000427,CVCL_1603,Esophagus/Stomach,ERBB2,,Gain,GAIN,GoF,Oncogene
+706,NCI-N87,ACH-000427,CVCL_1603,Esophagus/Stomach,ERBB3,,Missense,p.T757K,,Oncogene
+707,NCI-N87,ACH-000427,CVCL_1603,Esophagus/Stomach,KMT2D,Het,Missense,p.S537F,,Suppressor
+708,NCI-N87,ACH-000427,CVCL_1603,Esophagus/Stomach,LASP1,,Gain,GAIN,GoF,Oncogene
+709,NCI-N87,ACH-000427,CVCL_1603,Esophagus/Stomach,SETD1B,Het,Missense,p.Q1589P,,Suppressor
+710,NCI-N87,ACH-000427,CVCL_1603,Esophagus/Stomach,SMAD4,Hom,Deletion,DEL,LoF,Suppressor
+711,NCI-N87,ACH-000427,CVCL_1603,Esophagus/Stomach,TP53,Hom,Missense,p.R248Q,LoF,Suppressor
+712,SNU-5,ACH-000303,CVCL_0078,Esophagus/Stomach,ARID1A,Hom,Deletion,DEL,LoF,Suppressor
+713,SNU-5,ACH-000303,CVCL_0078,Esophagus/Stomach,BRCA2,Het,Missense,p.E2292A,LoF,Suppressor
+714,SNU-5,ACH-000303,CVCL_0078,Esophagus/Stomach,CDKN2A,Hom,Stopgain,p.R29*,LoF,Suppressor
+715,SNU-5,ACH-000303,CVCL_0078,Esophagus/Stomach,MET,,Gain,GAIN,GoF,Oncogene
+716,SNU-5,ACH-000303,CVCL_0078,Esophagus/Stomach,STK11,Het,Missense,p.P149L,LoF,Suppressor
+717,SNU-5,ACH-000303,CVCL_0078,Esophagus/Stomach,TP53,,Missense,p.G262_269NA,,Suppressor
+718,SNU-5,ACH-000303,CVCL_0078,Esophagus/Stomach,TP53,Het,Splice_site,,LoF,Suppressor
+719,SNU-5,ACH-000303,CVCL_0078,Esophagus/Stomach,ZFHX3,Hom,Missense,p.S1608G,,Suppressor
+720,HEC-1-A,ACH-000954,CVCL_0293,Uterus,ACVR2A,Het,Missense,p.A349T,,Suppressor
+721,HEC-1-A,ACH-000954,CVCL_0293,Uterus,ACVR2A,Het,Missense,p.L329M,LoF,Suppressor
+722,HEC-1-A,ACH-000954,CVCL_0293,Uterus,ARID1A,Het,Missense,p.G1544C,,Suppressor
+723,HEC-1-A,ACH-000954,CVCL_0293,Uterus,ARID1A,Het,Stopgain,p.Q1618*,LoF,Suppressor
+724,HEC-1-A,ACH-000954,CVCL_0293,Uterus,ARID1A,Het,Stopgain,p.Q1898*,LoF,Suppressor
+725,HEC-1-A,ACH-000954,CVCL_0293,Uterus,ARID1A,Het,Missense,p.Q404H,,Suppressor
+726,HEC-1-A,ACH-000954,CVCL_0293,Uterus,ATM,Het,Missense,p.P2353H,LoF,Suppressor
+727,HEC-1-A,ACH-000954,CVCL_0293,Uterus,BRAF,Het,Missense,p.R682Q,,Oncogene
+728,HEC-1-A,ACH-000954,CVCL_0293,Uterus,EP300,Het,Missense,p.D1399N,LoF,Suppressor
+729,HEC-1-A,ACH-000954,CVCL_0293,Uterus,ERBB2,Het,Missense,p.T798I,GoF,Oncogene
+730,HEC-1-A,ACH-000954,CVCL_0293,Uterus,ERBB2,Het,Missense,p.V842I,GoF,Oncogene
+731,HEC-1-A,ACH-000954,CVCL_0293,Uterus,KMT2D,Het,Missense,p.P2641H,,Suppressor
+732,HEC-1-A,ACH-000954,CVCL_0293,Uterus,KRAS,Het,Missense,p.G12D,GoF,Oncogene
+733,HEC-1-A,ACH-000954,CVCL_0293,Uterus,MET,Het,Missense,p.V1350D,,Oncogene
+734,HEC-1-A,ACH-000954,CVCL_0293,Uterus,MSH6,Het,Frameshift,p.F1088fs,LoF,Suppressor
+735,HEC-1-A,ACH-000954,CVCL_0293,Uterus,MSH6,Het,Splice_site,,LoF,Suppressor
+736,HEC-1-A,ACH-000954,CVCL_0293,Uterus,MTOR,Het,Missense,p.R2254M,,Oncogene
+737,HEC-1-A,ACH-000954,CVCL_0293,Uterus,NF1,Het,Missense,p.L792I,,Suppressor
+738,HEC-1-A,ACH-000954,CVCL_0293,Uterus,PIK3CA,Het,Missense,p.G1049R,GoF,Oncogene
+739,HEC-1-A,ACH-000954,CVCL_0293,Uterus,PMS2,Hom,Stopgain,p.R802*,LoF,Suppressor
+740,HEC-1-A,ACH-000954,CVCL_0293,Uterus,PRDM2,Het,Missense,p.N1324I,,Suppressor
+741,HEC-1-A,ACH-000954,CVCL_0293,Uterus,RNF43,Het,Frameshift,p.G659fs,LoF,Suppressor
+742,HEC-1-A,ACH-000954,CVCL_0293,Uterus,SETD1B,Het,Frameshift,p.H8fs,LoF,Suppressor
+743,HEC-1-A,ACH-000954,CVCL_0293,Uterus,SETD1B,Het,Frameshift,p.P1361fs,LoF,Suppressor
+744,HEC-1-A,ACH-000954,CVCL_0293,Uterus,SMAD4,Het,Missense,p.L344S,LoF,Suppressor
+745,HEC-1-A,ACH-000954,CVCL_0293,Uterus,SMARCA4,Het,Frameshift,p.G271fs,LoF,Suppressor
+746,HEC-1-A,ACH-000954,CVCL_0293,Uterus,TP53,Hom,Missense,p.R248Q,LoF,Suppressor
+747,HEC-1-A,ACH-000954,CVCL_0293,Uterus,ZFHX3,Het,Stopgain,p.R1114*,LoF,Suppressor
+748,HEC-1-A,ACH-000954,CVCL_0293,Uterus,ZFHX3,Het,Frameshift,p.S2505fs,LoF,Suppressor
+749,C-33 A,ACH-001333,CVCL_1094,Cervix,ARID1A,Het,Frameshift,p.Q758fs,LoF,Suppressor
+750,C-33 A,ACH-001333,CVCL_1094,Cervix,BRCA2,Het,Missense,p.A3029T,,Suppressor
+751,C-33 A,ACH-001333,CVCL_1094,Cervix,HNF1A,Het,Frameshift,p.P291fs,LoF,Suppressor
+752,C-33 A,ACH-001333,CVCL_1094,Cervix,KMT2D,Het,Frameshift,p.A2119fs,LoF,Suppressor
+753,C-33 A,ACH-001333,CVCL_1094,Cervix,KMT2D,Het,Missense,p.R1614W,LoF,Suppressor
+754,C-33 A,ACH-001333,CVCL_1094,Cervix,KMT2D,Het,Missense,p.R1617W,LoF,Suppressor
+755,C-33 A,ACH-001333,CVCL_1094,Cervix,KMT2D,Het,Frameshift,p.V1244fs,LoF,Suppressor
+756,C-33 A,ACH-001333,CVCL_1094,Cervix,PIK3CA,Het,Missense,p.R88Q,GoF,Oncogene
+757,C-33 A,ACH-001333,CVCL_1094,Cervix,PTEN,Het,Stopgain,p.R130*,LoF,Suppressor
+758,C-33 A,ACH-001333,CVCL_1094,Cervix,PTEN,Het,Stopgain,p.R233*,LoF,Suppressor
+759,C-33 A,ACH-001333,CVCL_1094,Cervix,RB1,Hom,Splice_site,,LoF,Suppressor
+760,C-33 A,ACH-001333,CVCL_1094,Cervix,SETD1B,Het,Frameshift,p.H8fs,LoF,Suppressor
+761,C-33 A,ACH-001333,CVCL_1094,Cervix,SETD1B,Het,Missense,p.R980W,,Suppressor
+762,C-33 A,ACH-001333,CVCL_1094,Cervix,SETD1B,Het,Missense,p.T482M,,Suppressor
+763,C-33 A,ACH-001333,CVCL_1094,Cervix,SMARCA4,Het,Missense,p.M527T,LoF,Suppressor
+764,C-33 A,ACH-001333,CVCL_1094,Cervix,SMARCA4,Het,Missense,p.Q1248R,LoF,Suppressor
+765,C-33 A,ACH-001333,CVCL_1094,Cervix,SMARCA4,Het,Stopgain,p.Q1537*,LoF,Suppressor
+766,C-33 A,ACH-001333,CVCL_1094,Cervix,TP53,Hom,Missense,p.R273C,LoF,Suppressor
+767,C-33 A,ACH-001333,CVCL_1094,Cervix,WNK2,Het,Missense,p.A678T,,Suppressor
+768,C-33 A,ACH-001333,CVCL_1094,Cervix,WNK2,Het,Frameshift,p.D1638fs,LoF,Suppressor
+769,C-33 A,ACH-001333,CVCL_1094,Cervix,ZFHX3,Het,Frameshift,p.R1893fs,LoF,Suppressor
+770,SK-HEP-1,ACH-000361,CVCL_0525,Liver,BRAF,Het,Missense,p.V600E,GoF,Oncogene
+771,SK-HEP-1,ACH-000361,CVCL_0525,Liver,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+772,SK-HEP-1,ACH-000361,CVCL_0525,Liver,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+773,SK-HEP-1,ACH-000361,CVCL_0525,Liver,NF2,Het,Missense,p.I264V,,Suppressor
+774,SK-HEP-1,ACH-000361,CVCL_0525,Liver,SMARCA4,Hom,Stopgain,p.E1582*,LoF,Suppressor
+775,NCI-H1573,ACH-000916,CVCL_1478,Lung,CDKN2A,Het,Missense,p.D23P,,Suppressor
+776,NCI-H1573,ACH-000916,CVCL_1478,Lung,EGFR,,Gain,GAIN,GoF,Oncogene
+777,NCI-H1573,ACH-000916,CVCL_1478,Lung,ERBB3,Het,Missense,p.E332K,GoF,Oncogene
+778,NCI-H1573,ACH-000916,CVCL_1478,Lung,FBXW7,Het,Missense,p.V619L,,Suppressor
+779,NCI-H1573,ACH-000916,CVCL_1478,Lung,FBXW7,Het,Stopgain,p.W593*,LoF,Suppressor
+780,NCI-H1573,ACH-000916,CVCL_1478,Lung,KMT2D,Het,Missense,p.L2398P,,Suppressor
+781,NCI-H1573,ACH-000916,CVCL_1478,Lung,KMT2D,Het,Missense,p.V361F,,Suppressor
+782,NCI-H1573,ACH-000916,CVCL_1478,Lung,KRAS,Het,Missense,p.G12A,GoF,Oncogene
+783,NCI-H1573,ACH-000916,CVCL_1478,Lung,MET,,Gain,GAIN,GoF,Oncogene
+784,NCI-H1573,ACH-000916,CVCL_1478,Lung,NRAS,Het,Missense,p.Q61K,GoF,Oncogene
+785,NCI-H1573,ACH-000916,CVCL_1478,Lung,PIK3R1,Het,Stopgain,p.G71*,LoF,Suppressor
+786,NCI-H1573,ACH-000916,CVCL_1478,Lung,PTPN11,Het,Stopgain,p.R351*,,Oncogene
+787,NCI-H1573,ACH-000916,CVCL_1478,Lung,RNF43,Het,Missense,p.A605G,,Suppressor
+788,NCI-H1573,ACH-000916,CVCL_1478,Lung,SMARCA4,Hom,Stopgain,p.E1399*,LoF,Suppressor
+789,NCI-H1573,ACH-000916,CVCL_1478,Lung,STK11,Het,Missense,p.S216F,LoF,Suppressor
+790,NCI-H1573,ACH-000916,CVCL_1478,Lung,TP53,Hom,Missense,p.R248L,LoF,Suppressor
+791,SK-MEL-2,ACH-001190,CVCL_0069,Skin,CCND1,,Gain,GAIN,GoF,Oncogene
+792,SK-MEL-2,ACH-001190,CVCL_0069,Skin,EP300,Het,Missense,p.P989S,,Suppressor
+793,SK-MEL-2,ACH-001190,CVCL_0069,Skin,NRAS,Het,Missense,p.Q61R,GoF,Oncogene
+794,SK-MEL-2,ACH-001190,CVCL_0069,Skin,POLE,Het,Missense,p.T1052A,,Suppressor
+795,SK-MEL-2,ACH-001190,CVCL_0069,Skin,SETD1B,Het,Frameshift,p.L1255fs,LoF,Suppressor
+796,SK-MEL-2,ACH-001190,CVCL_0069,Skin,TERT,,Promoter,1-146C>T,GoF,Oncogene
+797,SK-MEL-2,ACH-001190,CVCL_0069,Skin,TP53,Hom,Missense,p.G245S,LoF,Suppressor
+798,SK-MEL-2,ACH-001190,CVCL_0069,Skin,ZFHX3,Het,Frameshift,p.H3611fs,LoF,Suppressor
+799,NCI-H1155,ACH-000980,CVCL_1456,Lung,APC,Het,Stopgain,p.R232*,LoF,Suppressor
+800,NCI-H1155,ACH-000980,CVCL_1456,Lung,EGFR,Het,Missense,p.R264G,,Oncogene
+801,NCI-H1155,ACH-000980,CVCL_1456,Lung,EP300,Hom,Splice_site,,LoF,Suppressor
+802,NCI-H1155,ACH-000980,CVCL_1456,Lung,KMT2D,Het,Missense,p.A3561D,,Suppressor
+803,NCI-H1155,ACH-000980,CVCL_1456,Lung,KMT2D,Het,Missense,p.V38M,,Suppressor
+804,NCI-H1155,ACH-000980,CVCL_1456,Lung,KRAS,Hom,Missense,p.Q61H,GoF,Oncogene
+805,NCI-H1155,ACH-000980,CVCL_1456,Lung,LASP1,Het,Missense,p.A209V,,Oncogene
+806,NCI-H1155,ACH-000980,CVCL_1456,Lung,MSH6,Hom,Stopgain,p.R911*,LoF,Suppressor
+807,NCI-H1155,ACH-000980,CVCL_1456,Lung,NF2,Het,Missense,p.A403T,,Suppressor
+808,NCI-H1155,ACH-000980,CVCL_1456,Lung,PIK3CA,Het,Missense,p.D843E,,Oncogene
+809,NCI-H1155,ACH-000980,CVCL_1456,Lung,PTEN,Hom,Stopgain,p.R233*,LoF,Suppressor
+810,NCI-H1155,ACH-000980,CVCL_1456,Lung,RB1,Het,Stopgain,p.R467*,LoF,Suppressor
+811,NCI-H1155,ACH-000980,CVCL_1456,Lung,SMAD4,Het,Frameshift,p.R38fs,LoF,Suppressor
+812,NCI-H1155,ACH-000980,CVCL_1456,Lung,SMARCA4,Het,Missense,p.R466L,,Suppressor
+813,NCI-H1155,ACH-000980,CVCL_1456,Lung,SMARCA4,Het,Missense,p.S1238P,LoF,Suppressor
+814,NCI-H1155,ACH-000980,CVCL_1456,Lung,TP53,Hom,Missense,p.R273H,LoF,Suppressor
+815,NCI-H1155,ACH-000980,CVCL_1456,Lung,ZFHX3,Het,Missense,p.A896T,,Suppressor
+816,NCI-H460,ACH-000463,CVCL_0459,Lung,ARID1A,Hom,Missense,p.LI1917del,,Suppressor
+817,NCI-H460,ACH-000463,CVCL_0459,Lung,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+818,NCI-H460,ACH-000463,CVCL_0459,Lung,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+819,NCI-H460,ACH-000463,CVCL_0459,Lung,KRAS,Hom,Missense,p.Q61H,GoF,Oncogene
+820,NCI-H460,ACH-000463,CVCL_0459,Lung,MAP2K1,Het,Missense,p.Y134C,,Oncogene
+821,NCI-H460,ACH-000463,CVCL_0459,Lung,MYC,,Gain,GAIN,GoF,Oncogene
+822,NCI-H460,ACH-000463,CVCL_0459,Lung,PIK3CA,Het,Missense,p.E545K,GoF,Oncogene
+823,NCI-H460,ACH-000463,CVCL_0459,Lung,STK11,Hom,Stopgain,p.Q37*,LoF,Suppressor
+824,NCI-H460,ACH-000463,CVCL_0459,Lung,ZFHX3,Het,Missense,p.P3675Q,,Suppressor
+825,NCI-H1299,ACH-000510,CVCL_0060,Lung,NRAS,Het,Missense,p.Q61K,GoF,Oncogene
+826,NCI-H1299,ACH-000510,CVCL_0060,Lung,SMARCA4,Hom,Splice_site,,LoF,Suppressor
+827,NCI-H1299,ACH-000510,CVCL_0060,Lung,SOS1,Het,Missense,p.Y215H,,Oncogene
+828,NCI-H1299,ACH-000510,CVCL_0060,Lung,TP53,Hom,Deletion,DEL,LoF,Suppressor
+829,NCI-H1299,ACH-000510,CVCL_0060,Lung,ZFHX3,Het,Missense,p.F3044V,LoF,Suppressor
+830,NCI-H661,ACH-000853,CVCL_1577,Lung,BRCA2,Het,Missense,p.G2584V,LoF,Suppressor
+831,NCI-H661,ACH-000853,CVCL_1577,Lung,CDKN2A,Hom,Splice_site,,LoF,Suppressor
+832,NCI-H661,ACH-000853,CVCL_1577,Lung,LASP1,Het,Stopgain,p.E48*,,Oncogene
+833,NCI-H661,ACH-000853,CVCL_1577,Lung,PTPN11,Het,Missense,p.N58S,,Oncogene
+834,NCI-H661,ACH-000853,CVCL_1577,Lung,SMARCA4,Hom,Frameshift,p.L1161fs,LoF,Suppressor
+835,NCI-H661,ACH-000853,CVCL_1577,Lung,TP53,Het,Missense,p.R158L,LoF,Suppressor
+836,NCI-H661,ACH-000853,CVCL_1577,Lung,TP53,Het,Missense,p.S215I,LoF,Suppressor
+837,NCI-H661,ACH-000853,CVCL_1577,Lung,WNK2,Hom,Frameshift,p.G64fs,LoF,Suppressor
+838,NCI-H661,ACH-000853,CVCL_1577,Lung,ZFHX3,Het,Missense,p.H2506P,,Suppressor
+839,NCI-H596,ACH-000628,CVCL_1571,Lung,KMT2D,Het,Missense,p.M4058V,,Suppressor
+840,NCI-H596,ACH-000628,CVCL_1571,Lung,PIK3CA,Het,Missense,p.E545K,GoF,Oncogene
+841,NCI-H596,ACH-000628,CVCL_1571,Lung,RB1,Hom,Frameshift,p.S182fs,LoF,Suppressor
+842,NCI-H596,ACH-000628,CVCL_1571,Lung,TGFBR2,Hom,Frameshift,p.S75fs,LoF,Suppressor
+843,NCI-H596,ACH-000628,CVCL_1571,Lung,TP53,Hom,Missense,p.G245C,LoF,Suppressor
+844,A-427,ACH-000757,CVCL_1055,Lung,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+845,A-427,ACH-000757,CVCL_1055,Lung,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+846,A-427,ACH-000757,CVCL_1055,Lung,CTNNB1,Hom,Missense,p.T41A,GoF,Oncogene
+847,A-427,ACH-000757,CVCL_1055,Lung,KRAS,Het,Missense,p.G12D,GoF,Oncogene
+848,A-427,ACH-000757,CVCL_1055,Lung,POLE,Hom,Missense,p.R37L,,Suppressor
+849,A-427,ACH-000757,CVCL_1055,Lung,SMARCA4,Het,Missense,p.A1307D,LoF,Suppressor
+850,Panc 08.13,ACH-000417,CVCL_1638,Pancreas,ATM,Het,Missense,p.F1234S,LoF,Suppressor
+851,Panc 08.13,ACH-000417,CVCL_1638,Pancreas,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+852,Panc 08.13,ACH-000417,CVCL_1638,Pancreas,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+853,Panc 08.13,ACH-000417,CVCL_1638,Pancreas,KRAS,Hom,Missense,p.G12D,GoF,Oncogene
+854,Panc 08.13,ACH-000417,CVCL_1638,Pancreas,SMAD4,Hom,Frameshift,p.C123fs,LoF,Suppressor
+855,CHP-212,ACH-000120,CVCL_1125,Peripheral Nervous System,NRAS,Het,Missense,p.Q61K,GoF,Oncogene
+856,H4,ACH-000389,CVCL_1239,CNS/Brain,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+857,H4,ACH-000389,CVCL_1239,CNS/Brain,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+858,H4,ACH-000389,CVCL_1239,CNS/Brain,PTEN,Hom,Deletion,DEL,LoF,Suppressor
+859,H4,ACH-000389,CVCL_1239,CNS/Brain,TERT,,Promoter,1-124C>T,GoF,Oncogene
+860,A498,ACH-000555,CVCL_1056,Kidney,APC,Het,Missense,p.C1270R,LoF,Suppressor
+861,A498,ACH-000555,CVCL_1056,Kidney,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+862,A498,ACH-000555,CVCL_1056,Kidney,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+863,A498,ACH-000555,CVCL_1056,Kidney,PIK3CB,Het,Missense,p.D1067V,GoF,Oncogene
+864,A498,ACH-000555,CVCL_1056,Kidney,SMARCA4,Het,Missense,p.A923P,LoF,Suppressor
+865,A498,ACH-000555,CVCL_1056,Kidney,VHL,Hom,Frameshift,p.G144fs,LoF,Suppressor
+866,SW 1088,ACH-000437,CVCL_1715,CNS/Brain,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+867,SW 1088,ACH-000437,CVCL_1715,CNS/Brain,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+868,SW 1088,ACH-000437,CVCL_1715,CNS/Brain,NRAS,Het,Missense,p.Q61K,GoF,Oncogene
+869,SW 1088,ACH-000437,CVCL_1715,CNS/Brain,POLE,Het,Missense,p.V1270F,,Suppressor
+870,SW 1088,ACH-000437,CVCL_1715,CNS/Brain,PTEN,Hom,Deletion,DEL,LoF,Suppressor
+871,SW 1088,ACH-000437,CVCL_1715,CNS/Brain,TP53,Hom,Missense,p.R273C,LoF,Suppressor
+872,BT-483,ACH-000818,CVCL_2319,Breast,APC,Het,Missense,p.T1160K,LoF,Suppressor
+873,BT-483,ACH-000818,CVCL_2319,Breast,NF1,Het,Missense,p.R1204W,LoF,Suppressor
+874,BT-483,ACH-000818,CVCL_2319,Breast,PIK3CA,Het,Missense,p.E542K,GoF,Oncogene
+875,BT-483,ACH-000818,CVCL_2319,Breast,TP53,Het,Missense,p.M246I,LoF,Suppressor
+876,BT-483,ACH-000818,CVCL_2319,Breast,WNK2,Het,Missense,p.L1162P,,Suppressor
+877,SNU-423,ACH-000493,CVCL_0366,Liver,ARID1A,Hom,Stopgain,p.G623*,LoF,Suppressor
+878,SNU-423,ACH-000493,CVCL_0366,Liver,RNF43,Het,Missense,p.I485V,,Suppressor
+879,SNU-423,ACH-000493,CVCL_0366,Liver,TERT,,Promoter,1-124C>T,GoF,Oncogene
+880,SNU-423,ACH-000493,CVCL_0366,Liver,TP53,Hom,Splice_site,,LoF,Suppressor
+881,SW 1271,ACH-000890,CVCL_1716,Lung,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+882,SW 1271,ACH-000890,CVCL_1716,Lung,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+883,SW 1271,ACH-000890,CVCL_1716,Lung,NRAS,Hom,Missense,p.Q61R,GoF,Oncogene
+884,SW 1271,ACH-000890,CVCL_1716,Lung,PMS2,Het,Missense,p.H88Y,,Suppressor
+885,SW 1271,ACH-000890,CVCL_1716,Lung,SMARCA4,Hom,Missense,p.N774K,LoF,Suppressor
+886,SW 1271,ACH-000890,CVCL_1716,Lung,TP53,Hom,Missense,p.C277F,LoF,Suppressor
+887,Hs 695T,ACH-000799,CVCL_0851,Skin,ATM,Hom,Stopgain,p.Q1825*,LoF,Suppressor
+888,Hs 695T,ACH-000799,CVCL_0851,Skin,BRAF,Het,Missense,p.V600E,GoF,Oncogene
+889,Hs 695T,ACH-000799,CVCL_0851,Skin,BRCA2,Het,Missense,p.K2950N,,Suppressor
+890,Hs 695T,ACH-000799,CVCL_0851,Skin,NF1,Het,Stopgain,p.Q959*,LoF,Suppressor
+891,Hs 695T,ACH-000799,CVCL_0851,Skin,POLE,Het,Missense,p.V1270F,,Suppressor
+892,Hs 695T,ACH-000799,CVCL_0851,Skin,TERT,,Promoter,1-146C>T,GoF,Oncogene
+893,C32,ACH-000580,CVCL_1097,Skin,BRAF,Het,Missense,p.V600E,GoF,Oncogene
+894,C32,ACH-000580,CVCL_1097,Skin,CDKN2A,Hom,Stoploss,Ter157Serext*13,,Suppressor
+895,C32,ACH-000580,CVCL_1097,Skin,PTEN,Hom,Deletion,DEL,LoF,Suppressor
+896,C32,ACH-000580,CVCL_1097,Skin,TERT,,Promoter,1-124C>T,GoF,Oncogene
+897,KATO III,ACH-000793,CVCL_0371,Esophagus/Stomach,ATM,Het,Missense,p.S2581I,,Suppressor
+898,KATO III,ACH-000793,CVCL_0371,Esophagus/Stomach,BRCA2,Het,Missense,p.G2044V,,Suppressor
+899,KATO III,ACH-000793,CVCL_0371,Esophagus/Stomach,CTNNB1,,Gain,GAIN,GoF,Oncogene
+900,KATO III,ACH-000793,CVCL_0371,Esophagus/Stomach,FGFR2,,Gain,GAIN,GoF,Oncogene
+901,KATO III,ACH-000793,CVCL_0371,Esophagus/Stomach,KMT2D,Het,Missense,p.A3242P,,Suppressor
+902,KATO III,ACH-000793,CVCL_0371,Esophagus/Stomach,KMT2D,Het,Stopgain,p.E1747*,LoF,Suppressor
+903,KATO III,ACH-000793,CVCL_0371,Esophagus/Stomach,TP53,,Deletion,DEL,LoF,Suppressor
+904,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,ARID1A,Het,Frameshift,p.D1633fs,LoF,Suppressor
+905,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,ARID1A,Het,Missense,p.P121S,,Suppressor
+906,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,ARID1A,Het,Frameshift,p.Q372fs,LoF,Suppressor
+907,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,ATM,Het,Frameshift,p.L1154fs,LoF,Suppressor
+908,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,BRCA2,Het,Missense,p.R1190W,,Suppressor
+909,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,BRCA2,Het,Frameshift,p.S309fs,LoF,Suppressor
+910,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,JAK1,Het,Frameshift,p.K860fs,,Oncogene
+911,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,KMT2D,Het,Frameshift,p.A2119fs,LoF,Suppressor
+912,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,KMT2D,Het,Missense,p.P2363del,,Suppressor
+913,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,KMT2D,Het,Missense,p.R5030C,LoF,Suppressor
+914,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,KRAS,Het,Missense,p.G12D,GoF,Oncogene
+915,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,PRDM2,Het,Missense,p.S67F,LoF,Suppressor
+916,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,SETD1B,Hom,Frameshift,p.H8fs,LoF,Suppressor
+917,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,SMAD3,Het,Frameshift,p.V380fs,LoF,Suppressor
+918,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,SMAD4,Het,Missense,p.R265H,LoF,Suppressor
+919,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,TGFBR2,Het,Frameshift,p.S409fs,LoF,Suppressor
+920,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,WNK2,Het,Missense,p.G1850C,,Suppressor
+921,SNU-1,ACH-000932,CVCL_0099,Esophagus/Stomach,WNK2,Het,Missense,p.W547C,,Suppressor
+922,AN3 CA,ACH-000940,CVCL_0028,Uterus,ARID1A,Het,Frameshift,p.D1633fs,LoF,Suppressor
+923,AN3 CA,ACH-000940,CVCL_0028,Uterus,ARID1A,Het,Missense,p.LEMLRENT1836del,,Suppressor
+924,AN3 CA,ACH-000940,CVCL_0028,Uterus,FBXW7,Het,Missense,p.R361W,LoF,Suppressor
+925,AN3 CA,ACH-000940,CVCL_0028,Uterus,FGFR2,Het,Missense,p.K82R,GoF,Oncogene
+926,AN3 CA,ACH-000940,CVCL_0028,Uterus,FGFR2,Hom,Missense,p.N321K,GoF,Oncogene
+927,AN3 CA,ACH-000940,CVCL_0028,Uterus,HRAS,Het,Missense,p.F82L,,Oncogene
+928,AN3 CA,ACH-000940,CVCL_0028,Uterus,KMT2D,Het,Frameshift,p.P2210fs,LoF,Suppressor
+929,AN3 CA,ACH-000940,CVCL_0028,Uterus,MAPK3,Het,Missense,p.P373S,,Oncogene
+930,AN3 CA,ACH-000940,CVCL_0028,Uterus,MET,Het,Missense,p.G344R,,Oncogene
+931,AN3 CA,ACH-000940,CVCL_0028,Uterus,PIK3R1,Het,Missense,p.R557_561NA,,Suppressor
+932,AN3 CA,ACH-000940,CVCL_0028,Uterus,POLE,Het,Missense,p.S30L,,Suppressor
+933,AN3 CA,ACH-000940,CVCL_0028,Uterus,PTEN,Hom,Frameshift,p.R130fs,LoF,Suppressor
+934,AN3 CA,ACH-000940,CVCL_0028,Uterus,SETD1B,Het,Frameshift,p.P749fs,LoF,Suppressor
+935,AN3 CA,ACH-000940,CVCL_0028,Uterus,SMARCA4,Het,Missense,p.P1456L,,Suppressor
+936,AN3 CA,ACH-000940,CVCL_0028,Uterus,TERT,Het,Missense,p.D848G,,Oncogene
+937,AN3 CA,ACH-000940,CVCL_0028,Uterus,TP53,Het,Missense,p.G389W,,Suppressor
+938,AN3 CA,ACH-000940,CVCL_0028,Uterus,TP53,Het,Missense,p.R213Q,LoF,Suppressor
+939,AN3 CA,ACH-000940,CVCL_0028,Uterus,TP53,Het,Frameshift,p.S90fs,LoF,Suppressor
+940,AN3 CA,ACH-000940,CVCL_0028,Uterus,WNK2,Het,Missense,p.P702S,,Suppressor
+941,AN3 CA,ACH-000940,CVCL_0028,Uterus,ZFHX3,Het,Frameshift,p.R1893fs,LoF,Suppressor
+942,NCI-H2347,ACH-000875,CVCL_1550,Lung,B2M,Hom,Stopgain,p.Q28*,LoF,Suppressor
+943,NCI-H2347,ACH-000875,CVCL_1550,Lung,EP300,Het,Missense,p.V5L,,Suppressor
+944,NCI-H2347,ACH-000875,CVCL_1550,Lung,KRAS,Het,Missense,p.L19F,GoF,Oncogene
+945,NCI-H2347,ACH-000875,CVCL_1550,Lung,NF1,Het,Missense,p.H31L,LoF,Suppressor
+946,NCI-H2347,ACH-000875,CVCL_1550,Lung,NRAS,Hom,Missense,p.Q61R,GoF,Oncogene
+947,NCI-H2347,ACH-000875,CVCL_1550,Lung,TP53,Hom,Splice_site,p.T125T,LoF,Suppressor
+948,NCI-H2347,ACH-000875,CVCL_1550,Lung,TP53,Hom,Synonymous_splicing,Thr125Thr,,Suppressor
+949,EKVX,ACH-000706,CVCL_1195,Lung,SMARCA4,Hom,Stopgain,p.Q418*,LoF,Suppressor
+950,EKVX,ACH-000706,CVCL_1195,Lung,STK11,Hom,Missense,p.S216F,LoF,Suppressor
+951,EKVX,ACH-000706,CVCL_1195,Lung,TP53,Hom,Stopgain,p.E204*,LoF,Suppressor
+952,EKVX,ACH-000706,CVCL_1195,Lung,VHL,Het,Missense,p.S111I,,Suppressor
+953,NCI-H2087,ACH-000841,CVCL_1524,Lung,ATM,Het,Missense,p.E848Q,,Suppressor
+954,NCI-H2087,ACH-000841,CVCL_1524,Lung,ATM,Het,Missense,p.L2965F,LoF,Suppressor
+955,NCI-H2087,ACH-000841,CVCL_1524,Lung,BRAF,Het,Missense,p.L597V,GoF,Oncogene
+956,NCI-H2087,ACH-000841,CVCL_1524,Lung,MYC,,Gain,GAIN,GoF,Oncogene
+957,NCI-H2087,ACH-000841,CVCL_1524,Lung,MYC,Het,Missense,p.E54K,,Oncogene
+958,NCI-H2087,ACH-000841,CVCL_1524,Lung,NRAS,Het,Missense,p.Q61K,GoF,Oncogene
+959,NCI-H2087,ACH-000841,CVCL_1524,Lung,PRDM2,Hom,Missense,p.P619S,,Suppressor
+960,NCI-H2087,ACH-000841,CVCL_1524,Lung,RB1,Het,Splice_site,,LoF,Suppressor
+961,NCI-H2087,ACH-000841,CVCL_1524,Lung,TP53,Hom,Missense,p.V157F,LoF,Suppressor
+962,A-172,ACH-000558,CVCL_0131,CNS/Brain,ABL1,,Fusion,ABL1-CBFB,,Oncogene
+963,A-172,ACH-000558,CVCL_0131,CNS/Brain,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+964,A-172,ACH-000558,CVCL_0131,CNS/Brain,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+965,A-172,ACH-000558,CVCL_0131,CNS/Brain,PTEN,Hom,Deletion,DEL,LoF,Suppressor
+966,A-172,ACH-000558,CVCL_0131,CNS/Brain,RB1,Het,Missense,p.V852L,,Suppressor
+967,hTERT-HPNE,,CVCL_C466,Pancreas,TERT,,Transgene,,,Oncogene
+968,NCI-H23,ACH-000900,CVCL_1547,Lung,ATM,Hom,Missense,p.Q1919P,LoF,Suppressor
+969,NCI-H23,ACH-000900,CVCL_1547,Lung,KMT2D,Het,Missense,p.G3465V,,Suppressor
+970,NCI-H23,ACH-000900,CVCL_1547,Lung,KMT2D,Het,Missense,p.S4328T,,Suppressor
+971,NCI-H23,ACH-000900,CVCL_1547,Lung,KRAS,Het,Missense,p.G12C,GoF,Oncogene
+972,NCI-H23,ACH-000900,CVCL_1547,Lung,MYC,,Gain,GAIN,GoF,Oncogene
+973,NCI-H23,ACH-000900,CVCL_1547,Lung,PMS2,Het,Missense,p.E491K,,Suppressor
+974,NCI-H23,ACH-000900,CVCL_1547,Lung,SMARCA4,Hom,Stopgain,p.1566_1567KE>N*,LoF,Suppressor
+975,NCI-H23,ACH-000900,CVCL_1547,Lung,STK11,Hom,Stopgain,p.W332*,LoF,Suppressor
+976,NCI-H23,ACH-000900,CVCL_1547,Lung,TP53,Hom,Missense,p.M246I,LoF,Suppressor
+977,NCI-H1792,ACH-000496,CVCL_1495,Lung,CDKN2A,Het,Stopgain,p.W110*,LoF,Suppressor
+978,NCI-H1792,ACH-000496,CVCL_1495,Lung,KRAS,Het,Missense,p.G12C,GoF,Oncogene
+979,NCI-H1792,ACH-000496,CVCL_1495,Lung,MYC,,Gain,GAIN,GoF,Oncogene
+980,NCI-H1792,ACH-000496,CVCL_1495,Lung,SOS1,,Gain,GAIN,GoF,Oncogene
+981,NCI-H1792,ACH-000496,CVCL_1495,Lung,TP53,Hom,Splice_site,,LoF,Suppressor
+982,NCI-H2122,ACH-000311,CVCL_1531,Lung,CDKN2A,,Deletion,DEL,LoF,Suppressor
+983,NCI-H2122,ACH-000311,CVCL_1531,Lung,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+984,NCI-H2122,ACH-000311,CVCL_1531,Lung,KRAS,Hom,Missense,p.G12C,GoF,Oncogene
+985,NCI-H2122,ACH-000311,CVCL_1531,Lung,MYC,,Gain,GAIN,GoF,Oncogene
+986,NCI-H2122,ACH-000311,CVCL_1531,Lung,STK11,Hom,Frameshift,p.P281fs,LoF,Suppressor
+987,NCI-H2122,ACH-000311,CVCL_1531,Lung,TP53,Het,Missense,p.C176F,LoF,Suppressor
+988,NCI-H2122,ACH-000311,CVCL_1531,Lung,TP53,Het,Missense,p.Q16L,LoF,Suppressor
+989,NCI-H2030,ACH-000521,CVCL_1517,Lung,KRAS,Hom,Missense,p.G12C,GoF,Oncogene
+990,NCI-H2030,ACH-000521,CVCL_1517,Lung,POLE,Hom,Missense,p.S780L,,Suppressor
+991,NCI-H2030,ACH-000521,CVCL_1517,Lung,STK11,Hom,Stopgain,p.E317*,LoF,Suppressor
+992,NCI-H2030,ACH-000521,CVCL_1517,Lung,STK11,Hom,Missense,p.E357K,,Suppressor
+993,NCI-H2030,ACH-000521,CVCL_1517,Lung,STK11,Hom,Missense,p.M392I,,Suppressor
+994,NCI-H2030,ACH-000521,CVCL_1517,Lung,TP53,Hom,Missense,p.G262V,LoF,Suppressor
+995,LOX-IMVI,ACH-000750,CVCL_1381,Skin,ARID1A,Het,Stopgain,p.Q1212*,LoF,Suppressor
+996,LOX-IMVI,ACH-000750,CVCL_1381,Skin,BRAF,Het,Missense,p.V600E,GoF,Oncogene
+997,LOX-IMVI,ACH-000750,CVCL_1381,Skin,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+998,LOX-IMVI,ACH-000750,CVCL_1381,Skin,NF1,Het,Stopgain,p.Q1174*,LoF,Suppressor
+999,LOX-IMVI,ACH-000750,CVCL_1381,Skin,TERT,,Promoter,1-124C>T,GoF,Oncogene
+1000,DMSO_DMSO,ACH-000681,CVCL_0023,Lung,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+1001,DMSO_DMSO,ACH-000681,CVCL_0023,Lung,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+1002,DMSO_DMSO,ACH-000681,CVCL_0023,Lung,KRAS,Hom,Missense,p.G12S,GoF,Oncogene
+1003,DMSO_DMSO,ACH-000681,CVCL_0023,Lung,SMARCA4,Hom,Frameshift,p.Q729fs,LoF,Suppressor
+1004,DMSO_DMSO,ACH-000681,CVCL_0023,Lung,STK11,Hom,Stopgain,p.Q37*,LoF,Suppressor
+1005,DMSO_DMSO,ACH-000681,CVCL_0023,Lung,ZFHX3,Het,Missense,p.L1473F,,Suppressor
+1006,panobinostat_crizotinib,ACH-000681,CVCL_0023,Lung,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+1007,panobinostat_crizotinib,ACH-000681,CVCL_0023,Lung,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+1008,panobinostat_crizotinib,ACH-000681,CVCL_0023,Lung,KRAS,Hom,Missense,p.G12S,GoF,Oncogene
+1009,panobinostat_crizotinib,ACH-000681,CVCL_0023,Lung,SMARCA4,Hom,Frameshift,p.Q729fs,LoF,Suppressor
+1010,panobinostat_crizotinib,ACH-000681,CVCL_0023,Lung,STK11,Hom,Stopgain,p.Q37*,LoF,Suppressor
+1011,panobinostat_crizotinib,ACH-000681,CVCL_0023,Lung,ZFHX3,Het,Missense,p.L1473F,,Suppressor
+1012,panobinostat_SRT3025,ACH-000681,CVCL_0023,Lung,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+1013,panobinostat_SRT3025,ACH-000681,CVCL_0023,Lung,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+1014,panobinostat_SRT3025,ACH-000681,CVCL_0023,Lung,KRAS,Hom,Missense,p.G12S,GoF,Oncogene
+1015,panobinostat_SRT3025,ACH-000681,CVCL_0023,Lung,SMARCA4,Hom,Frameshift,p.Q729fs,LoF,Suppressor
+1016,panobinostat_SRT3025,ACH-000681,CVCL_0023,Lung,STK11,Hom,Stopgain,p.Q37*,LoF,Suppressor
+1017,panobinostat_SRT3025,ACH-000681,CVCL_0023,Lung,ZFHX3,Het,Missense,p.L1473F,,Suppressor
+1018,panobinostat_Alvespimycin,ACH-000681,CVCL_0023,Lung,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+1019,panobinostat_Alvespimycin,ACH-000681,CVCL_0023,Lung,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+1020,panobinostat_Alvespimycin,ACH-000681,CVCL_0023,Lung,KRAS,Hom,Missense,p.G12S,GoF,Oncogene
+1021,panobinostat_Alvespimycin,ACH-000681,CVCL_0023,Lung,SMARCA4,Hom,Frameshift,p.Q729fs,LoF,Suppressor
+1022,panobinostat_Alvespimycin,ACH-000681,CVCL_0023,Lung,STK11,Hom,Stopgain,p.Q37*,LoF,Suppressor
+1023,panobinostat_Alvespimycin,ACH-000681,CVCL_0023,Lung,ZFHX3,Het,Missense,p.L1473F,,Suppressor
+1024,Trametinib_0.0_vehicle_0.0,ACH-000558,CVCL_0131,CNS/Brain,ABL1,,Fusion,ABL1-CBFB,,Oncogene
+1025,Trametinib_0.0_vehicle_0.0,ACH-000558,CVCL_0131,CNS/Brain,CDKN2A,Hom,Deletion,DEL,LoF,Suppressor
+1026,Trametinib_0.0_vehicle_0.0,ACH-000558,CVCL_0131,CNS/Brain,CDKN2B,Hom,Deletion,DEL,LoF,Suppressor
+1027,Trametinib_0.0_vehicle_0.0,ACH-000558,CVCL_0131,CNS/Brain,PTEN,Hom,Deletion,DEL,LoF,Suppressor
+1028,Trametinib_0.0_vehicle_0.0,ACH-000558,CVCL_0131,CNS/Brain,RB1,Het,Missense,p.V852L,,Suppressor
+1029,Malignant_Metastasis_Metastasis_1,ACH-000818,CVCL_2319,Breast,APC,Het,Missense,p.T1160K,LoF,Suppressor
+1030,Malignant_Metastasis_Metastasis_1,ACH-000818,CVCL_2319,Breast,NF1,Het,Missense,p.R1204W,LoF,Suppressor
+1031,Malignant_Metastasis_Metastasis_1,ACH-000818,CVCL_2319,Breast,PIK3CA,Het,Missense,p.E542K,GoF,Oncogene
+1032,Malignant_Metastasis_Metastasis_1,ACH-000818,CVCL_2319,Breast,TP53,Het,Missense,p.M246I,LoF,Suppressor
+1033,Malignant_Metastasis_Metastasis_1,ACH-000818,CVCL_2319,Breast,WNK2,Het,Missense,p.L1162P,,Suppressor
+1034,Malignant_Metastasis_Metastasis_3,ACH-000818,CVCL_2319,Breast,APC,Het,Missense,p.T1160K,LoF,Suppressor
+1035,Malignant_Metastasis_Metastasis_3,ACH-000818,CVCL_2319,Breast,NF1,Het,Missense,p.R1204W,LoF,Suppressor
+1036,Malignant_Metastasis_Metastasis_3,ACH-000818,CVCL_2319,Breast,PIK3CA,Het,Missense,p.E542K,GoF,Oncogene
+1037,Malignant_Metastasis_Metastasis_3,ACH-000818,CVCL_2319,Breast,TP53,Het,Missense,p.M246I,LoF,Suppressor
+1038,Malignant_Metastasis_Metastasis_3,ACH-000818,CVCL_2319,Breast,WNK2,Het,Missense,p.L1162P,,Suppressor
+1039,Malignant_Metastasis_Metastasis_4,ACH-000818,CVCL_2319,Breast,APC,Het,Missense,p.T1160K,LoF,Suppressor
+1040,Malignant_Metastasis_Metastasis_4,ACH-000818,CVCL_2319,Breast,NF1,Het,Missense,p.R1204W,LoF,Suppressor
+1041,Malignant_Metastasis_Metastasis_4,ACH-000818,CVCL_2319,Breast,PIK3CA,Het,Missense,p.E542K,GoF,Oncogene
+1042,Malignant_Metastasis_Metastasis_4,ACH-000818,CVCL_2319,Breast,TP53,Het,Missense,p.M246I,LoF,Suppressor
+1043,Malignant_Metastasis_Metastasis_4,ACH-000818,CVCL_2319,Breast,WNK2,Het,Missense,p.L1162P,,Suppressor
+1044,Malignant_Metastasis_Metastasis_6,ACH-000818,CVCL_2319,Breast,APC,Het,Missense,p.T1160K,LoF,Suppressor
+1045,Malignant_Metastasis_Metastasis_6,ACH-000818,CVCL_2319,Breast,NF1,Het,Missense,p.R1204W,LoF,Suppressor
+1046,Malignant_Metastasis_Metastasis_6,ACH-000818,CVCL_2319,Breast,PIK3CA,Het,Missense,p.E542K,GoF,Oncogene
+1047,Malignant_Metastasis_Metastasis_6,ACH-000818,CVCL_2319,Breast,TP53,Het,Missense,p.M246I,LoF,Suppressor
+1048,Malignant_Metastasis_Metastasis_6,ACH-000818,CVCL_2319,Breast,WNK2,Het,Missense,p.L1162P,,Suppressor
+1049,Malignant_Metastasis_Metastasis_9,ACH-000818,CVCL_2319,Breast,APC,Het,Missense,p.T1160K,LoF,Suppressor
+1050,Malignant_Metastasis_Metastasis_9,ACH-000818,CVCL_2319,Breast,NF1,Het,Missense,p.R1204W,LoF,Suppressor
+1051,Malignant_Metastasis_Metastasis_9,ACH-000818,CVCL_2319,Breast,PIK3CA,Het,Missense,p.E542K,GoF,Oncogene
+1052,Malignant_Metastasis_Metastasis_9,ACH-000818,CVCL_2319,Breast,TP53,Het,Missense,p.M246I,LoF,Suppressor
+1053,Malignant_Metastasis_Metastasis_9,ACH-000818,CVCL_2319,Breast,WNK2,Het,Missense,p.L1162P,,Suppressor
+1054,Malignant_Metastasis_Metastasis_11,ACH-000818,CVCL_2319,Breast,APC,Het,Missense,p.T1160K,LoF,Suppressor
+1055,Malignant_Metastasis_Metastasis_11,ACH-000818,CVCL_2319,Breast,NF1,Het,Missense,p.R1204W,LoF,Suppressor
+1056,Malignant_Metastasis_Metastasis_11,ACH-000818,CVCL_2319,Breast,PIK3CA,Het,Missense,p.E542K,GoF,Oncogene
+1057,Malignant_Metastasis_Metastasis_11,ACH-000818,CVCL_2319,Breast,TP53,Het,Missense,p.M246I,LoF,Suppressor
+1058,Malignant_Metastasis_Metastasis_11,ACH-000818,CVCL_2319,Breast,WNK2,Het,Missense,p.L1162P,,Suppressor
+1059,resist_post,,,Skin,B2M,Hom,Stopgain,p.Q1825*,LoF,Suppressor
+1060,resist_post,,,Skin,HLA-A,Het,Missense,p.V600E,GoF,Oncogene
+1061,resist_post,,,Skin,HLA-B,Het,Missense,p.K2950N,,Suppressor
+1062,resist_post,,,Skin,HLA-C,Het,Stopgain,p.Q959*,LoF,Suppressor
+1063,resist_post,,,Skin,JAK1,Het,Missense,p.V1270F,,Suppressor
+1064,resist_post,,,Skin,JAK2,Het,Promoter,1-146C>T,GoF,Oncogene
+1065,resist_post,,,Skin,IFNGR1,Het,,,LoF,
+1066,resist_post,,,Skin,IFNGR2,Het,,,LoF,
+1067,resist_post,,,Skin,STAT1,Het,,,LoF,
+1068,resist_post,,,Skin,IRF1,Het,,,LoF,
+1069,resist_post,,,Skin,PTEN,Het,,,LoF,
+1070,resist_post,,,Skin,MDM2,Het,,,LoF,
+1071,resist_post,,,Skin,MDM4,Het,,,LoF,
+1072,resist_post,,,Skin,CTNNB1,Het,,,LoF,
+1073,resist_post,,,Skin,SOCS1,Het,,,LoF,
+1074,resist_post,,,Skin,PTPN2,Het,,,LoF,
+1075,resist_post,,,Skin,BRCA2,Het,,,LoF,
+1076,resist_post,,,Skin,POLE,Het,,,LoF,
+1077,resist_post,,,Skin,POLD1,Het,,,LoF,
+1078,resist_post,,,Skin,CDK12,Het,,,LoF,
