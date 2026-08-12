@@ -83,7 +83,49 @@ Copy those four lines into the current shell before running the examples below.
 To download only one model, use `--component transition` for ST-SE-Tahoe or
 `--component embedding` for SE-600M.
 
-### Generate `X_state` embeddings
+### Process a dataset of interest
+
+Begin from an AnnData object whose `adata.X` contains raw gene counts. Remove
+low-quality cells using criteria appropriate for the dataset, such as doublet
+removal and filtering cells with high mitochondrial read fractions. Once cell
+QC is complete, retain genes detected in at least three cells, normalize every
+cell to 10,000 total counts, and apply a `log1p` transformation. Do **not**
+restrict the matrix to highly variable genes: PHAROS performed better with
+broad gene coverage, typically approximately 13,000–20,000 genes depending on
+the dataset.
+
+For simpler and more computationally efficient downstream analysis, reduce the
+processed object to the two observational states involved in the intended
+conversion. For example, a `cell_type` column might contain the states
+`metastatic` and `primary`. Because these are unperturbed observational cells,
+also assign STATE's control perturbation label to every retained cell:
+
+```python
+import scanpy as sc
+
+adata = sc.read_h5ad("data/dataset_raw_counts.h5ad")
+
+# Apply dataset-appropriate cell QC before these steps, including doublet and
+# mitochondrial-content filtering where appropriate.
+sc.pp.filter_genes(adata, min_cells=3)
+sc.pp.normalize_total(adata, target_sum=10_000)
+sc.pp.log1p(adata)
+
+state_col = "cell_type"
+start_state = "metastatic"
+target_state = "primary"
+adata = adata[adata.obs[state_col].isin([start_state, target_state])].copy()
+
+adata.obs["drugname_drugconc"] = "[('DMSO_TF', 0.0, 'uM')]"
+adata.write_h5ad("data/conversion_input_lognorm.h5ad")
+```
+
+Do not repeat normalization or `log1p` if the input matrix has already received
+those transformations. Confirm that both state labels are present after QC and
+subsetting; subsequent PHAROS commands should use the same observation-column
+name with `--cell-col cell_type`.
+
+### Embed the dataset with SE-600M
 
 If an input `.h5ad` does not already contain `adata.obsm["X_state"]`, generate
 the embeddings with the pinned SE-600M model through the STATE CLI:
@@ -92,8 +134,8 @@ the embeddings with the pinned SE-600M model through the STATE CLI:
 state emb transform \
   --model-folder "$SE_DIR" \
   --checkpoint "$SE_CKPT" \
-  --input data/plate_merged_WT_SE_input_lognorm.h5ad \
-  --output data/plate_merged_WT_SE_input_lognorm.SE600M.h5ad \
+  --input data/conversion_input_lognorm.h5ad \
+  --output data/conversion_input_lognorm.SE600M.h5ad \
   --embed-key X_state \
   --batch-size 64
 ```
