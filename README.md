@@ -109,3 +109,60 @@ Use `pharos admissibility --help` and each subcommand's `--help` output for the
 complete option reference. The corresponding scripts in
 `target_calibration_QC/`, `embedding_manifold_QC/`, and
 `umap_seperation_QC/` remain available as compatibility entry points.
+
+## Hypothesis-driven analysis
+
+Hypothesis-driven mode evaluates specified drug combinations against random
+two-drug controls. A candidate may be an explicit pair, one fixed drug paired
+with a requested mechanism, or two mechanism-of-action classes.
+
+Evaluate one candidate pair and its mechanism-matched alternatives:
+
+```bash
+pharos hypothesis-driven pair \
+  --adata /path/to/query.h5ad \
+  --start-cell "starting_state" \
+  --target-cell "target_state" \
+  --cell-col "cell_type" \
+  --model-dir "$ST_RUN" \
+  --checkpoint "$ST_RUN/checkpoints/final.ckpt" \
+  --drug-pair "['drug_a', 'drug_b']" \
+  --moa-pairs "['mechanism_a', 'mechanism_b']" \
+  --output-dir runs/hypothesis_pair \
+  --overwrite
+```
+
+For a conversion that failed separation QC, add
+`--batch-selection high-sensitivity`. This uses the same 1,000-candidate,
+zero-overlap-penalty selection and three-batch default as open-search mode.
+
+Evaluate a CSV or TSV panel containing `drug_a` and `drug_b` columns, with
+optional `pair_id` and `pair_group` columns:
+
+```bash
+pharos hypothesis-driven panel \
+  --adata /path/to/query.h5ad \
+  --start-cell "starting_state" \
+  --target-cell "target_state" \
+  --cell-col "cell_type" \
+  --model-dir "$ST_RUN" \
+  --checkpoint "$ST_RUN/checkpoints/final.ckpt" \
+  --pairs-file /path/to/drug_pairs.csv \
+  --output-dir runs/hypothesis_panel \
+  --overwrite
+```
+
+Collate pair analyses from multiple conversions and run the report-level
+statistical comparisons:
+
+```bash
+pharos hypothesis-driven summarize \
+  --run-dirs runs/conversion_a runs/conversion_b runs/conversion_c \
+  --labels "Conversion A" "Conversion B" "Conversion C" \
+  --output-dir runs/hypothesis_summary
+```
+
+The original options `--2drug-pair`, `--MOA-pairs`, and
+`--approved-pairs-file` remain supported for command compatibility. The
+scripts in `positive_control_2drug/` also remain available as compatibility
+entry points.

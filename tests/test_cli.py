@@ -9,6 +9,9 @@ from pharos_cell.admissibility.manifold_cli import build_parser as build_manifol
 from pharos_cell.admissibility.separation_cli import parse_args as parse_separation_args
 from pharos_cell.admissibility.separation_cli import resolve_cells_per_line
 from pharos_cell.cli import app
+from pharos_cell.hypothesis.pair_cli import parse_args as parse_hypothesis_pair_args
+from pharos_cell.hypothesis.panel_cli import parse_args as parse_hypothesis_panel_args
+from pharos_cell.hypothesis.reports.multi import parse_args as parse_hypothesis_summary_args
 from pharos_cell.open_search import parse_args
 
 runner = CliRunner()
@@ -172,3 +175,126 @@ def test_separation_defaults() -> None:
     assert args.min_mean_knn_purity == 0.8
     assert args.umap_n_neighbors == 15
     assert args.umap_min_dist == 0.3
+
+
+@pytest.mark.parametrize(
+    ("command", "expected"),
+    [
+        (["hypothesis-driven", "pair", "--help"], "--drug-pair"),
+        (["hypothesis-driven", "panel", "--help"], "--pairs-file"),
+        (["hypothesis-driven", "summarize", "--help"], "--run-dirs"),
+    ],
+)
+def test_hypothesis_driven_help(command: list[str], expected: str) -> None:
+    result = runner.invoke(app, command)
+
+    assert result.exit_code == 0
+    assert expected in result.stdout
+
+
+def test_hypothesis_driven_group_help() -> None:
+    result = runner.invoke(app, ["hypothesis-driven", "--help"])
+
+    assert result.exit_code == 0
+    assert "pair" in result.stdout
+    assert "panel" in result.stdout
+    assert "summarize" in result.stdout
+
+
+def _required_hypothesis_args() -> list[str]:
+    return [
+        "--adata", "input.h5ad",
+        "--start-cell", "start",
+        "--target-cell", "target",
+        "--model-dir", "state-model",
+        "--output-dir", "run-output",
+    ]
+
+
+def test_hypothesis_pair_paper_defaults_and_alias() -> None:
+    args = parse_hypothesis_pair_args(
+        _required_hypothesis_args()
+        + [
+            "--drug-pair", "drug-a", "drug-b",
+            "--moa-pairs", "['moa-a', 'moa-b']",
+        ]
+    )
+
+    assert args.two_drug_pair == ["drug-a", "drug-b"]
+    assert args.random_pairs == 100
+    assert args.n_batches == 5
+    assert args.converter_chunk_size == 16
+    assert args.start_sample == "256"
+    assert args.target_sample == "256"
+    assert args.sinkhorn_metric == "cosine"
+    assert args.sinkhorn_epsilon == 0.05
+    assert args.sinkhorn_iters == 100
+    assert args.projection_method == "pca_pls_da"
+    assert args.projection_auto_select_components is True
+    assert args.projection_whiten is False
+    assert args.trajectory_embedding_space == "projection"
+
+
+def test_hypothesis_pair_high_sensitivity_defaults_to_three_batches() -> None:
+    args = parse_hypothesis_pair_args(
+        _required_hypothesis_args()
+        + ["--moa-pairs", "['moa-a', 'moa-b']", "--batch-selection", "high-sensitivity"]
+    )
+
+    assert args.batch_candidates == 1000
+    assert args.batch_overlap_penalty == 0.0
+    assert args.n_batches == 3
+
+
+def test_hypothesis_panel_paper_defaults_and_alias() -> None:
+    args = parse_hypothesis_panel_args(
+        _required_hypothesis_args() + ["--pairs-file", "pairs.csv"]
+    )
+
+    assert args.approved_pairs_file == "pairs.csv"
+    assert args.random_pairs == 100
+    assert args.n_batches == 5
+    assert args.converter_chunk_size == 16
+    assert args.start_sample == "256"
+    assert args.target_sample == "256"
+    assert args.sinkhorn_metric == "cosine"
+    assert args.sinkhorn_epsilon == 0.05
+    assert args.sinkhorn_iters == 100
+    assert args.projection_method == "pca_pls_da"
+    assert args.projection_auto_select_components is True
+    assert args.projection_whiten is False
+    assert args.drug_metadata == "metadata/drug_metadata_sciplex.csv"
+
+
+def test_hypothesis_panel_high_sensitivity_defaults_to_three_batches() -> None:
+    args = parse_hypothesis_panel_args(
+        _required_hypothesis_args()
+        + ["--pairs-file", "pairs.csv", "--batch-selection", "high-sensitivity"]
+    )
+
+    assert args.batch_candidates == 1000
+    assert args.batch_overlap_penalty == 0.0
+    assert args.n_batches == 3
+
+
+def test_hypothesis_summary_defaults() -> None:
+    args = parse_hypothesis_summary_args(
+        ["--run-dirs", "run-a", "run-b", "--output-dir", "summary-output"]
+    )
+
+    assert args.labels is None
+    assert args.show_baseline_line is True
+    assert args.title_prefix == "Positive-control 2-drug comparison"
+
+
+def test_hypothesis_pair_forwards_arguments(monkeypatch: pytest.MonkeyPatch) -> None:
+    received: list[str] = []
+
+    def fake_main(argv: list[str]) -> None:
+        received.extend(argv)
+
+    monkeypatch.setattr("pharos_cell.hypothesis.pair_cli.main", fake_main)
+    result = runner.invoke(app, ["hypothesis-driven", "pair", "--adata", "input.h5ad"])
+
+    assert result.exit_code == 0
+    assert received == ["--adata", "input.h5ad"]

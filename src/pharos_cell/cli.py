@@ -20,6 +20,13 @@ admissibility_app = typer.Typer(
 )
 app.add_typer(admissibility_app, name="admissibility")
 
+hypothesis_app = typer.Typer(
+    help="Evaluate specified drug combinations against random controls.",
+    no_args_is_help=True,
+    rich_markup_mode="markdown",
+)
+app.add_typer(hypothesis_app, name="hypothesis-driven")
+
 
 def _version_callback(value: bool) -> None:
     if value:
@@ -96,6 +103,48 @@ def admissibility_separation(ctx: typer.Context) -> None:
     from pharos_cell.admissibility.separation_cli import main as separation_main
 
     separation_main(argv)
+
+
+@hypothesis_app.command(
+    "pair",
+    add_help_option=False,
+    context_settings={"allow_extra_args": True, "ignore_unknown_options": True},
+)
+def hypothesis_pair(ctx: typer.Context) -> None:
+    """Evaluate one named, fixed-drug, or MOA-defined candidate pair."""
+
+    argv = list(ctx.args) or ["--help"]
+    from pharos_cell.hypothesis.pair_cli import main as pair_main
+
+    pair_main(argv)
+
+
+@hypothesis_app.command(
+    "panel",
+    add_help_option=False,
+    context_settings={"allow_extra_args": True, "ignore_unknown_options": True},
+)
+def hypothesis_panel(ctx: typer.Context) -> None:
+    """Evaluate a file containing a panel of explicit drug pairs."""
+
+    argv = list(ctx.args) or ["--help"]
+    from pharos_cell.hypothesis.panel_cli import main as panel_main
+
+    panel_main(argv)
+
+
+@hypothesis_app.command(
+    "summarize",
+    add_help_option=False,
+    context_settings={"allow_extra_args": True, "ignore_unknown_options": True},
+)
+def hypothesis_summarize(ctx: typer.Context) -> None:
+    """Collate and statistically compare multiple pair-analysis runs."""
+
+    argv = list(ctx.args) or ["--help"]
+    from pharos_cell.hypothesis.reports.multi import main as summarize_main
+
+    summarize_main(argv)
 
 
 def main() -> None:
