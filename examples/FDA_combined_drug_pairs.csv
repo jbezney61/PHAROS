@@ -1,0 +1,17 @@
+﻿pair_id,drug_a,drug_b,pair_group
+Fail_1,Capivasertib,Paclitaxel,failed_trial
+Fail_2,Ipatasertib,Paclitaxel,failed_trial
+Fail_3,Sunitinib,Docetaxel,failed_trial
+Fail_4,Sunitinib,Paclitaxel,failed_trial
+Fail_5,Everolimus,Paclitaxel,failed_trial
+Fail_6,Dinaciclib,Epirubicin (hydrochloride),failed_trial
+Fail_7,Lapatinib ditosylate,Paclitaxel,failed_trial
+FDA_2,palbociclib,Anastrozole,FDA_approved
+FDA_3,Ribociclib,Anastrozole,FDA_approved
+FDA_4,Abemaciclib,Anastrozole,FDA_approved
+FDA_5,palbociclib,Fulvestrant,FDA_approved
+FDA_6,Ribociclib,Fulvestrant,FDA_approved
+FDA_7,Abemaciclib,Fulvestrant,FDA_approved
+FDA_8,Alpelisib,Fulvestrant,FDA_approved
+FDA_9,Capivasertib,Fulvestrant,FDA_approved
+FDA_10,Gemcitabine,Paclitaxel,FDA_approved
