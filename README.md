@@ -179,7 +179,7 @@ for each new dataset.
 ### 1.1 Target calibration
 
 <p align="center">
-  <img src="assets/calibrate.png" alt="Target Calibration" width="600">
+  <img src="assets/calibrate.png" alt="Target Calibration" width="900">
 </p>
 
 Run calibration against an observed perturbation reference dataset:
