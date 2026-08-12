@@ -1,7 +1,21 @@
+<p align="center">
+  <img src="assets/pharos_logo.png" alt="PHAROS logo" width="360">
+</p>
+
+<h1 align="center">PHAROS</h1>
+
+<p align="center">
+  <b>Perturbation-guided search for navigating therapeutic cell-state transitions</b>
+</p>
+
 # PHAROS
 
 PHAROS identifies combinatorial drug perturbations predicted to convert a
 starting cell state into a target cell state. The recommended workflow is:
+
+<p align="center">
+  <img src="assets/overview.png" alt="PHAROS overview" width="900">
+</p>
 
 1. establish that the proposed conversion is admissible;
 2. test prespecified drugs or mechanisms in hypothesis-driven mode, or run an
@@ -163,6 +177,10 @@ outputs. Query manifold scoring and start–target separation should then be run
 for each new dataset.
 
 ### 1.1 Target calibration
+
+<p align="center">
+  <img src="assets/calibrate.png" alt="Target Calibration" width="600">
+</p>
 
 Run calibration against an observed perturbation reference dataset:
 
