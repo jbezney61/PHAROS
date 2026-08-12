@@ -144,7 +144,9 @@ pharos hypothesis-driven pair \
 
 PHAROS evaluates both sequential orders of the explicit pair, compares it with
 pairs drawn from the requested mechanism classes, and compares both with the
-random-pair controls.
+random-pair controls. Explicit-pair trajectory figures and metrics default to
+the fitted PCA–PLS-DA projection (`--trajectory-embedding-space projection`),
+the same space used for conversion scoring.
 
 ### 2.2 Fix one drug and search a partner mechanism
 
@@ -239,7 +241,9 @@ pharos hypothesis-driven panel \
 The generated panel report ranks individual pairs, compares each with random
 controls, and compares the two cohorts with a one-sided Mann–Whitney U test.
 Reported significance values are Benjamini–Hochberg adjusted across the valid
-tests in the report.
+tests in the report. Panel conversion scores are computed in the fitted
+PCA–PLS-DA projection by default. Panel mode does not currently generate a
+separate per-pair trajectory-embedding report.
 
 For a conversion that failed separation QC, add
 `--batch-selection high-sensitivity` to any pair or panel command. This uses

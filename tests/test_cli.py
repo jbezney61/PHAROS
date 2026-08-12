@@ -13,6 +13,7 @@ from pharos_cell.evaluation.pair_recovery_cli import build_parser as build_pair_
 from pharos_cell.hypothesis.pair_cli import parse_args as parse_hypothesis_pair_args
 from pharos_cell.hypothesis.panel_cli import parse_args as parse_hypothesis_panel_args
 from pharos_cell.hypothesis.reports.multi import parse_args as parse_hypothesis_summary_args
+from pharos_cell.hypothesis.reports.trajectory import parse_args as parse_trajectory_report_args
 from pharos_cell.open_search import parse_args
 from pharos_cell.reports.open_search import parse_args as parse_open_search_report_args
 
@@ -277,6 +278,12 @@ def test_hypothesis_panel_high_sensitivity_defaults_to_three_batches() -> None:
     assert args.batch_candidates == 1000
     assert args.batch_overlap_penalty == 0.0
     assert args.n_batches == 3
+
+
+def test_explicit_trajectory_report_defaults_to_projection() -> None:
+    args = parse_trajectory_report_args(["--run-dir", "run-output"])
+
+    assert args.embedding_space == "projection"
 
 
 def test_hypothesis_summary_defaults() -> None:

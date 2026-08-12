@@ -12,8 +12,8 @@ Expected input directory:
             explicit_pair_trajectory_metadata.json
 
 Outputs:
-    run_dir/trajectory_report/  (or --output-dir, for full-dimensional reports)
-    run_dir/trajectory_report_projection/  (for --embedding-space projection)
+    run_dir/trajectory_report_projection/  (default; projected PCA--PLS-DA space)
+    run_dir/trajectory_report/  (for --embedding-space full)
     run_dir/trajectory_report_compare/  (for --embedding-space both)
         summary.md
         tables/
@@ -834,7 +834,7 @@ def _make_single_trajectory_report(
     metadata: Dict[str, Any],
     max_cells_per_group: int = 1200,
     seed: int = 42,
-    embedding_space: str = "full",
+    embedding_space: str = "projection",
     projection_metadata: Optional[Dict[str, Any]] = None,
 ) -> Tuple[Dict[str, str], Any, Any]:
     table_dir = safe_mkdir(report_dir / "tables")
@@ -993,7 +993,7 @@ def make_explicit_trajectory_report(
     output_dir: Optional[str | Path] = None,
     max_cells_per_group: int = 1200,
     seed: int = 42,
-    embedding_space: str = "full",
+    embedding_space: str = "projection",
     projection_cache: Optional[str | Path] = None,
 ) -> Dict[str, str]:
     ensure_report_dependencies()
@@ -1108,7 +1108,7 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
     p.add_argument(
         "--embedding-space",
         choices=["full", "projection", "both"],
-        default="full",
+        default="projection",
         help="Generate figures/metrics in full 2058-D space, fitted projection space, or both.",
     )
     p.add_argument(
