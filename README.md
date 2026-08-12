@@ -17,12 +17,47 @@ pharos --help
 pharos --version
 ```
 
-The pretrained STATE model and checkpoint are external runtime artifacts and
-are not included in the PHAROS package. The examples below assume that the
-model location has been assigned once in the shell:
+## STATE source and model prerequisites
+
+PHAROS uses the model class provided by the
+[Arc Institute STATE repository](https://github.com/ArcInstitute/state). To
+keep PHAROS reproducible as STATE develops, clone and install the exact source
+revision used for the validated analyses:
 
 ```bash
-ST_RUN=/path/to/state_generalization_X_state
+git clone https://github.com/ArcInstitute/state.git state
+git -C state checkout --detach bf4fbc9ea35bf4d1e91afe201b663dec5d8bdd48
+uv pip install --editable ./state
+```
+
+Run the installation command from the same activated Python environment in
+which PHAROS is installed. Merely placing the repository in the working
+directory is not sufficient; the editable installation makes its `src/state`
+package importable. Confirm the installed version and source location with:
+
+```bash
+python -c "import importlib.metadata as m, state; print('arc-state:', m.version('arc-state')); print('state source:', state.__file__)"
+```
+
+The expected package version is `arc-state 0.10.5`, and `state source` should
+point into the cloned `state/src/state/` directory. PHAROS imports
+`state.tx.models.state_transition.StateTransitionPerturbationModel` directly
+and performs conversion inference through its own GPU-aware converter. It does
+not use STATE's embedding or transition-inference CLI scripts.
+
+Two pretrained model repositories are used:
+
+- **SE-600M** encodes expression data into the `X_state` embedding consumed by
+  PHAROS. It is needed when a user's `.h5ad` has not already been embedded.
+- **ST-SE-Tahoe** supplies the perturbation model that PHAROS uses to predict
+  drug-induced state transitions.
+
+These model artifacts are external and are not included in the PHAROS package.
+After downloading ST-SE-Tahoe, the examples below assume that its transition
+run and checkpoint have been assigned once in the shell:
+
+```bash
+ST_RUN=/path/to/ST-SE-Tahoe/fewshot/state_generalization_X_state
 ST_CKPT="$ST_RUN/checkpoints/final.ckpt"
 ```
 
