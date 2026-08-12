@@ -53,13 +53,56 @@ Two pretrained model repositories are used:
   drug-induced state transitions.
 
 These model artifacts are external and are not included in the PHAROS package.
-After downloading ST-SE-Tahoe, the examples below assume that its transition
-run and checkpoint have been assigned once in the shell:
+Download the exact model revisions used for the validated analyses and verify
+their SHA-256 checksums with:
 
 ```bash
-ST_RUN=/path/to/ST-SE-Tahoe/fewshot/state_generalization_X_state
-ST_CKPT="$ST_RUN/checkpoints/final.ckpt"
+pharos models download --output-dir ./models
 ```
+
+The downloader is pinned to the following immutable Hugging Face revisions:
+
+```text
+arcinstitute/ST-SE-Tahoe  03b1971d7cc93a7535fd2e957c6948dba267378b
+arcinstitute/SE-600M      5a9a80f44f7ce32ce57059933ef0d735d7c10ce5
+```
+
+Downloads are resumable through the Hugging Face cache. PHAROS verifies every
+expected artifact against the checksums from the validated copies and writes
+`models/pharos_model_manifest.json` with the model provenance. The command
+finishes by printing four ready-to-copy environment-variable assignments:
+
+```bash
+export ST_RUN=/absolute/path/to/models/ST-SE-Tahoe/fewshot/state_generalization_X_state
+export ST_CKPT=/absolute/path/to/models/ST-SE-Tahoe/fewshot/state_generalization_X_state/checkpoints/final.ckpt
+export SE_DIR=/absolute/path/to/models/SE-600M
+export SE_CKPT=/absolute/path/to/models/SE-600M/se600m_epoch16.ckpt
+```
+
+Copy those four lines into the current shell before running the examples below.
+To download only one model, use `--component transition` for ST-SE-Tahoe or
+`--component embedding` for SE-600M.
+
+### Generate `X_state` embeddings
+
+If an input `.h5ad` does not already contain `adata.obsm["X_state"]`, generate
+the embeddings with the pinned SE-600M model through the STATE CLI:
+
+```bash
+state emb transform \
+  --model-folder "$SE_DIR" \
+  --checkpoint "$SE_CKPT" \
+  --input data/plate_merged_WT_SE_input_lognorm.h5ad \
+  --output data/plate_merged_WT_SE_input_lognorm.SE600M.h5ad \
+  --embed-key X_state \
+  --batch-size 64
+```
+
+Embedding can be computationally expensive: approximately 300 cells may take
+more than ten minutes even on an NVIDIA H200. Runtime depends on input shape,
+storage performance, GPU configuration, and STATE version. The resulting
+`.SE600M.h5ad` can then be supplied to the PHAROS admissibility,
+hypothesis-driven, and open-search commands.
 
 ## 1. Admissibility checks
 

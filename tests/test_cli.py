@@ -14,6 +14,9 @@ from pharos_cell.hypothesis.pair_cli import parse_args as parse_hypothesis_pair_
 from pharos_cell.hypothesis.panel_cli import parse_args as parse_hypothesis_panel_args
 from pharos_cell.hypothesis.reports.multi import parse_args as parse_hypothesis_summary_args
 from pharos_cell.hypothesis.reports.trajectory import parse_args as parse_trajectory_report_args
+from pharos_cell.model_download import ST_REVISION, SE_REVISION
+from pharos_cell.model_download import build_parser as build_model_download_parser
+from pharos_cell.model_download import environment_lines, verify_files
 from pharos_cell.open_search import parse_args
 from pharos_cell.reports.open_search import parse_args as parse_open_search_report_args
 
@@ -388,3 +391,62 @@ def test_pair_recovery_forwards_arguments(monkeypatch: pytest.MonkeyPatch) -> No
 
     assert result.exit_code == 0
     assert received == ["--run-dirs", "run-output"]
+
+
+def test_model_download_help() -> None:
+    result = runner.invoke(app, ["models", "download", "--help"])
+
+    assert result.exit_code == 0
+    assert "--output-dir" in result.stdout
+    assert "--component" in result.stdout
+    assert "--no-verify" in result.stdout
+
+
+def test_models_group_help() -> None:
+    result = runner.invoke(app, ["models", "--help"])
+
+    assert result.exit_code == 0
+    assert "download" in result.stdout
+
+
+def test_model_download_defaults_and_pins() -> None:
+    args = build_model_download_parser().parse_args([])
+
+    assert args.output_dir.name == "models"
+    assert args.component == "all"
+    assert args.verify is True
+    assert args.max_workers == 8
+    assert ST_REVISION == "03b1971d7cc93a7535fd2e957c6948dba267378b"
+    assert SE_REVISION == "5a9a80f44f7ce32ce57059933ef0d735d7c10ce5"
+
+
+def test_model_environment_lines(tmp_path) -> None:
+    lines = environment_lines(tmp_path / "models")
+
+    assert lines[0].endswith("ST-SE-Tahoe/fewshot/state_generalization_X_state")
+    assert lines[1].endswith("ST-SE-Tahoe/fewshot/state_generalization_X_state/checkpoints/final.ckpt")
+    assert lines[2].endswith("SE-600M")
+    assert lines[3].endswith("SE-600M/se600m_epoch16.ckpt")
+
+
+def test_model_checksum_verification(tmp_path) -> None:
+    artifact = tmp_path / "artifact.bin"
+    artifact.write_bytes(b"pharos")
+
+    verify_files(
+        tmp_path,
+        {"artifact.bin": "8653057a4b57183ce71278ca80dbd82a61196fa182652f4cba355614b768d063"},
+    )
+
+
+def test_model_download_forwards_arguments(monkeypatch: pytest.MonkeyPatch) -> None:
+    received: list[str] = []
+
+    def fake_main(argv: list[str]) -> None:
+        received.extend(argv)
+
+    monkeypatch.setattr("pharos_cell.model_download.main", fake_main)
+    result = runner.invoke(app, ["models", "download", "--output-dir", "model-root"])
+
+    assert result.exit_code == 0
+    assert received == ["--output-dir", "model-root"]

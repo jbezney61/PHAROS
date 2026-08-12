@@ -41,6 +41,13 @@ evaluate_app = typer.Typer(
 )
 app.add_typer(evaluate_app, name="evaluate")
 
+models_app = typer.Typer(
+    help="Download and verify pretrained models used by PHAROS.",
+    no_args_is_help=True,
+    rich_markup_mode="markdown",
+)
+app.add_typer(models_app, name="models")
+
 
 def _version_callback(value: bool) -> None:
     if value:
@@ -189,6 +196,20 @@ def evaluate_pair_recovery(ctx: typer.Context) -> None:
     exit_code = pair_recovery_main(argv)
     if exit_code:
         raise typer.Exit(exit_code)
+
+
+@models_app.command(
+    "download",
+    add_help_option=False,
+    context_settings={"allow_extra_args": True, "ignore_unknown_options": True},
+)
+def models_download(ctx: typer.Context) -> None:
+    """Download pinned SE-600M and ST-SE-Tahoe model artifacts."""
+
+    argv = list(ctx.args) or ["--help"]
+    from pharos_cell.model_download import main as download_main
+
+    download_main(argv)
 
 
 def main() -> None:
