@@ -27,6 +27,20 @@ hypothesis_app = typer.Typer(
 )
 app.add_typer(hypothesis_app, name="hypothesis-driven")
 
+report_app = typer.Typer(
+    help="Generate reports from completed PHAROS runs.",
+    no_args_is_help=True,
+    rich_markup_mode="markdown",
+)
+app.add_typer(report_app, name="report")
+
+evaluate_app = typer.Typer(
+    help="Evaluate recovery and statistical significance in PHAROS results.",
+    no_args_is_help=True,
+    rich_markup_mode="markdown",
+)
+app.add_typer(evaluate_app, name="evaluate")
+
 
 def _version_callback(value: bool) -> None:
     if value:
@@ -145,6 +159,36 @@ def hypothesis_summarize(ctx: typer.Context) -> None:
     from pharos_cell.hypothesis.reports.multi import main as summarize_main
 
     summarize_main(argv)
+
+
+@report_app.command(
+    "open-search",
+    add_help_option=False,
+    context_settings={"allow_extra_args": True, "ignore_unknown_options": True},
+)
+def report_open_search(ctx: typer.Context) -> None:
+    """Audit where a known drug pair appears in open-search results."""
+
+    argv = list(ctx.args) or ["--help"]
+    from pharos_cell.reports.open_search import main as report_main
+
+    report_main(argv)
+
+
+@evaluate_app.command(
+    "pair-recovery",
+    add_help_option=False,
+    context_settings={"allow_extra_args": True, "ignore_unknown_options": True},
+)
+def evaluate_pair_recovery(ctx: typer.Context) -> None:
+    """Test target-pair recovery against a beam-matched Monte Carlo null."""
+
+    argv = list(ctx.args) or ["--help"]
+    from pharos_cell.evaluation.pair_recovery_cli import main as pair_recovery_main
+
+    exit_code = pair_recovery_main(argv)
+    if exit_code:
+        raise typer.Exit(exit_code)
 
 
 def main() -> None:

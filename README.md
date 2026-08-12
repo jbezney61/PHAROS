@@ -6,9 +6,9 @@ starting cell state into a target cell state.
 ## Package migration status
 
 PHAROS is being migrated from its original research scripts to an installable
-command-line application. The open-search workflow is now available through
-the package, while the remaining scientific commands will be ported
-incrementally.
+command-line application. Open search, admissibility checks, hypothesis-driven
+analysis, and post-search reporting and evaluation are available through the
+package.
 
 ```bash
 uv tool install .
@@ -166,3 +166,43 @@ The original options `--2drug-pair`, `--MOA-pairs`, and
 `--approved-pairs-file` remain supported for command compatibility. The
 scripts in `positive_control_2drug/` also remain available as compatibility
 entry points.
+
+## Post-search reporting and evaluation
+
+Audit where a known two-drug positive control appears in one completed open
+search. Repeat `--run-dir` and optionally `--run-label` to compare searches:
+
+```bash
+pharos report open-search \
+  --run-dir runs/example/search \
+  --drug-a panobinostat \
+  --drug-b crizotinib \
+  --output-dir runs/example/positive_control_report
+```
+
+The report reads `checkpoint.pt` when available and otherwise uses
+`results.tsv`; select one explicitly with `--source checkpoint` or
+`--source results`.
+
+Evaluate target-pair abundance and exact-pair recovery across searches against
+the beam-matched Model B Monte Carlo null:
+
+```bash
+pharos evaluate pair-recovery \
+  --run-dirs runs/conversion_a runs/conversion_b \
+  --labels conversion_a conversion_b \
+  --target-pairs metadata/target_pairs.tsv \
+  --depth 2 \
+  --rank-threshold 128 \
+  --output-dir runs/pair_recovery
+```
+
+The target-pairs table contains one row per label and, by default, the columns
+`label`, `drug_a`, `drug_b`, and optionally `pair_id`. The evaluation defaults
+to the paper configuration of 10,000 null permutations, 379 drugs, three
+concentration labels per drug, and random seed 1.
+
+Run `pharos report open-search --help` and
+`pharos evaluate pair-recovery --help` for their full option references. The
+legacy `make_positive_control_search_report.py` and `fda_pair_recovery/`
+entry points remain as compatibility wrappers.

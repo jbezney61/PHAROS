@@ -9,10 +9,12 @@ from pharos_cell.admissibility.manifold_cli import build_parser as build_manifol
 from pharos_cell.admissibility.separation_cli import parse_args as parse_separation_args
 from pharos_cell.admissibility.separation_cli import resolve_cells_per_line
 from pharos_cell.cli import app
+from pharos_cell.evaluation.pair_recovery_cli import build_parser as build_pair_recovery_parser
 from pharos_cell.hypothesis.pair_cli import parse_args as parse_hypothesis_pair_args
 from pharos_cell.hypothesis.panel_cli import parse_args as parse_hypothesis_panel_args
 from pharos_cell.hypothesis.reports.multi import parse_args as parse_hypothesis_summary_args
 from pharos_cell.open_search import parse_args
+from pharos_cell.reports.open_search import parse_args as parse_open_search_report_args
 
 runner = CliRunner()
 
@@ -298,3 +300,84 @@ def test_hypothesis_pair_forwards_arguments(monkeypatch: pytest.MonkeyPatch) -> 
 
     assert result.exit_code == 0
     assert received == ["--adata", "input.h5ad"]
+
+
+@pytest.mark.parametrize(
+    ("command", "expected"),
+    [
+        (["report", "open-search", "--help"], "--drug-a"),
+        (["evaluate", "pair-recovery", "--help"], "--target-pairs"),
+    ],
+)
+def test_post_search_help(command: list[str], expected: str) -> None:
+    result = runner.invoke(app, command)
+
+    assert result.exit_code == 0
+    assert expected in result.stdout
+
+
+def test_post_search_group_help() -> None:
+    report = runner.invoke(app, ["report", "--help"])
+    evaluate = runner.invoke(app, ["evaluate", "--help"])
+
+    assert report.exit_code == 0
+    assert "open-search" in report.stdout
+    assert evaluate.exit_code == 0
+    assert "pair-recovery" in evaluate.stdout
+
+
+def test_open_search_report_defaults() -> None:
+    args = parse_open_search_report_args(
+        ["--run-dir", "run-output", "--drug-a", "drug-a", "--drug-b", "drug-b"]
+    )
+
+    assert args.run_dir == ["run-output"]
+    assert args.target_depth == 2
+    assert args.source == "auto"
+    assert args.top_n_table == 25
+
+
+def test_pair_recovery_defaults() -> None:
+    args = build_pair_recovery_parser().parse_args(
+        [
+            "--run-dirs", "run-output",
+            "--labels", "conversion-a",
+            "--target-pairs", "target-pairs.tsv",
+            "--depth", "2",
+            "--rank-threshold", "128",
+            "--output-dir", "recovery-output",
+        ]
+    )
+
+    assert args.run_key_col == "label"
+    assert args.permutations == 10000
+    assert args.num_drugs == 379
+    assert args.concentrations_per_drug == 3
+    assert args.seed == 1
+
+
+def test_open_search_report_forwards_arguments(monkeypatch: pytest.MonkeyPatch) -> None:
+    received: list[str] = []
+
+    def fake_main(argv: list[str]) -> None:
+        received.extend(argv)
+
+    monkeypatch.setattr("pharos_cell.reports.open_search.main", fake_main)
+    result = runner.invoke(app, ["report", "open-search", "--run-dir", "run-output"])
+
+    assert result.exit_code == 0
+    assert received == ["--run-dir", "run-output"]
+
+
+def test_pair_recovery_forwards_arguments(monkeypatch: pytest.MonkeyPatch) -> None:
+    received: list[str] = []
+
+    def fake_main(argv: list[str]) -> int:
+        received.extend(argv)
+        return 0
+
+    monkeypatch.setattr("pharos_cell.evaluation.pair_recovery_cli.main", fake_main)
+    result = runner.invoke(app, ["evaluate", "pair-recovery", "--run-dirs", "run-output"])
+
+    assert result.exit_code == 0
+    assert received == ["--run-dirs", "run-output"]
