@@ -301,7 +301,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     metadata.add_argument("--metadata-dir", default="metadata", help="Directory containing drug_metadata.csv.")
     metadata.add_argument(
         "--drug-metadata",
-        default="metadata/drug_metadata_sciplex.csv",
+        default="metadata/drug_metadata.csv",
         help="Drug metadata CSV used for panel construction and reporting.",
     )
 

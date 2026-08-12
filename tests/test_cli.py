@@ -93,7 +93,7 @@ def test_open_search_paper_defaults() -> None:
     assert args.projection_whiten is False
     assert args.projection_selection_pca_grid == "96,128,192,256"
     assert args.projection_selection_pls_grid == "64,96,128,192"
-    assert args.drug_metadata == "metadata/drug_metadata_sciplex.csv"
+    assert args.drug_metadata == "metadata/drug_metadata.csv"
 
 
 def test_open_search_high_sensitivity_defaults_to_three_robust_batches() -> None:
@@ -265,7 +265,7 @@ def test_hypothesis_panel_paper_defaults_and_alias() -> None:
     assert args.projection_method == "pca_pls_da"
     assert args.projection_auto_select_components is True
     assert args.projection_whiten is False
-    assert args.drug_metadata == "metadata/drug_metadata_sciplex.csv"
+    assert args.drug_metadata == "metadata/drug_metadata.csv"
 
 
 def test_hypothesis_panel_high_sensitivity_defaults_to_three_batches() -> None:

@@ -433,7 +433,7 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     )
     out.add_argument(
         "--drug-metadata",
-        default="metadata/drug_metadata_sciplex.csv",
+        default="metadata/drug_metadata.csv",
         help="Drug metadata CSV used by the sample/drug report.",
     )
     out.add_argument(
