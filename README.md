@@ -10,13 +10,30 @@
 
 # PHAROS
 
+PHAROS is a framework that converts a trained single-cell perturbation model into a combinatorial drug screen.
 PHAROS identifies combinatorial drug perturbations predicted to convert a
-starting cell state into a target cell state. The recommended workflow is:
+starting cell state into a target cell state. Unlike other models, PHAROS can be applied to datasets without any perturbations,
+meaning any cancer single-cell dataset. The primary use case for PHAROS is to generate predictions
+in cancer single-cell datasets that can then be experimentally evaluated. While combination therapy is central to oncology, 
+experimentally screening all potential combinations is intractable, so we need a way to prioritize a certain set in-silico. 
+Furthermore, this framework gives users full flexibility to decide with single-cell resolution the starting cell state
+and the target cell state. 
 
 <p align="center">
   <img src="assets/overview.png" alt="PHAROS overview" width="900">
 </p>
 
+For a cancer dataset of interest, the user first needs to select a starting cell state and target cell state of interest.
+For example: converting metastatic cells into primary cells, converting drug resistant cells into drug responsive cells, 
+converting stage 4 cancer into stage 1 cancer, converting cancer stem cells into differentiated cells, converting 
+immune resistant malignant cells into immune responsive malignant cells, converting melanoma cells with high EMT to 
+melanoma cells with low EMT, converting cancer-associated fibroblasts into normal fibroblasts. With the advancement of 
+single-cell technologies and bioinformatic analysis pipelines, there is a wealth of datasets that identify different
+cellular states of primary tumors. Often with bulk-deconvolution and atlasses such as TCGA, scientists are able to 
+identify certain cell states that correlate with poor overall or median survival. PHAROS gives researchers a data driven 
+prediction of which drug combinations might convert those detrimental cell states into a less detrimental state.
+
+The recommended workflow is:
 1. establish that the proposed conversion is admissible;
 2. test prespecified drugs or mechanisms in hypothesis-driven mode, or run an
    unbiased open search; and
