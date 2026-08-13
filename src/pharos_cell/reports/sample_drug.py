@@ -47,9 +47,19 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
+
+
+class StartCellMetadataNotFoundError(ValueError):
+    """Raised when valid cell metadata does not cover the requested start cell."""
+
+    def __init__(self, start_cell: str, metadata_path: Optional[Path] = None):
+        self.start_cell = str(start_cell)
+        self.metadata_path = Path(metadata_path) if metadata_path is not None else None
+        location = f" in {self.metadata_path}" if self.metadata_path is not None else ""
+        super().__init__(f"No rows found for start-cell={self.start_cell!r}{location}")
 
 
 PUBLICATION_RC = {
@@ -255,10 +265,14 @@ def extract_start_cell(df: pd.DataFrame, cli_start_cell: Optional[str]) -> str:
     raise ValueError("Could not infer starting cell from results.tsv. Pass --start-cell explicitly.")
 
 
-def get_starting_cell_drivers(cell_meta: pd.DataFrame, start_cell: str) -> Tuple[str, List[str], pd.DataFrame]:
+def get_starting_cell_drivers(
+    cell_meta: pd.DataFrame,
+    start_cell: str,
+    metadata_path: Optional[Path] = None,
+) -> Tuple[str, List[str], pd.DataFrame]:
     sub = cell_meta[cell_meta["cell_name"].astype(str) == str(start_cell)].copy()
     if sub.empty:
-        raise ValueError(f"No rows found for start-cell={start_cell!r} in cell_line_metadata.csv")
+        raise StartCellMetadataNotFoundError(start_cell, metadata_path)
     organ = "; ".join(sorted(set(sub["Organ"].dropna().astype(str))))
     drivers = sorted({normalize_gene_symbol(x) for x in sub["Driver_Gene_Symbol"].dropna().astype(str) if str(x).strip()})
     keep_cols = [
@@ -668,7 +682,11 @@ def main(argv=None):
     cell_meta = load_cell_metadata(cell_meta_path)
     print(f"Loading drug metadata: {drug_meta_path}")
     drug_meta = load_drug_metadata(drug_meta_path)
-    organ, driver_genes, start_driver_rows = get_starting_cell_drivers(cell_meta, start_cell)
+    organ, driver_genes, start_driver_rows = get_starting_cell_drivers(
+        cell_meta,
+        start_cell,
+        metadata_path=cell_meta_path,
+    )
     print(f"Start cell: {start_cell}")
     print(f"Organ: {organ}")
     print(f"Driver genes: {', '.join(driver_genes)}")

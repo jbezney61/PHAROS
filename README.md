@@ -457,6 +457,13 @@ move the starting cell-state distribution toward the target distribution.
 The validated paper settings are defaults, so the dataset, state labels,
 model, and output paths are the main required inputs:
 
+If you want PHAROS to incorporate genetic information of the cell line 
+your using, you need to append the genetic information (i.e. KRAS mutation)
+into the file `metadata/cell_line_metadata.csv` such that the `--start-cell`
+value in the conversion is present in the `cell_name` column. PHAROS will then 
+record and plot if any of the top selected drugs are targeting mutated genes in 
+your specific cell line. 
+
 ```bash
 pharos open-search \
   --adata /path/to/query.h5ad \

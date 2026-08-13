@@ -767,6 +767,16 @@ def save_run_manifest(
         "args": vars(args),
         "search_config": cfg,
         "paths": {k: str(v) for k, v in dirs.items()},
+        "reports": {
+            "generic": {
+                "status": "skipped" if args.skip_report else "pending",
+                **({"reason": "user_requested"} if args.skip_report else {}),
+            },
+            "sample_drug": {
+                "status": "skipped" if args.skip_sample_drug_report else "pending",
+                **({"reason": "user_requested"} if args.skip_sample_drug_report else {}),
+            },
+        },
     }
     if projection_cache_path is not None:
         manifest["projection_cache_path"] = projection_cache_path
@@ -775,6 +785,46 @@ def save_run_manifest(
     path = dirs["output_dir"] / "run_manifest.json"
     path.write_text(json.dumps(manifest, indent=2, default=str))
     return path
+
+
+def update_report_status(manifest_path: Path, report_name: str, **status: Any) -> None:
+    """Persist the terminal state of an optional report in the run manifest."""
+    manifest = json.loads(manifest_path.read_text())
+    manifest.setdefault("reports", {})[report_name] = status
+    manifest_path.write_text(json.dumps(manifest, indent=2, default=str))
+
+
+def write_skipped_sample_drug_summary(
+    report_dir: Path,
+    *,
+    start_cell: str,
+    cell_metadata_path: Path,
+    reason: str,
+    remediation: Optional[str] = None,
+) -> Path:
+    """Write a durable explanation when open-search cannot make the metadata report."""
+    report_dir.mkdir(parents=True, exist_ok=True)
+    summary_path = report_dir / "summary.md"
+    lines = [
+        "# Sample and Drug Metadata Report",
+        "",
+        "**Status: skipped**",
+        "",
+        f"- Starting cell: `{start_cell}`",
+        f"- Cell metadata searched: `{cell_metadata_path}`",
+        f"- Reason: {reason}",
+        "",
+        "The open-search results remain valid. If generated, the generic report also "
+        "remains valid; only this optional metadata-aware report was skipped.",
+        "",
+        remediation
+        or (
+            "To generate this report, provide a cell metadata CSV containing the starting "
+            "cell with `--cell-metadata`, then rerun open-search or the sample/drug report."
+        ),
+    ]
+    summary_path.write_text("\n".join(lines) + "\n")
+    return summary_path
 
 
 def main(argv: Optional[List[str]] = None) -> None:
@@ -1002,10 +1052,18 @@ def main(argv: Optional[List[str]] = None) -> None:
             report_argv.extend(["--projection-cache", projection_cache_path])
 
         report_main(report_argv)
+        update_report_status(
+            manifest_path,
+            "generic",
+            status="completed",
+            summary=str(dirs["report_dir"] / "summary.md"),
+        )
 
     # ------------------------------------------------------------------
     # 6. Generate sample/drug metadata report
     # ------------------------------------------------------------------
+    sample_drug_status = "skipped" if args.skip_sample_drug_report else "pending"
+    sample_drug_summary_path: Optional[Path] = None
     if args.skip_sample_drug_report:
         print("\n[6/6] Skipping sample/drug metadata report because --skip-sample-drug-report was set")
     else:
@@ -1016,14 +1074,45 @@ def main(argv: Optional[List[str]] = None) -> None:
         drug_metadata_path = Path(args.drug_metadata) if args.drug_metadata else metadata_dir / "drug_metadata.csv"
 
         if not cell_metadata_path.exists() or not drug_metadata_path.exists():
+            missing_paths = [
+                str(path)
+                for path in (cell_metadata_path, drug_metadata_path)
+                if not path.exists()
+            ]
+            reason = f"Required metadata file(s) not found: {', '.join(missing_paths)}."
             print(
                 "Warning: sample/drug metadata report skipped because metadata files were not found.\n"
                 f"  cell metadata: {cell_metadata_path}\n"
                 f"  drug metadata: {drug_metadata_path}\n"
                 "Provide --metadata-dir, --cell-metadata, or --drug-metadata to enable this report."
             )
+            sample_drug_summary_path = write_skipped_sample_drug_summary(
+                dirs["sample_drug_report_dir"],
+                start_cell=str(args.start_cell),
+                cell_metadata_path=cell_metadata_path,
+                reason=reason,
+                remediation=(
+                    "Provide the required files with `--metadata-dir`, `--cell-metadata`, "
+                    "or `--drug-metadata`, then rerun open-search or the sample/drug report."
+                ),
+            )
+            sample_drug_status = "skipped"
+            update_report_status(
+                manifest_path,
+                "sample_drug",
+                status="skipped",
+                reason="metadata_files_not_found",
+                start_cell=str(args.start_cell),
+                cell_metadata=str(cell_metadata_path),
+                drug_metadata=str(drug_metadata_path),
+                missing_files=missing_paths,
+                summary=str(sample_drug_summary_path),
+            )
         else:
-            from .reports.sample_drug import main as sample_drug_report_main
+            from .reports.sample_drug import (
+                StartCellMetadataNotFoundError,
+                main as sample_drug_report_main,
+            )
 
             sample_report_argv = [
                 "--run-dir", str(dirs["output_dir"]),
@@ -1040,7 +1129,39 @@ def main(argv: Optional[List[str]] = None) -> None:
             else:
                 sample_report_argv.append("--no-final-depth-only")
 
-            sample_drug_report_main(sample_report_argv)
+            try:
+                sample_drug_report_main(sample_report_argv)
+            except StartCellMetadataNotFoundError as exc:
+                reason = (
+                    f"Starting cell `{exc.start_cell}` was not found in the cell metadata."
+                )
+                print(f"Warning: sample/drug metadata report skipped. {reason}")
+                sample_drug_summary_path = write_skipped_sample_drug_summary(
+                    dirs["sample_drug_report_dir"],
+                    start_cell=exc.start_cell,
+                    cell_metadata_path=cell_metadata_path,
+                    reason=reason,
+                )
+                sample_drug_status = "skipped"
+                update_report_status(
+                    manifest_path,
+                    "sample_drug",
+                    status="skipped",
+                    reason="start_cell_not_found",
+                    start_cell=exc.start_cell,
+                    cell_metadata=str(cell_metadata_path),
+                    drug_metadata=str(drug_metadata_path),
+                    summary=str(sample_drug_summary_path),
+                )
+            else:
+                sample_drug_status = "completed"
+                sample_drug_summary_path = dirs["sample_drug_report_dir"] / "summary.md"
+                update_report_status(
+                    manifest_path,
+                    "sample_drug",
+                    status="completed",
+                    summary=str(sample_drug_summary_path),
+                )
 
     print("\n=== Workflow complete ===")
     print(f"output:              {dirs['output_dir']}")
@@ -1048,8 +1169,11 @@ def main(argv: Optional[List[str]] = None) -> None:
     print(f"cache:               {dirs['cache_dir']}")
     if not args.skip_report:
         print(f"generic report:      {dirs['report_dir'] / 'summary.md'}")
-    if not args.skip_sample_drug_report:
-        print(f"sample/drug report:  {dirs['sample_drug_report_dir'] / 'summary.md'}")
+    if sample_drug_summary_path is not None:
+        label = "sample/drug report" if sample_drug_status == "completed" else "sample/drug skip details"
+        print(f"{label + ':':<20} {sample_drug_summary_path}")
+    elif args.skip_sample_drug_report:
+        print("sample/drug report:  skipped by --skip-sample-drug-report")
 
 
 if __name__ == "__main__":
