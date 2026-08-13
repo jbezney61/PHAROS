@@ -192,6 +192,13 @@ The calibration and reference-manifold build steps create reusable reference
 outputs. Query manifold scoring and start–target separation should then be run
 for each new dataset.
 
+If you have your dataset of interest, you can directly skip to 1.2 Embedding-manifold support, 
+specifically the command:
+
+```bash
+pharos admissibility manifold score-query 
+```
+
 ### 1.1 Target calibration (this does not have to be re-run!)
 
 This was already run on 3 cell lines and 379 drugs at 5uM concentration. Results are below.
