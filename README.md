@@ -171,8 +171,7 @@ state emb transform \
   --batch-size 64
 ```
 
-Embedding can be computationally expensive: approximately 300 cells may take
-more than ten minutes even on an NVIDIA H200. Runtime depends on input shape,
+Embedding can be computationally expensive. Runtime depends on input shape,
 storage performance, GPU configuration, and STATE version. The resulting
 `.SE600M.h5ad` can then be supplied to the PHAROS admissibility,
 hypothesis-driven, and open-search commands.
@@ -193,7 +192,12 @@ The calibration and reference-manifold build steps create reusable reference
 outputs. Query manifold scoring and start–target separation should then be run
 for each new dataset.
 
-### 1.1 Target calibration
+### 1.1 Target calibration (this does not have to be re-run!)
+
+This was already run on 3 cell lines and 379 drugs at 5uM concentration. Results are below.
+A user might want to re-run this analysis if they want to focus on a certain set of cell lines
+represented in the Tahoe database like all breast cancer cell lines or all skin cancer cell lines. 
+This gives users a baseline to interpret the results of their own conversion predictions.
 
 <p align="center">
   <img src="assets/calibrate.png" alt="Target Calibration" width="900">
@@ -216,7 +220,9 @@ model is reliable enough for downstream conversion analysis.
 
 ### 1.2 Embedding-manifold support
 
-First build the reusable reference manifold:
+First build the reusable reference manifold (this does not have to be re-run!):
+This was run on all 50 cancer cell lines and all 379 5uM perturbations from Tahoe-100M
+sampled to 100 cells per cell-drug state. 
 
 ```bash
 pharos admissibility manifold build-reference \
@@ -227,6 +233,11 @@ pharos admissibility manifold build-reference \
 ```
 
 Then score a query dataset against it:
+This is when a user determines if their starting or target cell states of interest
+fall within the Tahoe-100M perturbation manifold (i.e. do they look like a cell state in Tahoe?).
+If they are categorized as OOD, then users should interpret the predictions with a higher level of scrutiny. 
+Nevertheless, since PHAROS leverages a single-cell foundation model to embed the cells, this can still 
+generate hypothesis driving results.  
 
 ```bash
 pharos admissibility manifold score-query \
@@ -397,8 +408,7 @@ The generated panel report ranks individual pairs, compares each with random
 controls, and compares the two cohorts with a one-sided Mann–Whitney U test.
 Reported significance values are Benjamini–Hochberg adjusted across the valid
 tests in the report. Panel conversion scores are computed in the fitted
-PCA–PLS-DA projection by default. Panel mode does not currently generate a
-separate per-pair trajectory-embedding report.
+PCA–PLS-DA projection by default.
 
 For a conversion that failed separation QC, add
 `--batch-selection high-sensitivity` to any pair or panel command. This uses
@@ -423,16 +433,13 @@ pharos hypothesis-driven summarize \
   --output-dir runs/hypothesis_multi_conversion_summary
 ```
 
-This is the packaged replacement for
-`make_positive_control_multi_report.py`. It creates side-by-side figures and,
+It creates side-by-side figures and,
 for each conversion, tests the random-pair distribution against the
 MOA-matched and explicit-pair distributions. The resulting P-values are
 Benjamini–Hochberg corrected across all comparisons in the combined report.
 
 Use `pharos hypothesis-driven --help` and each subcommand's `--help` output for
-the complete option reference. The legacy option names `--2drug-pair`,
-`--MOA-pairs`, and `--approved-pairs-file` remain supported, and the scripts in
-`positive_control_2drug/` remain as compatibility entry points.
+the complete option reference. 
 
 ## 3. Open search
 
