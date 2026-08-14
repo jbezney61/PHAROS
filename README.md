@@ -41,10 +41,7 @@ appropriate PyTorch and FAISS builds, and install PHAROS in editable mode.
 Editable installation means that a later `git pull` or local source edit is
 immediately reflected in the installed `pharos` command.
 
-### 1. Clone PHAROS over HTTPS
-
-Install Git and a Conda distribution such as Miniconda or Miniforge, then clone
-the repository:
+### 1. Clone PHAROS 
 
 ```bash
 git clone https://github.com/jbezney61/PHAROS.git
