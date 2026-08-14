@@ -22,7 +22,18 @@ classifiers = [
   "Topic :: Scientific/Engineering :: Bio-Informatics",
 ]
 dependencies = [
+  "anndata==0.12.14",
+  "huggingface-hub==1.14.0",
+  "matplotlib==3.10.9",
+  "numpy==2.4.4",
+  "pandas==2.3.3",
+  "pyyaml==6.0.3",
+  "scanpy==1.11.5",
+  "scikit-learn==1.8.0",
+  "scipy==1.17.1",
+  "torch==2.7.1",
   "typer==0.25.1",
+  "umap-learn==0.5.12",
 ]
 
 [project.urls]
