@@ -13,6 +13,13 @@ move cells from a user-defined starting state toward a target state. It turns a
 trained single-cell perturbation model into a focused *in silico* combination
 screen, helping researchers prioritize candidates for experimental evaluation.
 
+The primary utility of PHAROS is generating hypothesis for cell conversions
+from observational cancer single-cell datasets. Combinatorial drug treatments 
+are central to oncology, and yet it's experimentally intractable to screen 
+for all potential combinations. PHAROS is a data-driven method to prioritize 
+and rank certain combinations of drugs and mechanisms-of-action 
+for follow-up validation.     
+
 <p align="center">
   <img src="assets/overview.png" alt="PHAROS overview" width="900">
 </p>
@@ -38,8 +45,6 @@ The typical CLI workflow is:
 
 These steps clone the PHAROS source, create its Conda environment, select the
 appropriate PyTorch and FAISS builds, and install PHAROS in editable mode.
-Editable installation means that a later `git pull` or local source edit is
-immediately reflected in the installed `pharos` command.
 
 ### 1. Clone PHAROS 
 
@@ -115,7 +120,7 @@ CPU FAISS can support small smoke tests by passing `--no-require-gpu` to the
 FAISS-based manifold commands, but the full validated workflow is designed for
 Linux with an NVIDIA GPU.
 
-### 4. Install PHAROS in editable mode
+### 4. Install PHAROS
 
 From the repository root, with the `PHAROS` Conda environment still active,
 install PHAROS and its declared Python dependencies:
