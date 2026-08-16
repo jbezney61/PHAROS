@@ -323,6 +323,19 @@ This evaluates predicted perturbation responses against observed target states
 and generates the calibration tables and report used to judge whether the
 model is reliable enough for downstream conversion analysis.
 
+If you want an example of the processed Tahoe-100M dataset to generate the target calibration,
+download the dataset from https://zenodo.org/records/21925263. This is the dataset used to generate
+the main results: `Tahoe100m_3_cell_lines_alldrugs_5uMconc_log1p_norm10k.SE600M.h5ad.gz`
+
+```bash
+pharos admissibility calibrate \
+  --adata /path/to/Tahoe100m_3_cell_lines_alldrugs_5uMconc_log1p_norm10k.SE600M.h5ad \
+  --model-dir "$ST_RUN" \
+  --checkpoint "$ST_CKPT" \
+  --output-dir runs/target_calibration \
+  --overwrite
+```
+
 ### 1.2 Embedding-manifold support
 
 First build the reusable reference manifold (this does not have to be re-run!):
@@ -337,6 +350,18 @@ pharos admissibility manifold build-reference \
   --overwrite
 ```
 
+If you want an example of the processed Tahoe-100M dataset to generate the embedding manifold,
+download the dataset from https://zenodo.org/records/21925263. This is the dataset used to generate
+the main results: `Tahoe100m_allWT_cell_lines_alldrugs_5uMconc_log1p_norm10k.SE600M.h5ad.gz`
+
+```bash
+pharos admissibility manifold build-reference \
+  --reference-h5ad /path/to/Tahoe100m_allWT_cell_lines_alldrugs_5uMconc_log1p_norm10k.SE600M.h5ad \
+  --cell-line-metadata metadata/cell_line_metadata.csv \
+  --output-dir runs/tahoe_manifold_reference \
+  --overwrite
+```
+
 Then score a query dataset against it:
 This is when a user determines if their starting or target cell states of interest
 fall within the Tahoe-100M perturbation manifold (i.e. do they look like a cell state in Tahoe?).
@@ -344,9 +369,12 @@ If they are categorized as OOD, then users should interpret the predictions with
 Nevertheless, since PHAROS leverages a single-cell foundation model to embed the cells, this can still 
 generate hypothesis driving results.  
 
+First download the parquet vector database that was already generated from `pharos admissibility manifold build-reference.`
+This can be found at https://zenodo.org/records/21925263 under `tahoe100m_stse_manifold_reference.tar.gz`
+
 ```bash
 pharos admissibility manifold score-query \
-  --reference-dir runs/tahoe_manifold_reference \
+  --reference-dir tahoe100m_stse_manifold_reference \
   --query-h5ad /path/to/query.h5ad \
   --query-state-col cell_type \
   --output-dir runs/query_manifold_qc \
