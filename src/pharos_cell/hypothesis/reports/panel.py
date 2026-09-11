@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-"""
-Report for explicit 2-drug panel positive-control runs.
+"""Compare candidate pairs from a PHAROS hypothesis-driven panel analysis.
 
-This report expects a run created by positive_control_2drug_panel_analysis.py:
-multiple selected rows with group == "explicit_pair" and one shared random-pair
-control distribution.
+Consume a run produced by ``pharos hypothesis-driven panel`` with multiple
+selected ``explicit_pair`` rows and a shared random-pair control distribution.
+Summarize candidate conversion scores, gains, and pair-group comparisons in
+Markdown, tables, and figures under the panel report directory.
 """
 
 from __future__ import annotations

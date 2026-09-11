@@ -1,18 +1,20 @@
-"""
-converter.py
+"""Predict drug-induced cell-state transitions with the Arc STATE ST-SE model.
 
-In-memory converter for Arc STATE ST-SE models.
+Wrap a trained ``StateTransitionPerturbationModel`` for in-memory inference in
+PHAROS searches and hypothesis-driven analyses. ``StateSEConverter`` loads the
+model and perturbation labels, converts one cell batch, or yields predictions
+for many perturbations in chunks on CPU or CUDA.
 
-This module wraps a trained StateTransitionPerturbationModel so it can be used
-inside a beam/tree search without repeatedly reading/writing AnnData files.
+Inputs and outputs use STATE embedding (SE) arrays with shape
+``[n_cells, embedding_dim]``, typically from ``adata.obsm["X_state"]``.
+Perturbation labels must match the model's perturbation vocabulary.
 
-Core use:
-    converter = StateSEConverter(model_dir=ST_RUN, checkpoint=ST_CKPT)
-    y = converter.convert_one(x_state_256, perturbation_label)
+Example
+-------
+    from pharos_cell.converter import StateSEConverter
 
-Input/output embeddings are expected to be SE embeddings, e.g. adata.obsm['X_state']
-with shape [n_cells, embedding_dim]. For the Tahoe ST-SE checkpoint used in the
-examples, n_cells is typically 256 and embedding_dim is typically 2058.
+    converter = StateSEConverter(model_dir=model_dir, checkpoint=checkpoint)
+    predicted = converter.convert_one(start_embeddings, perturbation_label)
 """
 
 from __future__ import annotations

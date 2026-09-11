@@ -1,26 +1,19 @@
 #!/usr/bin/env python
-"""
-PHAROS embedding-manifold admissibility CLI.
+"""Build and query reference embeddings with ``pharos admissibility manifold``.
 
-CLI wrapper for ST-SE embedding manifold QC.
+``build-reference`` creates a reusable FAISS index and calibration bundle.
+``score-query`` evaluates an embedded AnnData dataset against the saved bundle
+and can generate a report of cell-state support. Both commands record their
+configuration and expose sampling and compute settings.
 
-Two-step workflow
------------------
-1. Build a reusable reference bundle:
+Examples
+--------
+    pharos admissibility manifold build-reference \
+        --reference-h5ad data/reference.h5ad --output-dir runs/reference
 
-   python embedding_manifold_qc_analysis.py build-reference \
-     --reference-h5ad data/merged_5um_perturbations_plus_DMSO_100_per_cell_line_log1p_norm10k.SE600M.h5ad \
-     --output-dir runs/tahoe_reference_manifold \
-     --cell-line-metadata metadata/cell_line_metadata.csv \
-     --k 50
-
-2. Score a query h5ad against that reference:
-
-   python embedding_manifold_qc_analysis.py score-query \
-     --reference-dir runs/tahoe_reference_manifold \
-     --query-h5ad data/query.SE600M.h5ad \
-     --query-state-col cell_type \
-     --output-dir runs/query_manifold_qc
+    pharos admissibility manifold score-query --reference-dir runs/reference \
+        --query-h5ad data/query.h5ad --query-state-col cell_type \
+        --output-dir runs/query_support
 """
 
 from __future__ import annotations

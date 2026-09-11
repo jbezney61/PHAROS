@@ -1,39 +1,35 @@
 #!/usr/bin/env python
-"""
-positive_control_2drug.py
+"""Evaluate two-drug cell-state conversion hypotheses with PHAROS.
 
-Core utilities for positive-control 2-drug ST-SE conversion analysis.
-
-This module is intentionally additive: it reuses the existing data_loader,
-converter, scoring, and search helpers, but does not alter any existing files.
+Provide the shared analysis engine for ``pharos hypothesis-driven pair`` and
+``pharos hypothesis-driven panel``. Use the package's embedding loaders, STATE
+transition converter, scoring projections, and distribution metrics to compare
+candidate drug pairs with untreated baselines and random-pair controls.
 
 Workflow
 --------
-1. Sample start/target batches from an SE-embedded AnnData file.
-2. Record baseline Sinkhorn OT between the untreated start state and target.
-3. For an explicit 2-drug pair, search both drug orders and all concentration
-   label pairs on batch 0, then evaluate the best ordered pair over all batches.
-4. For all ordered pairs matching the two requested moa-fine terms, aligned to
-   the best explicit order when available, do the same concentration selection
-   and multi-batch evaluation.
-5. For random controls, either match the explicit-pair order/concentration
-   search on batch 0 or use the legacy direct ordered-label sampling, then
-   evaluate the selected random controls over all batches.
+1. Sample starting and target cell batches from embedded AnnData and prepare
+   the scoring projection and baseline distances.
+2. Build candidates from a named pair, a fixed drug with mechanism-of-action
+   (MOA) partners, an explicit pair panel, or the requested MOA terms.
+3. Select explicit-pair orders and concentration labels on batch zero, then
+   select concentrations for MOA pairs, aligning MOA order with the selected
+   explicit order when applicable.
+4. Select random controls using matched order/concentration searches or direct
+   sampling of ordered perturbation labels, according to configuration.
+5. Evaluate selected candidates and controls across the sampled batches.
+   For single-pair runs, optionally save trajectory embeddings and evaluate
+   additive and order-interaction variants.
 
-Outputs are written under:
-    output_dir/
-        positive_control_config.used.json
-        positive_control_checkpoint.pt
-        trajectory_embeddings/
-            explicit_pair_trajectory.npz
-            explicit_pair_trajectory_metadata.json
-        tables/
-            baseline_results.tsv
-            batch_metadata.tsv
-            concentration_selection_scores.tsv
-            selected_pairs.tsv
-            random_pairs.tsv
-            evaluation_results.tsv
+Outputs
+-------
+The run directory contains ``positive_control_config.used.json`` and
+``positive_control_checkpoint.pt``. These are the current artifact filenames
+for hypothesis-driven analyses. The ``tables/`` directory contains baselines,
+batch metadata, concentration-selection scores, selected and random pairs,
+evaluation results, and additive-interaction results. Optional trajectory
+archives are stored under ``trajectory_embeddings/``; projection and batch
+selection diagnostics are saved when those features are used.
 """
 
 from __future__ import annotations

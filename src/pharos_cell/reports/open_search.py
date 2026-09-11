@@ -1,31 +1,19 @@
 #!/usr/bin/env python
-"""
-make_positive_control_search_report.py
+"""Audit a specified drug pair in retained PHAROS open-search paths.
 
-Positive-control audit for PHAROS open-search output directories.
+Implement ``pharos report open-search``. Read ``checkpoint.pt`` or
+``results.tsv``, identify the requested drugs and their orders in depth-two
+paths, and summarize scores, ranks, and percentiles. All ranks refer to retained
+search outputs, rather than the complete set of candidates expanded during
+search. Multiple runs can be compared in one report.
 
-The report asks where a known two-drug positive-control pair appears among the
-retained depth-2 search paths. It can use checkpoint.pt directly, or results.tsv
-when that is preferable. Ranks and percentiles are always ranks among retained
-search outputs, not all candidates ever expanded during prefiltering.
+Write per-run hit summaries, tables, and figures, plus a comparison report when
+multiple runs are supplied.
 
-Examples
---------
-pharos report open-search \
-  --run-dir runs/full_2058/search \
-  --drug-a Trametinib \
-  --drug-b Palbociclib
-
-Compare two runs:
-
-pharos report open-search \
-  --run-dir runs/full_2058/search \
-  --run-dir runs/pls/search \
-  --run-label full_2058 \
-  --run-label pls \
-  --drug-a Trametinib \
-  --drug-b Palbociclib \
-  --output-dir runs/positive_control_full_vs_pls
+Example
+-------
+    pharos report open-search --run-dir runs/start_to_target/search \
+        --drug-a Trametinib --drug-b Palbociclib
 """
 
 from __future__ import annotations

@@ -1,86 +1,22 @@
 #!/usr/bin/env python
-"""
-search.py
+"""Search sequential drug combinations that move cells toward a target state.
 
-Beam-search algorithms for sequential ST-SE perturbation search.
+Implement deterministic and diverse beam search for PHAROS using a
+``StateSEConverter``, a ``DistributionScorer``, and starting cell embeddings.
+At each depth, expand retained paths with allowed perturbation labels, filter
+candidates with the configured metric, and rerank with Sinkhorn optimal
+transport. Diverse search also penalizes overlapping paths and can penalize
+similar predicted states.
 
-This module assumes you already have:
+When enabled, robust reranking replays candidate paths on additional sampled
+start/target batches before retaining the beam. The aggregate score is stored
+as ``adjusted_score``. By default, using a drug at one concentration prevents
+reuse of that drug at any concentration later in the same path.
 
-    converter: StateSEConverter
-        - converter.convert_many_iter(state, perturbations, chunk_size)
-        - converter.list_perturbations(include_control=False)
-
-    scorer: DistributionScorer
-        - scorer.energy_distance(candidate_batch)
-        - scorer.sinkhorn(candidate_batch)
-
-    start_embeddings:
-        - np.ndarray or torch.Tensor [n_cells, emb_dim], usually [256, 2058]
-
-Core algorithms
----------------
-1. deterministic_beam_search()
-   - no repeated drug names by default
-   - configurable prefilter metric
-   - Sinkhorn OT rerank
-   - saves results.tsv and checkpoint.pt
-
-2. diverse_beam_search()
-   - same as deterministic beam search
-   - adds path-overlap penalty
-   - optional state-similarity penalty
-
-Optional robust reranking
--------------------------
-If cfg["robustness"]["enabled"] is true and robust_samples are provided,
-each depth reranks the post-Sinkhorn candidate pool by replaying every
-candidate path on additional sampled start/target batches before retaining
-the beam. The robust aggregate is stored in adjusted_score.
-
-Important concentration handling
---------------------------------
-Tahoe perturbation labels often contain the same drug at multiple concentrations, e.g.
-
-    "[('18β-Glycyrrhetinic acid', 0.5, 'uM')]"
-    "[('18β-Glycyrrhetinic acid', 0.05, 'uM')]"
-    "[('18β-Glycyrrhetinic acid', 5.0, 'uM')]"
-
-By default, the search may choose any concentration at a given step, but once a
-drug name has been used, no other concentration of the same drug can be selected
-later in the same path.
-
-Output
-------
-output_dir/
-    results.tsv
-    checkpoint.pt
-
-checkpoint.pt contains:
-    {
-        "config": config dictionary,
-        "baseline_scores": {
-            "sinkhorn": float,             # Sinkhorn OT(start_state, target_state)
-            "energy_distance": float,      # Energy distance(start_state, target_state)
-            "target_self_term": float,     # Cached E||Y-Y'|| for the target
-        } or None,
-        "depths": {
-            depth: {
-                "paths": list[tuple[str]],
-                "drug_names": list[tuple[str]],
-                "scores_sinkhorn": list[float],
-                "scores_energy_distance": list[float],
-                "adjusted_scores": list[float],
-                "states": torch.Tensor [beam_size, n_cells, emb_dim] on CPU float16/float32,
-            }
-        }
-    }
-
-Depth 0
--------
-Depth 0 records the un-perturbed starting state. Its score_sinkhorn and
-score_energy_distance are the baseline distances start_state -> target_state,
-so depth-1 rows in results.tsv carry a meaningful delta_sinkhorn_from_parent
-(score_after_first_drug - baseline).
+Write ``results.tsv`` and ``checkpoint.pt`` in the search output directory.
+The checkpoint stores the configuration, baseline scores, and retained paths,
+scores, and predicted states by depth. Depth zero records the untreated start
+state, providing the baseline for improvement after the first perturbation.
 """
 
 from __future__ import annotations

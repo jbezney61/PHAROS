@@ -1,34 +1,16 @@
 #!/usr/bin/env python
-"""
-make_explicit_trajectory_report.py
+"""Visualize saved two-drug trajectories from a PHAROS pair analysis.
 
-Generate trajectory figures for the explicit --2drug-pair path saved by
-positive_control_2drug.py.
+Read ``trajectory_embeddings/explicit_pair_trajectory.npz`` and its metadata
+from the run directory. Track starting cells, intermediate and final predicted
+states, and target cells using target-aligned plots, distance and angle metrics,
+stepwise gains, and UMAP views, with and without the target displayed.
 
-Expected input directory:
-    run_dir/
-        trajectory_embeddings/
-            explicit_pair_trajectory.npz
-            explicit_pair_trajectory_metadata.json
-
-Outputs:
-    run_dir/trajectory_report_projection/  (default; projected PCA--PLS-DA space)
-    run_dir/trajectory_report/  (for --embedding-space full)
-    run_dir/trajectory_report_compare/  (for --embedding-space both)
-        summary.md
-        tables/
-            trajectory_metrics_by_batch.tsv
-            umap_grid_search_results.tsv
-        figures/
-            with_target/
-                01_target_aligned_trajectory.png
-                02_distance_to_target.png
-                03_distance_from_wt.png
-                04_stepwise_gain_waterfall.png
-                05_umap_grid_search.png
-                06_angle_to_target.png
-            without_target/
-                matching no-target versions of the same six figure types
+Use the saved scoring projection by default. Reports are written to
+``trajectory_report_projection/`` for projected embeddings,
+``trajectory_report/`` for full embeddings, or ``trajectory_report_compare/``
+when both spaces are requested. Outputs include Markdown summaries, per-batch
+trajectory metrics, UMAP grid-search tables, and figures.
 """
 
 from __future__ import annotations

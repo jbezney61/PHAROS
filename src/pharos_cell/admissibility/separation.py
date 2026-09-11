@@ -1,15 +1,13 @@
 #!/usr/bin/env python
-"""
-pair_screening.py
+"""Screen separation between candidate starting and target states for PHAROS.
 
-Pre-search screening of start/target cell-line pairs using SE embeddings.
+Sample a fixed number of cells from each eligible state in an embedded AnnData
+dataset and L2-normalize their embeddings. Visualize states with UMAP, assess
+nearest-neighbor label purity, exclude states that fail the purity threshold,
+and compute energy distances for directed pairs of the remaining states.
 
-Steps:
-  1. Keep cell lines with at least cells_per_line cells and sample exactly that many.
-  2. L2-normalize embeddings (same convention as scoring.py / search).
-  3. UMAP visualization.
-  4. Per-cell KNN purity QC (exclude low-purity lines).
-  5. Energy distance for all directed pairs among QC-passing lines.
+Save sampled-state metadata, quality-control tables, pairwise distances, and
+figures for choosing conversions before running a drug-combination search.
 """
 
 from __future__ import annotations

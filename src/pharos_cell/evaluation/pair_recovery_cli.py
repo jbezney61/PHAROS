@@ -1,4 +1,10 @@
-"""CLI for per-run target-pair recovery vs Model B MC null."""
+"""Run ``pharos evaluate pair-recovery`` on completed search results.
+
+Accept run directories or result tables, labels matched to a target-pair table,
+the evaluation depth and rank threshold, and Monte Carlo settings. Delegate
+counting and null-model evaluation to the pair-recovery analysis, then write
+statistical tables, report figures, and a Markdown summary.
+"""
 
 from __future__ import annotations
 

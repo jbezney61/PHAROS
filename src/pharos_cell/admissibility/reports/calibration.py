@@ -1,9 +1,10 @@
 #!/usr/bin/env python
-"""
-make_target_calibration_qc_report.py
+"""Summarize prediction calibration from ``pharos admissibility calibrate``.
 
-Generate target calibration QC figures from target_calibration_qc_analysis.py
-outputs.
+Read the run manifest and calibration tables, compare score and conversion
+distributions across calibration modes, and rank cell types and drugs.
+Write a Markdown summary, report tables, and diagnostic distribution plots
+to the report directory.
 """
 
 from __future__ import annotations

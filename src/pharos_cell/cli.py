@@ -1,4 +1,10 @@
-"""Top-level PHAROS command-line interface."""
+"""Define the top-level ``pharos`` command and its workflow groups.
+
+Route commands for admissibility checks, hypothesis-driven evaluation, open
+search, reporting, statistical evaluation, and model downloads to their package
+modules. Workflow imports are deferred until the corresponding command runs;
+each workflow handles its own arguments.
+"""
 
 from typing import Annotated
 

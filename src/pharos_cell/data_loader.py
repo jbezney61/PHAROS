@@ -1,28 +1,30 @@
 #!/usr/bin/env python
-"""
-data_loader.py
+"""Load and sample starting and target cell-state embeddings for PHAROS.
 
-Utilities for loading start and target cell-state embeddings from an AnnData .h5ad
-that already contains SE embeddings in adata.obsm[embed_key], usually "X_state".
+Read an AnnData ``.h5ad`` file with STATE embeddings in ``adata.obsm[embed_key]``
+(usually ``X_state``), select states using an observation column, and return
+embedding arrays with cell identifiers and sampling metadata. Support single
+batches, repeated random batches, and high-sensitivity batch selection.
 
-This module is intentionally independent of the ST-SE converter and scoring modules.
+``LoadedCellStates`` stores the sampled states and can save or reload them as
+a compressed NumPy archive for reuse by analyses and reports.
 
-Typical use:
-    from data_loader import load_start_target_embeddings
+Example
+-------
+    from pharos_cell.data_loader import load_start_target_embeddings
 
     pair = load_start_target_embeddings(
-        h5ad_path="WT_256_per_cell_name.SE600M.h5ad",
-        start_cell="J82",
-        target_cell="A-172",
-        cell_col="cell_name",
+        h5ad_path="data/cells.h5ad",
+        start_cell="start",
+        target_cell="target",
+        cell_col="cell_type",
         embed_key="X_state",
         start_sample=256,
         target_sample=256,
         seed=42,
     )
-
-    start_embeddings = pair.start_embeddings  # np.ndarray [256, 2058]
-    target_embeddings = pair.target_embeddings  # np.ndarray [256, 2058]
+    start_embeddings = pair.start_embeddings
+    target_embeddings = pair.target_embeddings
 """
 
 from __future__ import annotations

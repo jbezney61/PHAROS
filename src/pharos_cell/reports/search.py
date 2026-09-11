@@ -1,59 +1,18 @@
 #!/usr/bin/env python
-"""
-make_search_report.py
+"""Summarize retained drug-combination paths from a PHAROS open search.
 
-Generate a generic summary report for ST-SE sequential perturbation search outputs.
+Read a search directory containing ``results.tsv``, ``checkpoint.pt``, and
+``search_config.used.yaml``. Summarize top paths, best results by depth,
+stepwise score improvements, drug frequencies and positions, path similarity,
+and conversion thresholds.
 
-Input
------
-A search output directory produced by search.py containing:
+Optional target embeddings from a NumPy cache or AnnData enable population
+variance and target-neighbor coverage diagnostics. Those diagnostics are
+skipped when target embeddings are unavailable.
 
-    results.tsv
-    checkpoint.pt
-    search_config.used.yaml
-
-Optional, but recommended for heterogeneity diagnostics:
-    either:
-        --target-npz J82_to_A172_states.npz
-    or:
-        --adata WT_256_per_cell_name.SE600M.h5ad --target-cell A-172 --cell-col cell_name --embed-key X_state
-
-Outputs
--------
-report/
-    summary.md
-    tables/
-        top_paths.tsv
-        best_by_depth.tsv
-        drug_frequency.tsv
-        drug_position_counts.tsv
-        conversion_threshold_counts.tsv
-        heterogeneity_diagnostics.tsv
-    figures/
-        01_best_score_by_depth.png
-        02_top_path_trajectories.png
-        03_delta_score_by_step.png
-        04_drug_frequency_top_paths.png
-        05_drug_position_heatmap.png
-        06_path_similarity_heatmap.png
-        07_variance_ratio_by_depth.png
-        08_target_neighbor_coverage.png
-
-Core plots
-----------
-1. Best Sinkhorn/energy score by depth
-2. Top-path trajectories across sequential drug steps
-3. Delta Sinkhorn improvement per step
-4. Drug frequency across top paths
-5. Drug × step-position heatmap
-6. Path similarity heatmap
-7. Variance ratio / population-collapse diagnostic
-8. Target-neighbor coverage diagnostic
-
-Notes
------
-Plots 7 and 8 require target embeddings. The script will skip those gracefully
-if target embeddings are not provided.
+Write ``summary.md``, summary tables, and figures to the report directory.
+The open-search workflow invokes this module to generate its generic report;
+it can also be run as ``python -m pharos_cell.reports.search``.
 """
 
 from __future__ import annotations

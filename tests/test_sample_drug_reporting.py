@@ -1,3 +1,9 @@
+"""Verify reporting behavior when PHAROS sample metadata are unavailable.
+
+Check the dedicated missing-start-cell exception, the skipped-report summary,
+and report-status updates in the open-search run manifest.
+"""
+
 import argparse
 import json
 

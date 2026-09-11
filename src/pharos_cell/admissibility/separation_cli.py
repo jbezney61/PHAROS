@@ -1,18 +1,15 @@
 #!/usr/bin/env python
-"""
-PHAROS separation admissibility CLI.
+"""Configure and run ``pharos admissibility separation``.
 
-CLI for pre-search cell-line pair screening (UMAP, KNN purity QC, energy distances).
+Parse the embedded AnnData input, state labels, cell-sampling settings, UMAP
+options, and nearest-neighbor purity thresholds. Delegate to the separation
+analysis and save its configuration alongside the screening outputs.
 
-Example:
-    export CUDA_VISIBLE_DEVICES=0
-
-    python screen_cell_line_pairs.py \
-      --adata WT_256_per_cell_name.SE600M.h5ad \
-      --cell-col cell_name \
-      --embed-key X_state \
-      --cells-per-line 256 \
-      --output-dir runs/pair_screening_WT256
+Example
+-------
+    pharos admissibility separation --adata data/cells.h5ad \
+        --cell-col cell_type --embed-key X_state --cells-per-line 256 \
+        --output-dir runs/state_separation
 """
 
 from __future__ import annotations

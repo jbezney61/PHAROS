@@ -1,81 +1,27 @@
 #!/usr/bin/env python
-"""
-PHAROS open-search workflow.
+"""Run the end-to-end ``pharos open-search`` cell-state conversion workflow.
 
-End-to-end CLI for one ST-SE cell-state conversion search.
+Load starting and target STATE embeddings from AnnData, initialize the ST-SE
+transition model and distribution scorer, prepare the scoring projection, and
+run deterministic or diverse beam search. Generate a search summary and, when
+the required metadata are available, a sample and drug annotation report.
 
-This wrapper runs the full workflow for a single conversion:
+Defaults use diverse beam search with depth 2, beam width 128, robust reranking,
+and a conversion-aligned PCA/PLS-DA scoring projection. Standard robust sampling
+uses five batches; high-sensitivity selection defaults to three.
 
-    1. Load starting and target cell-state embeddings from an SE-embedded h5ad.
-    2. Load the ST-SE converter model onto GPU/CPU.
-    3. Initialize the distributional scorer.
-    4. Run deterministic or diverse beam search.
-    5. Generate a generic search summary report with plots and tables.
-    6. Optionally generate a sample/drug metadata report if metadata files are available.
-
-It expects these companion modules to be importable from the same directory or PYTHONPATH:
-
-    data_loader.py
-    converter.py
-    scoring.py
-    search.py
-    make_search_report.py
-    make_sample_drug_report.py
-
-Minimal example
----------------
-    export CUDA_VISIBLE_DEVICES=0
-
-    python cell_converter.py \
-      --adata WT_256_per_cell_name.SE600M.h5ad \
-      --start-cell J82 \
-      --target-cell A-172 \
-      --cell-col cell_name \
-      --embed-key X_state \
-      --model-dir "$ST_RUN" \
-      --checkpoint "$ST_RUN/checkpoints/final.ckpt" \
-      --output-dir runs/J82_to_A172
-
-The default search settings match the validated settings used in the PHAROS
-paper: diverse beam search, depth 2, beam width 128, robust reranking, and a
-conversion-aligned PCA--PLS-DA scoring projection. High-sensitivity batch
-selection uses three robust batches instead of the standard five.
-
-Smoke test
-----------------
-    python cell_converter.py \
-      --adata WT_256_per_cell_name.SE600M.h5ad \
-      --start-cell J82 \
-      --target-cell A-172 \
-      --model-dir "$ST_RUN" \
-      --checkpoint "$ST_RUN/checkpoints/final.ckpt" \
-      --output-dir runs/test_J82_to_A172 \
-      --max-depth 2 \
-      --beam-size 2 \
-      --max-drugs-to-consider 6 \
-      --prefilter-multiplier 3 \
-      --converter-chunk-size 3 \
-      --sinkhorn-iters 50 \
-      --no-robust-rerank \
-      --projection-method none
+Example
+-------
+    pharos open-search --adata data/cells.h5ad --start-cell start \
+        --target-cell target --cell-col cell_type --model-dir "$ST_RUN" \
+        --checkpoint "$ST_CKPT" --output-dir runs/start_to_target
 
 Outputs
 -------
-output_dir/
-    search/
-        results.tsv
-        checkpoint.pt
-        search_config.used.yaml
-    cache/
-        start_target_states.npz
-    report/
-        summary.md
-        tables/
-        figures/
-    sample_drug_report/
-        summary.md
-        tables/
-        figures/
+The run directory contains ``search/results.tsv``, ``search/checkpoint.pt``,
+``search/search_config.used.yaml``, and cached start/target embeddings under
+``cache/``. Generated reports contain ``summary.md``, ``tables/``, and
+``figures/`` under ``report/`` and ``sample_drug_report/``.
 """
 
 from __future__ import annotations

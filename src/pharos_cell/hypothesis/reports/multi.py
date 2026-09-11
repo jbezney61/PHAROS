@@ -1,37 +1,19 @@
 #!/usr/bin/env python
-"""
-make_positive_control_multi_report.py
+"""Compare completed PHAROS pair analyses across cell-state conversions.
 
-Collate several positive_control_2drug_analysis.py output directories into
-publication-quality side-by-side comparison plots.
+Implement reporting for ``pharos hypothesis-driven summarize``. Read each
+run's configuration, baseline scores, selected pairs, evaluation results, and
+available additive-interaction results. Compare candidate, MOA-defined, and
+random-control distributions across runs.
 
-Expected input run directories:
-    run_dir/
-        positive_control_config.used.json
-        tables/
-            baseline_results.tsv
-            selected_pairs.tsv
-            evaluation_results.tsv
-            explicit_pair_additive_results.tsv
+Write ``summary.md``, conversion summaries, statistical-test and plotted-value
+tables, and side-by-side comparison figures in the requested output directory.
 
-Outputs:
-    output_dir/
-        summary.md
-        tables/
-            conversion_summary.tsv
-            positive_control_distribution_tests.tsv
-            positive_control_plot_values.tsv
-            additive_plot_values.tsv
-        figures/
-            01_multi_positive_control_boxplot.png
-            02_multi_positive_control_violinplot.png
-            03_multi_explicit_pair_additive_boxplot.png
-
-Example:
-    python positive_control_2drug/make_positive_control_multi_report.py \\
-      --run-dirs runs/PC_CPA_pano_alve runs/PC_CPA_trametinib \\
-      --labels "Pano + Alves" "Trametinib + ..." \\
-      --output-dir runs/positive_control_2drug_multi_report
+Example
+-------
+    pharos hypothesis-driven summarize --run-dirs runs/pair_a runs/pair_b \
+        --labels "Conversion A" "Conversion B" \
+        --output-dir runs/pair_comparison
 """
 
 from __future__ import annotations

@@ -1,35 +1,22 @@
 #!/usr/bin/env python
-"""
-PHAROS hypothesis-driven explicit-pair panel CLI.
+"""Evaluate a file of drug pairs with ``pharos hypothesis-driven panel``.
 
-This is a thin wrapper around run_positive_control_2drug_analysis. It keeps the
-standard positive-control sampling, scoring, random-pair controls, and output
-tables, but replaces the single --2drug-pair / MOA search with a file of
-explicit 2-drug pairs. Each pair is evaluated in both orders and retained as
-one selected explicit_pair row.
+Use the shared hypothesis engine to test both orders and available concentration
+labels for each explicit pair, retain its best choice on batch zero, and
+evaluate the selected pairs across batches against shared random controls.
+Generate a panel report unless reporting is skipped.
+
+Pair files require ``drug_a`` and ``drug_b`` columns and may include ``pair_id``
+and ``pair_group``. Defaults include 100 random pairs, five standard batches,
+and a conversion-aligned PCA/PLS-DA scoring projection; high-sensitivity sampling
+defaults to three batches.
 
 Example
 -------
-python positive_control_2drug/positive_control_2drug_panel_analysis.py \\
-  --adata my_conversion.SE600M.h5ad \\
-  --start-cell metastatic_patient_1 \\
-  --target-cell matched_primary_1 \\
-  --cell-col Sample \\
-  --model-dir "$ST_RUN" \\
-  --approved-pairs-file approved_breast_cancer_pairs.tsv \\
-  --output-dir runs/patient_1_fda_pair_panel
-
-The remaining defaults match the validated panel settings used in the PHAROS
-paper, including 100 random pairs, five standard batches, and conversion-aligned
-PCA--PLS-DA scoring. High-sensitivity batch selection defaults to three batches.
-
-Pair file columns
------------------
-Required:
-    drug_a, drug_b
-
-Optional:
-    pair_id, pair_group
+    pharos hypothesis-driven panel --adata data/cells.h5ad \
+        --start-cell start --target-cell target --cell-col cell_type \
+        --model-dir "$ST_RUN" --approved-pairs-file data/drug_pairs.tsv \
+        --output-dir runs/pair_panel
 """
 
 from __future__ import annotations

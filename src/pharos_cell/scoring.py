@@ -1,36 +1,18 @@
 #!/usr/bin/env python
-"""
-scoring.py
+"""Measure distances between predicted and target cell-state distributions.
 
-Distribution-aware scoring functions for STATE/ST-SE sequential drug search.
+Provide PyTorch implementations of energy distance and entropically regularized
+Sinkhorn optimal transport (OT) for PHAROS search and evaluation. Lower scores
+indicate closer distributions. ``DistributionScorer`` reuses a fixed target and
+caches its energy-distance self term when scoring many candidates.
 
-Inputs are cell-state embeddings:
-    predicted_states: [B, N, D] or [N, D]
-    target_state:     [M, D]
+Predicted embeddings have shape ``[B, N, D]`` or ``[N, D]``; target embeddings
+have shape ``[M, D]``. Here B is the candidate count, N and M are cell counts,
+and D is the embedding or scoring-projection dimension. Embedding normalization
+and the Sinkhorn cost metric are configurable.
 
-where:
-    B = number of candidate perturbations / beam nodes
-    N = number of predicted cells, usually 256
-    M = number of target cells, often 256 now but can be larger later
-    D = SE embedding dimension, e.g. 2058
-
-Implemented scores
-------------------
-1. Energy distance (euclidean on L2-normalized embeddings)
-   - Fast, GPU-friendly, batch-friendly; same distributional family as the
-     geomloss energy loss used in ST-SE training.
-   - Full distance: 2*E||X-Y|| - E||X-X'|| - E||Y-Y'||  (lower is better).
-   - For a fixed target Y, E||Y-Y'|| is constant and cached in DistributionScorer.
-
-2. Sinkhorn optimal transport distance
-   - More biologically faithful distributional matching.
-   - Builds a full pairwise cell-cell cost matrix and solves soft optimal transport.
-   - Good for reranking top candidates and final evaluation.
-
-Recommended use in beam search
-------------------------------
-Use energy distance to score all candidates quickly, keep top M, then rerank
-those top M using Sinkhorn OT.
+Energy distance supports fast candidate filtering; Sinkhorn OT supports
+candidate reranking and evaluation of the resulting cell-state distributions.
 """
 
 from __future__ import annotations

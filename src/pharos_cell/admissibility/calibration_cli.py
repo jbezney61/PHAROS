@@ -1,17 +1,16 @@
 #!/usr/bin/env python
-"""
-PHAROS target-calibration admissibility CLI.
+"""Configure and run ``pharos admissibility calibrate``.
 
-CLI wrapper for ST-SE target calibration QC.
+Parse the embedded AnnData input, transition-model paths, sampling settings,
+calibration modes, and scoring options. Run prediction-versus-observation
+calibration through ``pharos_cell.admissibility.calibration``, record the CLI
+configuration, and generate its report unless reporting is skipped.
 
 Example
 -------
-python target_calibration_QC/target_calibration_qc_analysis.py \
-  --adata data/merged_5um_perturbations_plus_DMSO_100_per_cell_line.SE600M.h5ad \
-  --model-dir "$ST_RUN" \
-  --checkpoint "$ST_RUN/checkpoints/final.ckpt" \
-  --output-dir runs/target_calibration_qc \
-  --overwrite
+    pharos admissibility calibrate --adata data/observed_perturbations.h5ad \
+        --model-dir "$ST_RUN" --checkpoint "$ST_CKPT" \
+        --output-dir runs/calibration
 """
 
 from __future__ import annotations

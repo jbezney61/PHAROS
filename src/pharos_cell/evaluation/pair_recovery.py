@@ -1,4 +1,14 @@
-"""Per-run target-pair abundance and exact-pair recovery vs Model B MC null."""
+"""Test recovery of specified drug pairs in PHAROS open-search results.
+
+Load retained search paths and the target pair assigned to each run. Count
+appearances of each target drug and exact-pair recovery within the requested
+depths and rank threshold, and record the best exact-pair rank.
+
+Compare observed counts with Model B, a Monte Carlo null that samples random
+search beams under the configured drug/concentration space and repetition
+constraints. Assemble empirical significance results, report tables, and a
+Markdown summary for ``pharos evaluate pair-recovery``.
+"""
 
 from __future__ import annotations
 

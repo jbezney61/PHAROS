@@ -1,39 +1,20 @@
 #!/usr/bin/env python
-"""
-make_sample_drug_report.py
+"""Annotate PHAROS search paths with sample drivers and drug mechanisms.
 
-Sample-specific and drug-specific report for PHAROS/ST-SE conversion searches.
+Read an open-search run directory or its ``search/`` subdirectory together with
+cell-line and drug metadata. Link top-ranked paths to the starting sample's
+driver genes, drug targets, and mechanisms of action (MOAs), and summarize
+target frequencies, treatment-step patterns, and MOA enrichment.
 
-Inputs:
-  - A PHAROS/cell_converter output directory, or its search/ subdirectory
-  - metadata/cell_line_metadata.csv
-  - metadata/drug_metadata.csv
+Write ``summary.md``, annotation and enrichment tables, and figures under
+``sample_drug_report/`` by default. A starting state absent from the cell
+metadata raises a dedicated exception that the open-search workflow uses to
+record this report as skipped.
 
-Outputs:
-  <run-dir>/sample_drug_report/
-    summary.md
-    tables/
-      starting_cell_drivers.tsv
-      top_path_drug_annotations.tsv
-      driver_target_frequency.tsv
-      driver_target_by_step.tsv
-      target_frequency.tsv
-      moa_frequency.tsv
-      moa_by_step.tsv
-      moa_enrichment.tsv
-    figures/
-      01_driver_target_heatmap.png
-      02_top_targets_barplot.png
-      03_moa_frequency_barplot.png
-      04_moa_enrichment_volcano.png
-      05_moa_by_step_heatmap.png
-      06_driver_target_path_matrix.png
-
-Example:
-  python make_sample_drug_report.py \
-    --run-dir runs/J82_to_A172 \
-    --metadata-dir metadata \
-    --top-n-paths 50
+Example
+-------
+    python -m pharos_cell.reports.sample_drug --run-dir runs/start_to_target \
+        --metadata-dir metadata --top-n-paths 50
 """
 
 from __future__ import annotations

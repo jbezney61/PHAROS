@@ -1,4 +1,10 @@
-"""Smoke tests for the installed PHAROS command."""
+"""Verify PHAROS command routing, help output, and workflow defaults.
+
+Exercise the installed command interface and argument parsers for open search,
+admissibility, hypothesis-driven analysis, reporting, evaluation, and model
+downloads. Check model pins, environment assignments, and checksum verification
+without running full cell-state conversion analyses.
+"""
 
 import pytest
 from typer.testing import CliRunner

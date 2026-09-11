@@ -1,11 +1,13 @@
 #!/usr/bin/env python
-"""
-projections.py
+"""Fit linear scoring projections for PHAROS cell-state comparisons.
 
-Supervised linear dimensionality reduction for distribution scoring.
+Provide principal component analysis (PCA), partial least squares discriminant
+analysis (PLS-DA), and combined PCA/PLS-DA projections of start/target embeddings.
+Support projection diagnostics, component selection, fit/evaluation cell splits,
+cached transforms, and estimation of Sinkhorn regularization in scoring space.
 
-Fits a projection on start vs target cell-state embeddings (PLS-DA, PCA+PLS, or PCA)
-and applies it only at scoring time. ST-SE conversion stays in the full embedding space.
+Projections transform embeddings for distribution scoring; the STATE transition
+model continues to predict perturbations in the full embedding space.
 """
 
 from __future__ import annotations

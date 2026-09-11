@@ -1,26 +1,24 @@
 #!/usr/bin/env python
-"""
-PHAROS hypothesis-driven pair CLI.
+"""Configure and run ``pharos hypothesis-driven pair``.
 
-CLI wrapper for positive-control 2-drug ST-SE analysis.
+Evaluate a named two-drug pair, a fixed drug with MOA-defined partners, or
+MOA-defined pairs against random controls for a chosen cell-state conversion.
+Parse data, model, sampling, and scoring settings; call the shared hypothesis
+engine; and generate pair and optional trajectory reports.
+
+Defaults include 100 random pairs, five standard batches, and a conversion-
+aligned PCA/PLS-DA scoring projection. High-sensitivity sampling defaults to
+three batches. MOA means mechanism of action; ``--moa-pairs`` supplies the two
+drug-class terms used to construct comparison pairs.
 
 Example
 -------
-python positive_control_2drug_analysis.py \
-  --adata positive_controls/GSE206741_qc_mad_scrublet_log1p.pano_alve.SE600M.h5ad \
-  --start-cell "DMSO_DMSO" \
-  --target-cell "panobinostat_Alvespimycin" \
-  --cell-col "cell_type" \
-  --embed-key X_state \
-  --model-dir "$ST_RUN" \
-  --checkpoint "$ST_CKPT" \
-  --output-dir runs/PC_CPA_pano_alve \
-  --2drug-pair "['Panobinostat', 'crizotinib']" \
-  --MOA-pairs "['HDAC inhibitor', 'Multi-TK inhibitor']"
-
-The remaining defaults match the validated settings used in the PHAROS paper,
-including 100 random pairs, five standard batches, and conversion-aligned
-PCA--PLS-DA scoring. High-sensitivity batch selection defaults to three batches.
+    pharos hypothesis-driven pair --adata data/cells.h5ad \
+        --start-cell start --target-cell target --cell-col cell_type \
+        --model-dir "$ST_RUN" --checkpoint "$ST_CKPT" \
+        --drug-pair Panobinostat crizotinib \
+        --moa-pairs "HDAC inhibitor" "Multi-TK inhibitor" \
+        --output-dir runs/pair_evaluation
 """
 
 from __future__ import annotations

@@ -1,12 +1,14 @@
 #!/usr/bin/env python
-"""
-embedding_manifold_qc.py
+"""Assess reference-neighborhood support for PHAROS cell-state embeddings.
 
-Reusable FAISS-based manifold support diagnostics for ST-SE embeddings.
+Build a reusable FAISS nearest-neighbor reference bundle from AnnData embeddings
+and calibrate distance-based support thresholds using reference holdouts.
+Score query cells against that bundle, summarize support by query state, and
+report reference-neighbor composition and outlier diagnostics.
 
-This module intentionally does not depend on the ST-SE converter. It treats
-adata.obsm[embed_key] as the embedding manifold and asks whether query cell
-states have reference-neighborhood support.
+This analysis uses embeddings from ``adata.obsm[embed_key]`` directly and does
+not require the STATE transition converter. Reference bundles, query scores,
+and metadata are written for reuse by the manifold CLI and report generator.
 """
 
 from __future__ import annotations

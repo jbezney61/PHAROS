@@ -1,9 +1,10 @@
 #!/usr/bin/env python
-"""
-make_embedding_manifold_qc_report.py
+"""Report reference support from PHAROS manifold query results.
 
-Generate figures and a concise report for embedding_manifold_qc_analysis.py
-score-query outputs.
+Read the manifest and score tables produced by
+``pharos admissibility manifold score-query``. Summarize support percentiles,
+outlier fractions, and reference-neighbor composition, with optional embedding
+visualization. Write a Markdown summary, tables, and diagnostic figures.
 """
 
 from __future__ import annotations

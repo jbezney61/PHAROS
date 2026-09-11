@@ -1,14 +1,15 @@
 #!/usr/bin/env python
-"""
-target_calibration_qc.py
+"""Compare PHAROS transition predictions with observed drug-treated cells.
 
-Core analysis for ST-SE target calibration QC.
+For each eligible cell type and drug at the configured concentration (5.0 uM
+by default), sample control and observed target embeddings, apply the matching
+ST-SE perturbation, and score the prediction against the target using Sinkhorn
+optimal transport and energy distance.
 
-For each cell line and each observed 5.0 uM perturbation, this analysis:
-  1. Samples one WT/control batch.
-  2. Applies the matching ST-SE 5.0 uM perturbation label.
-  3. Samples the actual target cells for that cell line/drug.
-  4. Scores predicted-vs-actual target with Sinkhorn OT using search defaults.
+Support raw and DMSO-adapted calibration modes, optional scoring projections,
+and reproducible cell sampling. Write per-comparison scores, grouped summaries,
+and run metadata for the calibration report. The command wrapper is
+``pharos admissibility calibrate``.
 """
 
 from __future__ import annotations

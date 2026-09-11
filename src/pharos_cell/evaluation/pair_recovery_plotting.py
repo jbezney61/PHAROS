@@ -1,4 +1,9 @@
-"""Plotting helpers for per-run target-pair recovery tables."""
+"""Render statistical tables from PHAROS target-pair recovery analyses.
+
+Use the analysis outputs to display target-drug counts, exact-pair recovery,
+empirical significance, and best pair ranks. Save report figures in PNG and
+PDF formats for ``pharos evaluate pair-recovery``.
+"""
 
 from __future__ import annotations
 

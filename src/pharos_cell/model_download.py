@@ -1,4 +1,10 @@
-"""Download and verify the pretrained model artifacts used by PHAROS."""
+"""Download and verify the pretrained model artifacts used by PHAROS.
+
+Implement ``pharos models download`` for the pinned SE-600M embedding model and
+ST-SE-Tahoe transition model. Verify downloaded files with SHA-256 checksums,
+write a model-provenance manifest, and print environment-variable assignments
+for the local model directories and checkpoints.
+"""
 
 from __future__ import annotations
 
