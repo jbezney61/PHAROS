@@ -149,12 +149,17 @@ def test_calibration_defaults() -> None:
         ]
     )
 
-    assert args.target_calibration_mode == "all"
-    assert args.cells_per_state == 100
+    assert args.cell_col == "cell_name"
+    assert args.target_calibration_mode == "raw"
+    assert args.cells_per_state == 300
     assert args.sinkhorn_metric == "cosine"
     assert args.sinkhorn_epsilon == 0.05
     assert args.sinkhorn_iters == 100
-    assert args.projection_method == "none"
+    assert args.projection_method == "pca_pls_da"
+    assert args.projection_auto_select_components is True
+    assert args.projection_whiten is False
+    assert args.projection_selection_pca_grid == "96,128,192,256"
+    assert args.projection_selection_pls_grid == "64,96,128,192"
 
 
 def test_manifold_defaults() -> None:

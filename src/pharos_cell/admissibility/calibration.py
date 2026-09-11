@@ -6,9 +6,10 @@ by default), sample control and observed target embeddings, apply the matching
 ST-SE perturbation, and score the prediction against the target using Sinkhorn
 optimal transport and energy distance.
 
-Support raw and DMSO-adapted calibration modes, optional scoring projections,
-and reproducible cell sampling. Write per-comparison scores, grouped summaries,
-and run metadata for the calibration report. The command wrapper is
+Default to raw calibration with 300 cells per state and independently select
+PCA/PLS-DA components for each cell-line/drug conversion. DMSO-adapted modes
+and other scoring projections remain configurable. Write per-comparison scores,
+grouped summaries, and run metadata for the calibration report. The command wrapper is
 ``pharos admissibility calibrate``.
 """
 
@@ -45,13 +46,13 @@ class TargetCalibrationQCParams:
     model_dir: str
     output_dir: str
     checkpoint: Optional[str] = None
-    cell_col: str = "cell_type"
+    cell_col: str = "cell_name"
     perturbation_col: str = "drugname_drugconc"
     control_label: str = "DMSO"
-    target_calibration_mode: str = "all"
+    target_calibration_mode: str = "raw"
     dmso_adapter_label: Optional[str] = None
     embed_key: str = "X_state"
-    cells_per_state: int = 100
+    cells_per_state: int = 300
     drug_concentration: float = 5.0
     drug_unit: str = "uM"
     seed: int = 42
@@ -68,7 +69,7 @@ class TargetCalibrationQCParams:
     sinkhorn_metric: str = "cosine"
     sinkhorn_epsilon: float = 0.05
     sinkhorn_iters: int = 100
-    projection_method: str = "none"
+    projection_method: str = "pca_pls_da"
     projection_components: int = 128
     projection_whiten: bool = False
     projection_fit_cap: Optional[int] = 4000
@@ -77,9 +78,9 @@ class TargetCalibrationQCParams:
     projection_small_dataset_threshold: int = 512
     projection_auto_epsilon: bool = True
     projection_pca_prefilter: int = 256
-    projection_auto_select_components: bool = False
+    projection_auto_select_components: bool = True
     projection_selection_pca_grid: str = "96,128,192,256"
-    projection_selection_pls_grid: str = "32,64,96,128,192"
+    projection_selection_pls_grid: str = "64,96,128,192"
     overwrite: bool = False
 
 
@@ -524,9 +525,9 @@ def setup_pair_projection(
     small_dataset_threshold: int,
     auto_epsilon: bool,
     pca_prefilter: int,
-    auto_select_components: bool = False,
+    auto_select_components: bool = True,
     selection_pca_grid: str = "96,128,192,256",
-    selection_pls_grid: str = "32,64,96,128,192",
+    selection_pls_grid: str = "64,96,128,192",
 ) -> Tuple[Optional[Any], np.ndarray, np.ndarray, Dict[str, Any]]:
     """Fit a per-pair scoring projection and return row indices used for scoring."""
     source_np = state_to_numpy_2d(source_state)
@@ -746,13 +747,13 @@ def run_target_calibration_qc(
     model_dir: str | Path,
     output_dir: str | Path,
     checkpoint: Optional[str | Path] = None,
-    cell_col: str = "cell_type",
+    cell_col: str = "cell_name",
     perturbation_col: str = "drugname_drugconc",
     control_label: str = "DMSO",
-    target_calibration_mode: str = "all",
+    target_calibration_mode: str = "raw",
     dmso_adapter_label: Optional[str] = None,
     embed_key: str = "X_state",
-    cells_per_state: int = 100,
+    cells_per_state: int = 300,
     drug_concentration: float = 5.0,
     drug_unit: str = "uM",
     seed: int = 42,
@@ -769,7 +770,7 @@ def run_target_calibration_qc(
     sinkhorn_metric: str = "cosine",
     sinkhorn_epsilon: float = 0.05,
     sinkhorn_iters: int = 100,
-    projection_method: str = "none",
+    projection_method: str = "pca_pls_da",
     projection_components: int = 128,
     projection_whiten: bool = False,
     projection_fit_cap: Optional[int] = 4000,
@@ -778,9 +779,9 @@ def run_target_calibration_qc(
     projection_small_dataset_threshold: int = 512,
     projection_auto_epsilon: bool = True,
     projection_pca_prefilter: int = 256,
-    projection_auto_select_components: bool = False,
+    projection_auto_select_components: bool = True,
     projection_selection_pca_grid: str = "96,128,192,256",
-    projection_selection_pls_grid: str = "32,64,96,128,192",
+    projection_selection_pls_grid: str = "64,96,128,192",
     overwrite: bool = False,
 ) -> Dict[str, Any]:
     target_calibration_mode = normalize_calibration_mode(target_calibration_mode)

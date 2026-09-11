@@ -6,6 +6,9 @@ calibration modes, and scoring options. Run prediction-versus-observation
 calibration through ``pharos_cell.admissibility.calibration``, record the CLI
 configuration, and generate its report unless reporting is skipped.
 
+Defaults use raw calibration, 300 cells per state, and a separate PCA/PLS-DA
+component grid search for each cell-line/drug conversion.
+
 Example
 -------
     pharos admissibility calibrate --adata data/observed_perturbations.h5ad \
@@ -52,7 +55,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     data = p.add_argument_group("Data loading")
     data.add_argument("--checkpoint", default=None, help="Path to ST-SE checkpoint. Defaults to model_dir/checkpoints/final.ckpt.")
-    data.add_argument("--cell-col", default="cell_type", help="adata.obs column containing cell-line labels.")
+    data.add_argument("--cell-col", default="cell_name", help="adata.obs column containing cell-line labels.")
     data.add_argument("--perturbation-col", default="drugname_drugconc", help="adata.obs column containing perturbation labels.")
     data.add_argument(
         "--control-label",
@@ -62,7 +65,7 @@ def build_parser() -> argparse.ArgumentParser:
     data.add_argument(
         "--target-calibration-mode",
         choices=["raw", "dmso_start_only", "dmso-start-only", "dmso_adapter", "dmso-adapter", "both", "all"],
-        default="all",
+        default="raw",
         help=(
             "Target calibration scoring mode. 'both' keeps the legacy raw + DMSO-adapter pair; "
             "'all' emits raw, DMSO-start-only, and DMSO-adapter rows."
@@ -74,7 +77,7 @@ def build_parser() -> argparse.ArgumentParser:
         help="Exact converter perturbation label used to DMSO-adapt WT and, for dmso_adapter mode, observed target embeddings. Defaults to auto-detect.",
     )
     data.add_argument("--embed-key", default="X_state", help="adata.obsm key containing SE embeddings.")
-    data.add_argument("--cells-per-state", type=int, default=100, help="WT and target cells sampled per cell line/drug.")
+    data.add_argument("--cells-per-state", type=int, default=300, help="WT and target cells sampled per cell line/drug.")
     data.add_argument("--cell-types", default=None, help="Optional comma-separated cell types. Default: all control cell types.")
     data.add_argument("--max-cell-types", type=int, default=None, help="Optional first-N cell-type limiter for smoke tests.")
     data.add_argument("--max-drugs", type=int, default=None, help="Optional first-N matched 5uM drug limiter for smoke tests.")
@@ -102,8 +105,9 @@ def build_parser() -> argparse.ArgumentParser:
     projection.add_argument(
         "--projection-method",
         choices=["none", "pls_da", "pca_pls_da", "pca"],
-        default="none",
-        help="Linear dimensionality reduction applied only at scoring time.",
+        default="pca_pls_da",
+        help="Linear dimensionality reduction applied only at scoring time. "
+        "For full embeddings, use 'none' with --no-projection-auto-select-components.",
     )
     projection.add_argument("--projection-components", type=int, default=128, help="Number of latent dimensions K.")
     projection.add_argument(
@@ -154,10 +158,11 @@ def build_parser() -> argparse.ArgumentParser:
     projection.add_argument(
         "--projection-auto-select-components",
         action=argparse.BooleanOptionalAction,
-        default=False,
+        default=True,
         help=(
-            "Select PCA/PLS component counts from held-out start/target geometry before fitting "
-            "each final scoring projection. When enabled, --projection-components and "
+            "Run a separate PCA/PLS component grid search on held-out start/target geometry "
+            "for each cell-line/drug conversion before fitting its scoring projection. "
+            "When enabled, --projection-components and "
             "--projection-pca-prefilter are replaced by the selected values."
         ),
     )
@@ -168,7 +173,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     projection.add_argument(
         "--projection-selection-pls-grid",
-        default="32,64,96,128,192",
+        default="64,96,128,192",
         help="Comma- or space-separated PLS/component candidates for --projection-auto-select-components.",
     )
 
