@@ -328,14 +328,6 @@ This evaluates predicted perturbation responses against observed target states
 and generates the calibration tables and report used to judge whether the
 model is reliable enough for downstream conversion analysis.
 
-Calibration defaults to raw mode, cell-line labels in `cell_name`, and 300 cells
-per control and target state. Each cell-line/drug conversion independently
-selects its PCA/PLS-DA scoring projection from PCA components
-`96,128,192,256` and PLS components `64,96,128,192`, without whitening.
-Use `--cell-col` for datasets with a different label column. Fixed projection
-sizes remain available with `--no-projection-auto-select-components`; combine
-that flag with `--projection-method none` to score full embeddings.
-
 If you want an example of the processed Tahoe-100M dataset to generate the target calibration,
 download the dataset from https://zenodo.org/records/21925263. This is the dataset used to generate
 the main results: `Tahoe100m_3_cell_lines_alldrugs_5uMconc_log1p_norm10k.SE600M.h5ad.gz`
